@@ -1,0 +1,155 @@
+---
+layout: default
+permalink: /education/
+---
+
+<div class="education">
+  <div class="ui container">
+
+    <div class="ui segment">
+      <h1 class="ui header">Education</h1>
+      <div class="ui divider"></div>
+      <div class="ui divided items">
+        {% assign schools = site.education | reverse %}
+        {% for school in schools %}
+        <div class = "item">
+          <div class = "image">
+            <img src="{{site.baseurl}}/assets/images/{{school.image}}">
+          </div>
+          <div class="content">
+            <div class="header">
+              {{school.title}}
+            </div>
+            <div class="meta">
+              <span>{{school.start}} - {{school.end}}</span>
+              {%if school.gpa %}
+              <span>GPA: {{school.gpa}}</span>
+              {% endif %}
+            </div>
+            <div class="description">
+              <p>{{school.brief}}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class = "ui divider"></div>
+
+    <div class = "ui aligned center">
+      <a href = "{{ site.baseurl }}/assets/resume/resume.pdf">
+        <div class="ui big red basic labeled icon button">
+          <i class="file pdf outline icon"></i>
+          Resume
+        </div>
+      </a>
+      <a href = "{{site.baseurl}}/assets/transcript.pdf">
+        <div class="ui big red basic labeled icon button">
+          <i class="file pdf outline icon"></i>
+          Transcript
+        </div>
+      </a>
+      <a href = "https://github.com/{{site.github_url}}">
+        <div class="ui big orange basic labeled icon button">
+          <i class="github icon"></i>
+          Github
+        </div>
+      </a>
+    </div>
+
+    <div class="ui divider"></div>
+
+    <div class="ui center aligned basic segment">
+      <div class="ui two column middle aligned very relaxed stackable grid">
+        <div class="column">
+          <div class="ui segment">
+            <h2>School Involvement</h2>
+          </div>
+          <div class="ui divider"></div>
+          <div class = "ui divided items">
+            {% for role in site.extracurricular %}
+            {% if role.categories contains 'recent' %}
+
+            <div class="item">
+              <div class="image">
+                <img src="{{ site.baseurl }}/assets/images/{{ role.image }}">
+              </div>
+              <div class="content">
+                <a class="header">{{ role.title }}</a>
+                <div class="meta">
+                  <span>{{ role.role }}</span>
+                </div>
+                <div class="description">
+                  <p>{{ role.brief }}</p>
+                </div>
+                {% for tag in education.tags %}
+                <div class="extra">
+                  <div class="ui label">{{tag}}</div>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+
+          <a href = "{{ site.baseurl }}/work">
+            <div class="ui big green labeled icon button">
+              <i class="building icon"></i>
+              View more
+            </div>
+          </a>
+        </div>
+        <div class="ui vertical divider"></div>
+        <div class="center aligned column">
+          <div class="ui segment">
+            <h2>Projects</h2>
+            <div class="ui divider"></div>
+            <div class = "ui divided items">
+              {% for project in site.projects %}
+              {% if project.categories contains 'education' %}
+
+              <div class="item">
+                <div class="image">
+                  <img src="{{ site.baseurl }}/assets/images/{{ project.image }}">
+                </div>
+                <div class="content">
+                  <a class="header" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+                  <div class="meta">
+                    <span>{{ project.role }}</span>
+                  </div>
+                  <div class="description">
+                    <p>{{ project.brief }}</p>
+                  </div>
+                  {% for tag in project.tags %}
+                  <div class="extra">
+                    <div class="ui label">{{tag}}</div>
+                  </div>
+                  {% endfor %}
+                  {% if project.pdf %}
+                  <a href="{{site.baseurl}}{{project.siteURL}}">
+                  <div class="ui small basic red labeled icon button">
+                      <i class="download icon"></i>
+                      Download
+                    </div>
+                  </a>
+                  {% endif %}
+                </div>
+              </div>
+              {% endif %}
+              {% endfor %}
+            </div>
+            <div class="ui divider"></div>
+            <a href = "{{ site.baseurl }}/projects">
+              <div class="ui big green labeled icon button">
+                <i class="laptop icon"></i>
+                Other education endeavours
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

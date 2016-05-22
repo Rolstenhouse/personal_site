@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class = "project">
+	<div class="ui container">
+		<div class = "ui segment">
+			<header class="header">
+				<div class="ui items">
+					<div class="item">
+						<div class="image">
+							<img src="{{site.baseurl}}/assets/images/{{page.image}}">
+						</div>	
+						
+						<div class="content">
+							<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+							<div class="meta">
+								<span>{{page.role}}</span>
+								<span>{{page.start}} - {{page.end}}</span>
+							</div>
+							<div class="description">
+								<p><b>tl;dr</b>  {{page.brief}}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="post-content" itemprop="articleBody">
+				{{ content }}
+			</div>
+		</div>
+	</div>
+</article>

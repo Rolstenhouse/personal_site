@@ -1,0 +1,57 @@
+---
+layout: default
+permalink: /work/
+---
+
+
+<div class="work">
+  <div class="ui container">
+    <div class="ui segment">
+      <h1 class="ui header">Work Experience</h1>
+      <div class="ui divider"></div>
+      <div class = "ui three stackable special cards">
+        {% for job in site.work %}
+
+        <div class="card">
+          <div class="blurring dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <a href="{{ job.url | prepend: site.baseurl }}">
+                    <div class="ui inverted button">Read More</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <img src="{{site.baseurl}}/assets/images/{{job.image}}">
+          </div>
+          <div class="content">
+            <a class="header" href="{{ project.url | prepend: site.baseurl }}">{{ job.title}}</a>
+            <div class="meta">
+              <span class="date">{{ job.role }}</span>
+            </div>
+            <div class="list">
+              {{job.brief}}
+            </div>
+          </div>
+          <div class="extra content">
+            <!-- Add some date parsing here -->
+            <a>
+              <i class="users icon"></i>
+              {{ job.start }} --> {{ job.end }}
+            </a>
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.special.cards .image').dimmer({
+      on: 'hover'
+    });
+  </script>
+
+</div>

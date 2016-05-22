@@ -1,0 +1,122 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="ui container">
+
+    <div class="ui center aligned very padded segment">
+     <div class="ui center aligned huge header">Hi there, I'm Rob</div>
+     <p class = "ui center aligned">I'm a current Computer Engineering and Physics double major at the University of Florida.</p>
+     <p>I have a passion for technology and enjoy "hacking" whenever I get the chance. If you don't find me at my computer, I might be hanging out with the UF ACM chapter or down by the lake sailing.</p>
+     <p>I'm curious, so let me know what you're passionate about, I would love to learn something you.</p>
+     <p>Cop a quick look at the projects, so you can get an idea what's up.</p>
+   </div>
+   <div class = "ui divider"></div>
+   <div class="ui center aligned basic segment">
+    <div class="ui two column middle aligned very relaxed stackable grid">
+      <div class="column">
+        <div class="ui segment">
+          <h2>Work Experience</h2>
+          <div class="ui divider"></div>
+
+          <div class = "ui divided items">
+            {% for job in site.work %}
+            {% if job.categories contains 'recent' %}
+
+            <div class="item">
+              <div class="image">
+                <img src="{{ site.baseurl }}/assets/images/{{ job.image }}">
+              </div>
+              <div class="content">
+                <a class="header">{{ job.title }}</a>
+                <div class="meta">
+                  <span>{{ job.role }}</span>
+                </div>
+                <div class="description">
+                  <p>{{ job.brief }}</p>
+                </div>
+<!--                   <div class="extra">
+                    <div class="ui label">IMAX</div>
+                    <div class="ui label"><i class="globe icon"></i> Additional Languages</div>
+                  </div> -->
+                </div>
+              </div>
+              {% endif %}
+              {% endfor %}
+            </div>
+            <a href = "{{ site.baseurl }}/work">
+              <div class="ui big blue labeled icon button">
+                <i class="building icon"></i>
+                Other positions I've held
+              </div>
+            </a>
+          </div>
+
+          
+        </div>
+        <div class="ui vertical divider"></div>
+        <div class="center aligned column">
+          <div class="ui segment">
+            <h2>Projects</h2>
+            <div class="ui divider"></div>
+
+            <div class = "ui divided items">
+              {% for project in site.projects %}
+              {% if project.categories contains 'recent' %}
+
+              <div class="item">
+                <div class="image">
+                  <img src="{{ site.baseurl }}/assets/images/{{ project.image }}">
+                </div>
+                <div class="content">
+                  <a class="header">{{ project.title }}</a>
+                  <div class="meta">
+                    <span>{{ project.role }}</span>
+                  </div>
+                  <div class="description">
+                    <p>{{ project.brief }}</p>
+                  </div>
+<!--                   <div class="extra">
+                    <div class="ui label">IMAX</div>
+                    <div class="ui label"><i class="globe icon"></i> Additional Languages</div>
+                  </div> -->
+                </div>
+              </div>
+              {% endif %}
+              {% endfor %}
+            </div>
+            <a href = "{{ site.baseurl }}/projects">
+              <div class="ui big orange labeled icon button">
+                <i class="laptop icon"></i>
+                More projects I've worked on
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui divider"></div>
+
+    <div class = "ui aligned center">
+      <a href = "{{ site.baseurl }}/assets/resume/resume.pdf">
+        <div class="ui big red basic labeled icon button">
+          <i class="file pdf outline icon"></i>
+          Resume
+        </div>
+      </a>
+      <a href = "https://linkedin.com/in/{{site.linkedin_url}}">
+        <div class="ui big blue basic labeled icon button">
+          <i class="linkedin icon"></i>
+          LinkedIn
+        </div>
+      </a>
+      <a href = "https://github.com/{{site.github_url}}">
+        <div class="ui big orange basic labeled icon button">
+          <i class="github icon"></i>
+          Github
+        </div>
+      </a>
+    </div>
+<br>
+  </div>

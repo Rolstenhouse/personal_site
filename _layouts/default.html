@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+
+  <div id="main" class="pusher">
+    <div id="mobileHeader" class = "ui center aligned icon header hidden">
+      <img class = "ui centered circular medium image" src = "{{site.baseurl}}/assets/images/profile.jpg">
+      <p class="centered">{{ site.self_description }}</p>
+    </div>
+    <div id = "m_menu" class="ui small menu hidden">
+      <div class="ui container">
+        <a class="active item">Recent</a>
+        <a class="item" href="/projects">Projects</a>
+        <a class="item" href="/education">Education</a>
+        <a class="item" href="/work">Work</a>
+      </div>
+    </div>
+
+    {{content}}
+
+    {% include footer.html %}
+  </div>
+  
+  <script> 
+
+    if($(window).width() < 617){
+      $('#menu').sidebar('hide');
+      $('.ui.small.menu')
+      .visibility({
+        type   : 'fixed'
+      })
+      ;
+    }
+
+
+    $('#menu')
+    .sidebar({
+      dimPage: false
+      ,closable: false
+    });
+
+    $(window).resize(function() {
+// Detect if the resized screen is mobile or desktop width
+if($(window).width() > 617) {
+  console.log('desktop'); 
+  $('.dimmed').removeClass("dimmed");
+  $('#menu').sidebar('show');
+  $('#menu').addClass("visible");
+  $('#menu').removeClass("uncover");
+}
+else {
+ console.log('mobile');
+ $('#menu').sidebar('hide');
+}
+});
+</script>
+
+</body>
+
+</html>

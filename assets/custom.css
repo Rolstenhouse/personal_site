@@ -1,0 +1,31 @@
+@media all and (max-width:630px) {
+
+    /* then display the mobile menu */
+    #m_menu {
+  }
+  /* change style */
+  .fixed#m_menu {
+      position: fixed;
+  }
+  #mobileHeader{
+     display:block;
+ }
+ #main{
+    padding-left: 0px;
+}
+}
+@media all and (min-width:631px) {
+    /* Hide the mobile menu */
+    #m_menu {
+        display: none;
+    }
+    /* Unhide the regular menu */
+    #mobileHeader{
+    	display: none;
+    }
+
+    #main{
+        padding-left: 260px;
+        margin:0;
+    }    
+}
