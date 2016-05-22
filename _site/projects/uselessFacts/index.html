@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Useless Facts</title>
+	<meta name="description" content="  Used PHP to iterate and send to email addresses which followed a format ‘123-456-7891@att.net’ to send text messages  Mobile-first design emphasized using ...">
+
+	<link rel="stylesheet" type="text/css" href="/assets/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/custom.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/assets/resume/resume.css"> -->
+	<link rel="canonical" href="http://robertolsthoorn.com/projects/uselessFacts/">
+	<link rel="alternate" type="application/rss+xml" title="Robert Olsthoorn" href="http://robertolsthoorn.com/feed.xml">
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="/assets/semantic.min.js"></script>
+	<script> 
+			$(function(){$("#resume").load("/assets/resume/resume.html")}); 
+	</script> 
+</head>
+
+
+<body>
+  <header class="header">
+  <div id = "menu" class="ui sidebar left vertical inverted menu visible fixed overlay">
+    <div class = "ui segment inverted">
+      <img class = "ui centered circular small image" src = "/assets/images/profile.jpg">
+      <div class="ui segment inverted aligned center">
+        <p class="ui centered">Learner, Hacker, Traveler</p>
+      </div>
+      <hr>
+    </div>
+
+    <a class="item" href="/">
+      Recent
+    </a>
+    <a class="item" href="/projects">     
+      Projects
+    </a>
+    <a class="item" href="/education">
+      Education
+    </a>
+    <a class="item" href="/work">Work Experience</a>
+  </div>
+</header>
+
+
+  <div id="main" class="pusher">
+    <div id="mobileHeader" class = "ui center aligned icon header hidden">
+      <img class = "ui centered circular medium image" src = "/assets/images/profile.jpg">
+      <p class="centered">Learner, Hacker, Traveler</p>
+    </div>
+    <div id = "m_menu" class="ui small menu hidden">
+      <div class="ui container">
+        <a class="active item">Recent</a>
+        <a class="item" href="/projects">Projects</a>
+        <a class="item" href="/education">Education</a>
+        <a class="item" href="/work">Work</a>
+      </div>
+    </div>
+
+    <article class = "project">
+	<div class="ui container">
+		<div class = "ui segment">
+			<header class="header">
+				<div class="ui items">
+					<div class="item">
+						<div class="image">
+							<img src="/assets/images/uselessFacts.png">
+						</div>	
+						
+						<div class="content">
+							<h1 class="post-title" itemprop="name headline">Useless Facts</h1>
+							<div class="meta">
+								<span>Full-Stack Developer</span>
+								<span>20/03/2015 - 21/03/2015</span>
+							</div>
+							<div class="description">
+								<p><b>tl;dr</b>  </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="post-content" itemprop="articleBody">
+				<ul>
+  <li>Used PHP to iterate and send to email addresses which followed a format ‘123-456-7891@att.net’ to send text messages</li>
+  <li>Mobile-first design emphasized using Materialize framework</li>
+</ul>
+
+			</div>
+		</div>
+	</div>
+</article>
+
+    <footer class="footer">
+
+  <div class="ui inverted vertical footer segment">
+  <div class="ui center aligned container">
+      <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="http://github.com/rolstenhouse"><i class="github icon"></i>Github</a>
+        <a class="item" href="mailto:rolsthoorn12@gmail.com">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  
+  <script> 
+
+    if($(window).width() < 617){
+      $('#menu').sidebar('hide');
+      $('.ui.small.menu')
+      .visibility({
+        type   : 'fixed'
+      })
+      ;
+    }
+
+
+    $('#menu')
+    .sidebar({
+      dimPage: false
+      ,closable: false
+    });
+
+    $(window).resize(function() {
+// Detect if the resized screen is mobile or desktop width
+if($(window).width() > 617) {
+  console.log('desktop'); 
+  $('.dimmed').removeClass("dimmed");
+  $('#menu').sidebar('show');
+  $('#menu').addClass("visible");
+  $('#menu').removeClass("uncover");
+}
+else {
+ console.log('mobile');
+ $('#menu').sidebar('hide');
+}
+});
+</script>
+
+</body>
+
+</html>
