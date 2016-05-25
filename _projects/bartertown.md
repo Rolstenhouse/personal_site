@@ -2,18 +2,15 @@
 layout: projectPost
 title: BarterTown
 role: CoFounder and Lead Developer
-techStack: Android, VenmoAPI
-brief: Native alarm clock application that donates to a charity every time you snooze the alarm
-start: 10/7/2015
-end: 24 hours later
+techStack: MeteorJS, materializeCSS, ElasticSearch
+brief: Worked in HackerHouse, a startup accelerator/incubator, on the bartering of services and products.
+start: May 2015
+end: August 2015
 image: barterTown.png
-githubURL:
-siteURL:
+githubURL: 
+siteURL: http://www.bartertown.xyz
+date: 2015-08-15 00:00:00
 ---
-Done at hackstart, this hackathon consisted of seeral main points
 
-* Awarded prize for the most unique and problem-solving idea
-* Based on open source github project, https://github.com/SheldonNeilson/Android-Alarm-Clock
-* Android application developed with android studio, using the Venmo API
-
-Actual implementation behind the idea lacked the availability to donate to other charities, however this is a feature which was planned on being added later on into the project.
+# Summary
+Over the summer after freshman year, I took place in the <a href="http://hackerhouse.info/">HackerHouse</a> startup accelerator/incubator. This four-month long program (and potentially longer) began with an ideation process, validation, a prototype, more validation, pitching, incorporating and ultimately halting progress on our project, BarterTown.

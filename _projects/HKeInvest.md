@@ -4,12 +4,13 @@ title: Hong Kong Investment Platform
 role: Developer
 techStack: ASP.Net
 brief: Investment platform project built for the COMP3111 course at HKUST
-start: 3/3/2016
-end: 12/5/2016
-image:
+start: March 2016
+end: May 2016
+image: 
 githubURL:
 siteURL:
 category: education
+date: 2016-05-15 00:00:00
 ---
 
 * Points of consideration

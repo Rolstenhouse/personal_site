@@ -3,11 +3,12 @@ layout: projectPost
 title: UF Engineers Week 2015
 role: Back-End Developer
 description: Website for two-week long event where other student socieites host events for engineers
-start: 12/01/2015
-end: 27/02/2015
+start: December 2014
+end: February 2015
 siteURL: http://www.ufbec.org/eweek2015/check-in/
 techStack: PHP, MySQL, WordPress, jQuery Mobile
 image: ufEweek.png
+date: 2015-02-15 00:00:00
 ---
 
 * Developed check-in software that was used in order to track which student organizations' members showed up to which events

@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Political Shamer</title>
-	<meta name="description" content="Done at hackstart, this hackathon consisted of seeral main points">
+	<meta name="description" content="Summary">
 
 	<link rel="stylesheet" type="text/css" href="/assets/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="/assets/custom.css">
@@ -68,17 +68,17 @@
 				<div class="ui items">
 					<div class="item">
 						<div class="image">
-							<img src="/assets/images/">
+							<img src="/assets/images/vote.jpeg">
 						</div>	
 						
 						<div class="content">
 							<h1 class="post-title" itemprop="name headline">Political Shamer</h1>
 							<div class="meta">
 								<span>Front End Developer</span>
-								<span>10/7/2015 - 24 hours later</span>
+								<span>March 2016 - March 2016</span>
 							</div>
 							<div class="description">
-								<p><b>tl;dr</b>  Native alarm clock application that donates to a charity every time you snooze the alarm</p>
+								<p><b>tl;dr</b>  Political filter overlay for Facebook profile picture</p>
 							</div>
 						</div>
 					</div>
@@ -86,15 +86,36 @@
 			</header>
 
 			<div class="post-content" itemprop="articleBody">
-				<p>Done at hackstart, this hackathon consisted of seeral main points</p>
+				<h1 id="summary">Summary</h1>
+
+<p>During our time in Hong Kong, our original idea was to influence the election as much as possible, despite the fact that we were studying overseas.</p>
+
+<p>We created a web application which would</p>
+
+<ol>
+  <li>Grab your current Facebook profile picture</li>
+  <li>Allow you to choose a specific political associated filter</li>
+  <li>Link you to a private album where it was stored, where you would choose to set it as your profile picture</li>
+</ol>
+
+<p>From a technical perspective, this wasn’t completely trivial.</p>
+
+<h5 id="during-this-project-we-used">During this project we used</h5>
 
 <ul>
-  <li>Awarded prize for the most unique and problem-solving idea</li>
-  <li>Based on open source github project, https://github.com/SheldonNeilson/Android-Alarm-Clock</li>
-  <li>Android application developed with android studio, using the Venmo API</li>
+  <li>PHP</li>
+  <li>Facebook’s Graph API</li>
+  <li>Canvas</li>
 </ul>
 
-<p>Actual implementation behind the idea lacked the availability to donate to other charities, however this is a feature which was planned on being added later on into the project.</p>
+<p>Canvas was used on the client-side and server-side to render the photo with a set image.</p>
+
+<p>Facebook’s Graph API was used to grab the profile picture, and then automatically upload the picture to a privately created album within Facebook that would later be redirected to. Unfortunately, Facebook does not allow outside applications to update the profile picture (as of May 2016) and the user had to manually set the updated project.</p>
+
+<p>PHP was used as a basic server so that images could be temporarily stored after Canvas was used to generate the graphic. This image would then be uploaded to Facebook and deleted off the server.</p>
+
+<h3 id="status">Status</h3>
+<p>This project was never completed, but may be restarted closer to election time. We missed the viral period of the Primaries, and would be unlikely to gain traction right now.</p>
 
 			</div>
 		</div>

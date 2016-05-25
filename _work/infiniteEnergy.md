@@ -8,6 +8,7 @@ image: infiniteEnergy.jpeg
 categories: ['software', 'recent']
 location: Gainesville, Florida
 brief: C# and Java EE developer intern for web and internal tools for natural gas and eletricity company.
+date: 2015-08-15 00:00:00
 ---
 * Wrote internal API using C#'s PageMethods to create a deferred UI widget load time with AngularJS injected into ASP.NET
 * Built customer page with AngularJS which allowed logged-in users to access their individual messages and documents

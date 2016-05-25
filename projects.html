@@ -9,7 +9,7 @@ permalink: /projects/
       <h1 class="ui header">Projects</h1>
       <div class="ui divider"></div>
       <h4 class="ui block header">Programming Experience</h4>
-      <div class = "ui three column grid">
+      <div class = "ui three column grid stackable">
         <div class=" column">
           <h3 class="ui header">Development</h3>
           <p> I enjoy learning new languages and working with different software to transform ideas into something tangible</p>
@@ -32,7 +32,8 @@ permalink: /projects/
       </div>
       <h4 class="ui block header">Projects</h4>
       <div class = "ui three stackable special cards">
-        {% for project in site.projects %}
+        {% assign projects = site.projects | reverse %}
+        {% for project in projects %}
 
         <div class="card">
           <div class="blurring dimmable image">

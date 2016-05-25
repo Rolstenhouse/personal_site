@@ -10,7 +10,8 @@ permalink: /work/
       <h1 class="ui header">Work Experience</h1>
       <div class="ui divider"></div>
       <div class = "ui three stackable special cards">
-        {% for job in site.work %}
+        {% assign works = site.work | reverse %}
+        {% for job in works %}
 
         <div class="card">
           <div class="blurring dimmable image">
