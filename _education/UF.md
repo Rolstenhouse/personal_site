@@ -8,5 +8,7 @@ involvement: UF Programming Team, UFACM, The Freshman Leadership Engineering Gro
 achievements: Dean's List
 brief: Declared Computer Engineering major and Physics minor
 image: uf.png
-date: 2018-05-15 00:00:00
+date: 2014-08-15 00:00:00
 ---
+
+Time at UF marked by balling out nonstop

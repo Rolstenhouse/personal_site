@@ -35,26 +35,33 @@ permalink: /education/
       </div>
     </div>
     <div class = "ui divider"></div>
-
-    <div class = "ui aligned center">
+<div class="ui three column centered stackable grid">
+  <div class = "four column centered row">
+      <div class="column">
       <a href = "{{ site.baseurl }}/assets/resume/resume.pdf">
         <div class="ui big red basic labeled icon button">
           <i class="file pdf outline icon"></i>
           Resume
         </div>
       </a>
+      </div>
+      <div class="column">
       <a href = "{{site.baseurl}}/assets/transcript.pdf">
         <div class="ui big red basic labeled icon button">
           <i class="file pdf outline icon"></i>
           Transcript
         </div>
       </a>
+      </div>
+      <div class="column">
       <a href = "https://github.com/{{site.github_url}}">
         <div class="ui big orange basic labeled icon button">
           <i class="github icon"></i>
           Github
         </div>
       </a>
+      </div>
+    </div>
     </div>
 
     <div class="ui divider"></div>
@@ -127,6 +134,7 @@ permalink: /education/
                   </div>
                   {% endfor %}
                   {% if project.pdf %}
+                  <br>
                   <a href="{{site.baseurl}}{{project.siteURL}}">
                   <div class="ui small basic red labeled icon button">
                       <i class="download icon"></i>

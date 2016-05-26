@@ -12,8 +12,8 @@ permalink: /projects/
       <div class = "ui three column grid stackable">
         <div class=" column">
           <h3 class="ui header">Development</h3>
-          <p> I enjoy learning new languages and working with different software to transform ideas into something tangible</p>
-          <h5> Right now, I'm proficient in<br></h5>
+          <p> I enjoy learning new languages and working with different software to transform ideas into something tangible.</p>
+          <h5> Right now, I'm proficient in: <br></h5>
           <div class="ui list">
             {% for language in site.comfortableLanguages %}
             <div class = "item">{{language}}</div>
@@ -27,7 +27,7 @@ permalink: /projects/
         </div>
         <div class=" column">
           <h3 class="ui header">Web Development</h3>
-          <p> Full stack web development combines both creativity and technical application in designing both the front end and the back end. <br>Right now, this website is hosted with Digital Ocean using Nginx as a proxy layer, and written with Jekyll. I enjoy using MeteorJS for quick hack full stack websites and have used PHP and C# for the backend. I'm familiar with MySQL and MongoDB as well as AngularJS for the client side. I've worked with the CSS libraries of Semantic UI, MaterializeCSS, and Bootstrap 3</p>
+          <p> Full stack web development combines both creativity and technical application in designing both the front end and the back end. I've worked with MySQL, MongoDB, PHP, MeteorJS, C#, AngularJS, Bootstrap 3 and Semantic UI.</p><p>Right now, this  <a href="https://github.com/{{site.github_username}}/jekyll.git">website</a> is hosted with Digital Ocean using Nginx as a proxy layer, and written with Jekyll.</p>
         </div>
       </div>
       <h4 class="ui block header">Projects</h4>
@@ -57,13 +57,16 @@ permalink: /projects/
             <div class="meta">
               <span class="date">{{ project.role }}</span>
             </div>
+            <div class="list">
+              {{ project.brief }}
+            </div>
           </div>
           <div class="extra content">
             <!-- Add some date parsing here -->
-            <a>
-              <i class="users icon"></i>
+            <div>
+              <i class="calendar outline icon"></i>
               {{ project.start }} --> {{ project.end }}
-            </a>
+            </div>
           </div>
         </div>
 

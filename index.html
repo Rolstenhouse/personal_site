@@ -5,12 +5,14 @@ layout: default
 <div class="home">
   <div class="ui container">
 
-    <div class="ui center aligned very padded segment">
-     <div class="ui center aligned huge header">Hi there, I'm Rob</div>
-     <p class = "ui center aligned">I'm a current Computer Engineering and Physics double major at the University of Florida.</p>
-     <p>I have a passion for technology and enjoy "hacking" whenever I get the chance. If you don't find me at my computer, I might be hanging out with the UF ACM chapter or down by the lake sailing.</p>
-     <p>I'm curious, so let me know what you're passionate about, I would love to learn something you.</p>
-     <p>Cop a quick look at the projects, so you can get an idea what's up.</p>
+    <div class="ui left aligned very padded segment">
+     <div class="ui left aligned huge header">Hi there, I'm Rob</div>
+     <div id="maininfo">
+       <div class = "">I'm a current Computer Engineering and Physics double major at the University of Florida.<br>
+       I have a passion for technology and enjoy "hacking" whenever I get the chance.<br>
+         I'm curious, so let me know what you're passionate about, I would love to learn something from you.
+       </div>
+     </div>
    </div>
    <div class = "ui divider"></div>
    <div class="ui center aligned basic segment">
@@ -98,25 +100,36 @@ layout: default
     </div>
     <div class="ui divider"></div>
 
-    <div class = "ui aligned center">
-      <a href = "{{ site.baseurl }}/assets/resume/resume.pdf">
-        <div class="ui big red basic labeled icon button">
-          <i class="file pdf outline icon"></i>
-          Resume
+    <div class="ui three column stackable centered grid">
+      <div class="four column centered row">
+        <div class="column">
+          <a href = "{{ site.baseurl }}/assets/resume/resume.pdf">
+            <div class="ui big red basic labeled icon button">
+              <i class="file pdf outline icon"></i>
+              Resume
+            </div>
+          </a>
         </div>
-      </a>
-      <a href = "https://linkedin.com/in/{{site.linkedin_url}}">
-        <div class="ui big blue basic labeled icon button">
-          <i class="linkedin icon"></i>
-          LinkedIn
+        <div class="column">
+          <a href = "https://linkedin.com/in/{{site.linkedin_url}}">
+            <div class="ui big blue basic labeled icon button">
+              <i class="linkedin icon"></i>
+              LinkedIn
+            </div>
+          </a>
         </div>
-      </a>
-      <a href = "https://github.com/{{site.github_url}}">
-        <div class="ui big orange basic labeled icon button">
-          <i class="github icon"></i>
-          Github
+        <div class="column">
+          <a href = "https://github.com/{{site.github_url}}">
+            <div class="ui big orange basic labeled icon button">
+              <i class="github icon"></i>
+              Github
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
-<br>
+
+
+    <br>
   </div>
+</div>
