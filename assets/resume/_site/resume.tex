@@ -1,0 +1,159 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,10pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\usepackage{tabto}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\huge Robert Olsthoorn}{\small.com}
+\end{center}
+\begin{tabular*}{7in}{l@{\extracolsep{3.3in}}l}
+2367 NE 3rd Ave.\ & \hfill \ +1-561-866-4321 \\
+Boca Raton, FL 33431 & \hfill\ rolsthoorn12@gmail.com \\
+https://linkedin.com/in/rolstenhouse\ & \hfill\ https://github.com/rolstenhouse
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{University of Florida, Honors Program}{Gainesville, FL}{Bachelor of Science in Computer Engineering, Minor in Physics}{Aug. 2014 - May 2018}
+	\begin{itemize}
+		\resitem{GPA: 3.79/4.0}
+	\end{itemize}
+
+\item
+	\ressubheading{Hong Kong University of Science and Technology}{Clearwater Bay, Hong Kong}{Study Abroad, School of Engineering}{Feb. 2016 - May 2016}
+\end{itemize}
+
+\resheading{Work Experience}
+\begin{itemize}
+\item
+	\ressubheading{Microsoft}{Redmond, WA}{Program Language and Compiler Explorer Intern}{May 2016 - Aug. 2016}
+	\begin{itemize}
+	    \resitem{Authored script to rewrite URIs referencing commit-dependent source files hosted in source control}
+		\resitem{Conﬁgured continuous integration platform, Appveyor, for static analysis tools supporting the SARIF standard}
+		\resitem{Refactored aspects of SARIF SDK to comply with quality standards}
+	\end{itemize}
+\item
+	\ressubheading{Infinite Energy}{Gainesville, FL}{Software Developer Intern}{Mar. 2015 - Aug. 2015}
+	\begin{itemize}
+		\resitem{Decreased page-load time for internal facing tool using AngularJS, C\#, \& .NET.}
+		\resitem{Built user notification page for documents and alerts using AngularJS.}
+		\resitem{Removed redundant argument from active-directory service function call}
+	\end{itemize}
+\item
+	\ressubheading{Urban Darling, LLC}{Boca Raton, FL}{Web Developer Intern}{Jun. 2014 - May 2015}
+	\begin{itemize}
+		\resitem{Developed and maintained WordPress based website for wardrobe stylists.}
+		\resitem{Managed design changes and modified template functionality using PHP.}
+		\resitem{Improved Google PageSpeed score by decreasing page-load time through lossless image compression plugin.}
+	\end{itemize}
+\end{itemize}
+
+\resheading{Projects}
+\begin{itemize}
+%\item
+%	\ressubheading{Acrophobe}{HKUST, HK}{Currently in development}{Feb. 2016}
+%	\begin{itemize}
+%		\resitem{Developed Android application that awards users for the height in which their phone was thrown into the air.}
+%	\end{itemize}
+\item
+	\ressubheading{PerfectPosture}{Tai Tam, Hong Kong}{Bitwise hacks: Awarded best software hack}{Feb. 2016}
+	\begin{itemize}
+		\resitem{Developed OS X application to automatically dim laptop screen based on back-posture.}
+		\resitem{Provided back-posture data through accelerometer on TI Launchpad implemented as a wearable}
+	\end{itemize}
+\item
+	\ressubheading{Bartertown, LLC}{Gainesville, FL}{CoFounder \& Development Lead}{May 2015 - Aug. 2015}
+	\begin{itemize}
+		\resitem{Founded a social trading platform for the exchange of goods and services.}
+		\resitem{Pitched product in front of investors to raise interest and funding.}
+		\resitem{Developed prototype using MeteorJS and Materialize in a startup incubator (Hackerhouse).}
+	\end{itemize}
+\item
+	\ressubheading{CheapSleep}{Atlanta, GA}{Hackstart: Awarded prize for Most Unique \& Problem-Solving App}{Jul. 2015}
+	\begin{itemize}
+		\resitem{Created an alarm clock which donated to a chosen charity per snooze.}
+		\resitem{Implemented on the Android platform using the Venmo API.}
+	\end{itemize}
+% \item
+% 	\ressubheading{Engineers Week}{Gainesville, FL}{UF College of Engineering Week of Events Software}{Nov. 2014 - Feb. 2015}
+% 	\begin{itemize}
+% 		\resitem{Led mobile site development using jQuery mobile and wrote custom event check-in.}
+% 	\end{itemize}
+
+\end{itemize}
+
+% \resheading{Involvement}
+% \begin{itemize}
+% \item
+%     \ressubheading{hackUST}{Feb. 2016 to Apr. 2016}{}{}
+%     \begin{itemize}
+%         \resitem{Member of organizing team for HKUST's hackathon}
+%     \end{itemize}
+% \item 
+%     \ressubheading{UF Programming Team}{Jan. 2015 to Dec. 2015}{}{}
+%     \begin{itemize}
+%         \resitem{Competed in Microsoft Coding Competition, UltiCoder, and Bloomberg's Codecon}
+%     \end{itemize}
+% \item
+%     \ressubheading{UF Association For Computing Machinery}{Jan. 2015 to Dec. 2015 }{}{}
+%     \begin{itemize}
+%         \resitem{Managed corporate sponsorships and organization's finances.}
+%     \end{itemize}
+% \end{itemize}
+\resheading{Skills}
+
+\begin{description}
+\textbf{Languages:} \tabto{2.5cm} Java, C{}\verb!++!, JavaScript, PHP, Python, C\#, .NET, Git, SQL, Scheme, Powershell\newline
+\textbf{Frameworks:} \tabto{2.5cm} MeteorJS, Materialize, AngularJS, WordPress, Semantic UI, jekyll
+\end{description}
+
+\resheading{Involvement/Awards}
+
+\begin{description}
+- Assisted in organizing \textbf{hackUST}, Hong Kong's largest student-led hackathon. \newline
+- Competed in CodeJam, Bloomberg's Codecon, Ulticoder, etc as a member of the \textbf{UF Programming Team}. \newline
+- Held Treasurer executive board position of the \textbf{UF ACM chapter}.\newline
+- Obtained dual \textbf{US-EU citizenship} as a Dutch national.\newline
+- Awarded \textbf{Dean's list} every semester
+\end{description}
+
+\end{document}
