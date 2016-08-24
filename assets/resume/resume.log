@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 JUL 2016 13:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  24 AUG 2016 19:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -115,12 +115,12 @@ Missing character: There is no Ô in font cmr10!
 Missing character: There is no ¨ in font cmr10!
 Missing character: There is no Å in font cmr10!
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 90--91
+Overfull \hbox (6.0pt too wide) in paragraph at lines 91--92
 [][][][][][][]  
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 142--143
+Overfull \hbox (6.0pt too wide) in paragraph at lines 143--144
 [][][][][][][]  
  []
 
@@ -131,11 +131,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.147 \end{description}
+l.148 \end{description}
                        
 ? 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 149--150
+Overfull \hbox (6.0pt too wide) in paragraph at lines 150--151
 [][][][][][][]  
  []
 
@@ -146,7 +146,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157 \end{description}
+l.158 \end{description}
                        
 ? 
 [1
@@ -156,7 +156,7 @@ l.157 \end{description}
 Here is how much of TeX's memory you used:
  1037 strings out of 493089
  13770 string characters out of 6134842
- 76297 words of memory out of 5000000
+ 77297 words of memory out of 5000000
  4561 multiletter control sequences out of 15000+600000
  8111 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -169,7 +169,7 @@ cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
 0.pfb>
-Output written on resume.pdf (1 page, 100518 bytes).
+Output written on resume.pdf (1 page, 100327 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
