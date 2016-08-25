@@ -5,7 +5,7 @@ role: Software Developer Intern
 start: March 2015
 end: August 2015
 image: infiniteEnergy.jpeg
-categories: ['software', 'recent']
+categories: ['software']
 location: Gainesville, Florida
 brief: C# and Java EE developer intern for web and internal tools for natural gas and electricity company.
 date: 2015-08-15 00:00:00

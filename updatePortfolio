@@ -1,9 +1,7 @@
 #!/bin/bash
 
 MINPARAMS=1
-cd assets/resume
-make
-cd ../..
+
 jekyll build
 git add .
 git commit -m "$1"
