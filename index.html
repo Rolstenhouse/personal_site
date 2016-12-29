@@ -9,8 +9,7 @@ layout: default
      <div class="ui left aligned huge header">Hi there! I'm Rob</div>
      <div id="maininfo">
        <div class = "">I'm a current Computer Engineering major with Physics minor at the University of Florida.<br>
-       I have a passion for technology and enjoy "hacking" whenever I get the chance.<br>
-         I'm curious, so let me know what you're passionate about, I would love to learn something from you.
+       I have a passion for technology and enjoy "hacking" whenever I get the chance.
        </div>
      </div>
    </div>
@@ -27,8 +26,11 @@ layout: default
             {% if job.categories contains 'recent' %}
 
             <div class="item">
+
               <div class="image">
+                <a href="{{ job.url }}" class="ui image">
                 <img src="{{ site.baseurl }}/assets/images/{{ job.image }}">
+              </a>
               </div>
               <div class="content">
                 <a class="header">{{ job.title }}</a>
@@ -63,7 +65,9 @@ layout: default
 
               <div class="item">
                 <div class="image">
+                  <a href="{{project.url}}" class="image ui">
                   <img src="{{ site.baseurl }}/assets/images/{{ project.image }}">
+                </a>
                 </div>
                 <div class="content">
                   <a class="header">{{ project.title }}</a>

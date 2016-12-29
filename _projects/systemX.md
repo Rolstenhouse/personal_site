@@ -13,7 +13,3 @@ date: 2013-05-15 00:00:00
 ---
 
 # Summary
-
-Contracted to fix the site for several occasions.
-
-Has since been re
