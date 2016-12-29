@@ -10,12 +10,12 @@ title: Robert Olsthoorn
 email: rolsthoorn12@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Robert Olsthoorn | Developer, Traveler, Learner, Family Man
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://robertolsthoorn.com" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://robertolsthoorn.com"
 github_username:  rolstenhouse
 linkedin_username: rolstenhouse
 
-self_description: 
+self_description:
   Learner, Hacker, Traveler
 
 # Build settings
@@ -25,7 +25,7 @@ markdown: kramdown
 
 exclude: [node_modules]
 
-collections: 
+collections:
   projects:
     output: true
     permalink: /projects/:path/
@@ -38,6 +38,6 @@ collections:
   extracurricular:
     output: true
     permalink: /extracurricular/:path/
-    
 
-comfortableLanguages: ['C++', 'Java', 'C#', 'SQL']
+
+comfortableLanguages: ['C++', 'Java', 'C#', 'Javascript']
