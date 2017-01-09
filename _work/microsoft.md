@@ -15,6 +15,7 @@ date: 2016-08-15 00:00:00
 From orientation on the first day of work to the presentation on the final day, my experience at Microsoft was nothing short of spectacular. I got to provide immediate value to my team and was able to work with teams on the Visual Studio Code team as well. As an intern, Microsoft did an excellent job at facilitating interviews and interactions with powerful players within Microsoft.
 
 Some of the highlights from the summer (in no particular order):
+
 - Satya Nadella intimate Q&A session
 - Microsoft Signature Event (Space Needle rented out and private Ellie Goulding performance and Microsoft Surfacebook)
 - Sailing on 50' sailboats
