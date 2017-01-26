@@ -27,9 +27,13 @@
     #main{
         padding-left: 260px;
         margin:0;
-    }    
+    }
 }
 
 #maininfo{
   font-size: 16px;
+}
+
+.p{
+  font-size: 20px;
 }
