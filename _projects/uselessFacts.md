@@ -47,7 +47,7 @@ For the frontEnd, a mobile-first approach was in place by using the [Materialize
 
 ### Status
 
-This project is no longer functional, but could be spinned up if a cause arises. I.e., simple notification system Twilio alternative during an event.
+This project is no longer functional, but could be spun up if a cause arises. I.e., simple notification system Twilio alternative during an event.
 
 #### The Useless Facts are Below
 
