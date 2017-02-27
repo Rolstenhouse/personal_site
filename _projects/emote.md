@@ -16,6 +16,8 @@ date: 2017-01-15 00:00:00
 
 # Summary
 
+*AWARDED 2nd PLACE OVERALL AT SWAMPHACKS*
+
 Imagine going through your everyday conversations – and not being able to read body language, social cues, or emotions.
 
 **This is a reality for people with autism.**
