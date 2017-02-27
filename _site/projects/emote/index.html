@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Publix</title>
-	<meta name="description" content="Entry into the corporate world">
+	<title>Emote</title>
+	<meta name="description" content="Summary">
 
 	<link rel="stylesheet" type="text/css" href="/assets/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="/assets/custom.css">
 	<!-- <link rel="stylesheet" type="text/css" href="/assets/resume/resume.css"> -->
-	<link rel="canonical" href="http://robertolsthoorn.com/work/publix/">
+	<link rel="canonical" href="http://robertolsthoorn.com/projects/emote/">
 	<link rel="alternate" type="application/rss+xml" title="Robert Olsthoorn" href="http://robertolsthoorn.com/feed.xml">
 	<script src="/assets/pace/pace.min.js"></script>
   	<link href="/assets/pace/themes/minimal.css" rel="stylesheet" />
@@ -114,17 +114,17 @@
 				<div class="ui items">
 					<div class="item">
 						<div class="image">
-							<img src="/assets/images/publix.jpg">
+							<img src="/assets/images/emote.png">
 						</div>
 
 						<div class="content">
-							<h1 class="post-title" itemprop="name headline">Publix</h1>
+							<h1 class="post-title" itemprop="name headline">Emote</h1>
 							<div class="meta">
-								<span>Front Service Clerk Associate</span>
-								<span>August 2010 - May 2012</span>
+								<span>Back-End Developer</span>
+								<span>January 2017 - present</span>
 							</div>
 							<div class="description">
-								<p><b>tl;dr</b>  Customer Service responsible for bagging groceries</p>
+								<p><b>tl;dr</b>  Real-Time facial emotion recognition for individuals with high functioning autism.</p>
 							</div>
 						</div>
 					</div>
@@ -135,29 +135,36 @@
 				<div class="ui grid">
 					<div class="twelve wide centered column">
 			<div class="post-content" itemprop="articleBody">
-				<h3 id="entry-into-the-corporate-world">Entry into the corporate world</h3>
+				<h1 id="summary">Summary</h1>
 
-<p>As I was growing up, it was made clear to me that my allowance for spending money would dry up as soon as I was able to earn money independently. Conveniently, Publix had the lowest age to hire, at a paltry 14, and while I had been making some side money at that point selling honey buns and teaching piano, I was eager to earn some “real” money by working for a set number of hours</p>
+<p>Imagine going through your everyday conversations – and not being able to read body language, social cues, or emotions.</p>
 
-<h3 id="job-roles">Job Roles</h3>
+<p><strong>This is a reality for people with autism.</strong></p>
 
-<p>As a front service clerk, (bag boy), I was the last stop in an experience designed to deliver customer service from the start. Anything we bagged or talked about was done with pleasure, a smiling face, and a positive attitude. Customer satisfaction was of utmost importance, and so small talk and exchanging pleasantries was a mandatory responsibility as the customer walked through the line, or as we took the shopping cart out to their car in order to unload the groceries.</p>
+<p>Unfortunately, this leads to people with high-functioning autism being socially outcasted from early education to the work force – and beyond. Not because they do not understand emotion, but because they need to be explicitly told how someone is feeling to respond accordingly.</p>
 
-<p>The roles of our job were as follows:
-- Maximize amount of groceries in the bag
-- Place similar items in the bags (No mixing raw meat with anything else)
-- Engage the customer with “How’s your day?” or “The weather is awful today isn’t it?”
-- Walk the customer to their car and unload groceries
-- Collect up to 5 carts maximum and push back into store
-- Clean the bathroom at assigned times</p>
+<p>Our team set out to create a way to do that by providing an application that would read another individuals emotion based on an image fed to Microsoft’s emotion API.</p>
 
-<p>These roles were thrilling at first, but became somewhat repetitive down the line.</p>
+<h3 id="what-we-built">What we built</h3>
 
-<h3 id="reflections">Reflections</h3>
+<p>We build our backEnd with <code class="highlighter-rouge">R</code> in order to expose our API to take the image from our web application. We then sent that image to the Microsoft facial recognition API.</p>
 
-<p>I credit Publix with giving me a greater sense of discipline and responsibility than I had been used to during school; however, my time there went quickly from constantly engaged, to somewhat mindless. I found myself zoning out during work hours and not truly engaging with the customers.</p>
+<p>It’s functionality fell severely short of what we initially envisioned; however, we have continued to work on it.</p>
 
-<p>All in all, it was an experience which I’m glad I had which gave me structure during a time of instability. Publix will forever be my favorite grocery store as I relish in the nostalgia.</p>
+<h3 id="how-i-contributed">How I Contributed</h3>
+
+<p>This was my most embarassing hackathon. As a hackathon veteran at that point, I spent the first 10 hours our so of the project working on another application called <strong>Wow Reacts Only</strong> that was destined to be a chrome extension that when pressed from within facebook, would automatically WOW (similar to Liking) all of their facebook profile pictures.</p>
+
+<p>After switching to working on Emote, I struggled for hours on being able to pass a canvas image to the API that we were trying to use. I had taken an image from a webcam stream and could successfully save it to disk and then upload it to the API; however, I wanted to be able to do all the operations in memory in order to improve latency. I was unsuccessful and ultimately had to succumb to sleep, confident that I would be able to tackle the problem in the morning.</p>
+
+<p>However, while I slept, my other teammates decided to build a prototype that could simply take an image and give the reaction using the Microsoft API <em>which is what I should have used in the first place, rather than the 3rd party I was looking at</em> and then send that reaction via a text to the users phone; which would be able to discreetly show up on a users pebble watch.</p>
+
+<p>They made a product that was effective for a compelling demo and all success was due to their work rather than my own. I learned an important lesson from this which is to <strong>always surround yourself with individuals determined to be successful</strong> as they can take over the wheel regardless of the situation.</p>
+
+<h3 id="status">Status</h3>
+
+<p>We have continued to work on this project and have gathered interested developers and have successfully pitched our products to UF’s graphic design school, who agreed to take on designing aspects of this project, rather than their traditional curriculum.</p>
+
 
 			</div>
 		</div>
