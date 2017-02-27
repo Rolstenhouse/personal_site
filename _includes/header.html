@@ -7,17 +7,32 @@
       </div>
       <hr>
     </div>
-
-    <a class="item" href="/">
-      Home
-    </a>
-    <a class="item" href="/projects">
-      Projects
-    </a>
-    <a class="item" href="/education">
-      Education
-    </a>
-    <a class="item" href="/work">Work Experience</a>
+    <div class="item">
+      <a class="header" href="/">
+        Home
+      </a>
+    </div>
+    <div class="item">
+      <a class="header" href="/work">Work Experience</a>
+      <div class="menu">
+        {% assign jobs = site.work | reverse %}
+        {% for job in jobs%}
+          <a class="item" href="{{job.url}}">{{job.title}}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="item">
+      <a class="header" href="/projects">Projects</a>
+      <div class="menu">
+        {% assign projects = site.projects | reverse %}
+        {% for project in projects %}
+          <a class="item" href="{{project.url}}">{{project.title}}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="item">
+      <a class="header" href="/education">Education</a>
+      </div>
   </div>
 
 <div id="mobileHeader" class = "ui center aligned icon header hidden">
@@ -32,6 +47,5 @@
         <a class="item" href="/work">Work</a>
       </div>
     </div>
-
     
 </header>

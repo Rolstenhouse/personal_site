@@ -2,7 +2,7 @@
 layout: projectPost
 title: UF Engineers Week 2015
 role: Back-End Developer
-description: Website for two-week long event where other student socieites host events for engineers
+brief: Website for two-week long event where other student societies host events for engineers
 start: December 2014
 end: February 2015
 siteURL: http://www.ufbec.org/eweek2015/check-in/
@@ -23,9 +23,9 @@ How it broke down:
 
 ### During this project I used
 
-The form allowed for new users or users who had already registered using a `PHP` form with a `MySQL` database storing all the responses and account queries. In order to make sure that sign-ins were tracked for each individual event; each event was supplied with an appropriate access code that the user had to put in in otder to login.
+The form allowed for new users or users who had already registered using a `PHP` form with a `MySQL` database storing all the responses and account queries. In order to make sure that sign-ins were tracked for each individual event; each event was supplied with an appropriate access code that the user had to put in in order to login.
 
-### Reflectiion
+### Reflection
 
 This was my first real project I had done in College and it showed. We spent forever in the planning process and took too long to begin executing. I remember being assigned as a member and not starting to put in work until about a month before we needed everything to function. This meant that we had done no user testing, and we saw that the event password entry and overall navigation was slower than we initially expected.
 
