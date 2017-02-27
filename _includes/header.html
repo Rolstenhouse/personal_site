@@ -19,4 +19,19 @@
     </a>
     <a class="item" href="/work">Work Experience</a>
   </div>
+
+<div id="mobileHeader" class = "ui center aligned icon header hidden">
+      <img class = "ui centered circular medium image" src = "{{site.baseurl}}/assets/images/profile.jpg">
+      <p class="centered">{{ site.self_description }}</p>
+    </div>
+    <div id = "m_menu" class="ui large menu hidden">
+      <div class="ui container">
+        <a class="item" href="/" {% if page.url == "/"%}class="active"{% endif %}>Home</a>
+        <a class="item" href="/projects">Projects</a>
+        <a class="item" href="/education">Education</a>
+        <a class="item" href="/work">Work</a>
+      </div>
+    </div>
+
+    
 </header>

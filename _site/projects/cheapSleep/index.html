@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>CheapSleep</title>
-	<meta name="description" content="Done at hackstart, this hackathon consisted of seeral main points">
+	<meta name="description" content="Summary">
 
 	<link rel="stylesheet" type="text/css" href="/assets/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="/assets/custom.css">
@@ -46,22 +46,26 @@
     </a>
     <a class="item" href="/work">Work Experience</a>
   </div>
-</header>
 
-
-  <div id="main" class="pusher">
-    <div id="mobileHeader" class = "ui center aligned icon header hidden">
+<div id="mobileHeader" class = "ui center aligned icon header hidden">
       <img class = "ui centered circular medium image" src = "/assets/images/profile.jpg">
       <p class="centered">Learner, Hacker, Traveler</p>
     </div>
     <div id = "m_menu" class="ui large menu hidden">
       <div class="ui container">
-        <a class="item" href="/" >Recent</a>
+        <a class="item" href="/" >Home</a>
         <a class="item" href="/projects">Projects</a>
         <a class="item" href="/education">Education</a>
         <a class="item" href="/work">Work</a>
       </div>
     </div>
+
+    
+</header>
+
+
+  <div id="main" class="pusher">
+    
 
     <article class = "project">
 	<div class="ui container">
@@ -91,15 +95,26 @@
 				<div class="ui grid">
 					<div class="twelve wide centered column">
 			<div class="post-content" itemprop="articleBody">
-				<p>Done at hackstart, this hackathon consisted of seeral main points</p>
+				<h1 id="summary">Summary</h1>
 
-<ul>
-  <li>Awarded prize for the most unique and problem-solving idea</li>
-  <li>Based on open source github project, https://github.com/SheldonNeilson/Android-Alarm-Clock</li>
-  <li>Android application developed with android studio, using the Venmo API</li>
-</ul>
+<p>This project was built at HackStart with the goal to allow an alarm clock to donate to a chosen charity. During development at the hackathon, the alarm clock was functional; however, the donation was only enabled to donate to the developer, which just so happened to be myself.</p>
 
-<p>Actual implementation behind the idea lacked the availability to donate to other charities, however this is a feature which was planned on being added later on into the project.</p>
+<p>Despite being only halfway functional, I received an award for “Most Unique and Problem-Solving App” as the ultimate vision I had for the application was powerful.</p>
+
+<p>How it broke down:
+- The alarm clock was based on open source github project, https://github.com/SheldonNeilson/Android-Alarm-Clock
+- The Android application was developed with android studio, along with the Venmo API
+- The database was slightly modified to keep track of the number of times the individual hit snooze, which would later be aggregated to send through the API.
+- All monetary transactions were done through Venmo</p>
+
+<h3 id="during-this-project-i-used">During this project I used</h3>
+
+<p><code class="highlighter-rouge">Java</code> to develop most of the internal logic of the applications and <code class="highlighter-rouge">SQLite</code> for the database, as it as almost a requisite of Android. If I were to do it again, I would have stored most information locally, but also some information on our own servers; however when I developed the application, I was focused more on building everything into the application.</p>
+
+<p>I also used lots of Redbull, pulling my first all-nighter at a hackathon, much thanks to the onsite Redbull vending machines.</p>
+
+<h3 id="status">Status</h3>
+<p>This project was barely completed, and maybe pursued at some point in the future; however, this would be dependent on finding a charity API that would support micro-donations. Currently, the existing solution has a $10 minimum transfer amount.</p>
 
 			</div>
 		</div>
@@ -126,6 +141,7 @@
   
   <script> 
 
+//Kept in for dynamic resizing in webpages (HONESTLY SHOULD REMOVE)
     if($(window).width() < 617){
       $('#menu').sidebar('hide');
       $('.ui.small.menu')

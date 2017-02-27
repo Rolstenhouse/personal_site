@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 SEP 2016 22:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 FEB 2017 01:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -107,12 +107,17 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 86--87
+Overfull \hbox (6.0pt too wide) in paragraph at lines 65--66
 [][][][][][][]  
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 131--132
+Overfull \hbox (6.0pt too wide) in paragraph at lines 91--92
+[][][][][][][]  
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 139--140
 [][][][][][][]  
  []
 
@@ -123,51 +128,32 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 \end{description}
+l.148 \end{description}
                        
 ? 
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 138--139
-[][][][][][][]  
- []
-
 
 Overfull \hbox (6.0pt too wide) in paragraph at lines 150--151
 [][][][][][][]  
  []
 
 
-! LaTeX Error: \begin{description} on input line 152 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.159 \end{document}
-                    
-? 
-
 ! LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 \end{document}
-                    
+l.155 \end{description}
+                       
 ? 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./resume.aux) )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 152 (\begingroup)
-### bottom level 
+(./resume.aux) ) 
 Here is how much of TeX's memory you used:
  1036 strings out of 493089
  13769 string characters out of 6134842
- 77297 words of memory out of 5000000
+ 75297 words of memory out of 5000000
  4561 multiletter control sequences out of 15000+600000
  8110 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -180,7 +166,7 @@ cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 10.pfb>
-Output written on resume.pdf (1 page, 100559 bytes).
+Output written on resume.pdf (1 page, 97935 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream

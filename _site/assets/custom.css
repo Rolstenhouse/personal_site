@@ -1,7 +1,8 @@
 @media all and (max-width:630px) {
 
     /* then display the mobile menu */
-    #m_menu {
+    #menu {
+        display: none;
   }
   /* change style */
   .fixed#m_menu {
@@ -24,10 +25,22 @@
     	display: none;
     }
 
+    #menu{
+        display:block;
+    }
+
     #main{
         padding-left: 260px;
         margin:0;
     }
+}
+
+.header{
+    background-color: #FFF;
+}
+
+#main{
+    padding-bottom: 60px;
 }
 
 #maininfo{
@@ -36,4 +49,10 @@
 
 .p{
   font-size: 20px;
+}
+
+.footer { /* Increased specificity for SO snippet priority */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

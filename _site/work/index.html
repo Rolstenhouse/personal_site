@@ -47,22 +47,26 @@
     </a>
     <a class="item" href="/work">Work Experience</a>
   </div>
-</header>
 
-
-  <div id="main" class="pusher">
-    <div id="mobileHeader" class = "ui center aligned icon header hidden">
+<div id="mobileHeader" class = "ui center aligned icon header hidden">
       <img class = "ui centered circular medium image" src = "/assets/images/profile.jpg">
       <p class="centered">Learner, Hacker, Traveler</p>
     </div>
     <div id = "m_menu" class="ui large menu hidden">
       <div class="ui container">
-        <a class="item" href="/" >Recent</a>
+        <a class="item" href="/" >Home</a>
         <a class="item" href="/projects">Projects</a>
         <a class="item" href="/education">Education</a>
         <a class="item" href="/work">Work</a>
       </div>
     </div>
+
+    
+</header>
+
+
+  <div id="main" class="pusher">
+    
 
     <div class="work">
   <div class="ui container">
@@ -233,6 +237,7 @@
   
   <script> 
 
+//Kept in for dynamic resizing in webpages (HONESTLY SHOULD REMOVE)
     if($(window).width() < 617){
       $('#menu').sidebar('hide');
       $('.ui.small.menu')
