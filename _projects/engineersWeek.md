@@ -19,7 +19,7 @@ The team consisted of myself and Annie Luc. At the time we were both freshman, a
 
 How it broke down:
 - The main website was build with WordPress, so we developed the processing form in `PHP`
-- In order to build a mobile website, we set it up to redirect to a `jQuery mobile` responsibe site. 
+- In order to build a mobile website, we set it up to redirect to a `jQuery mobile` mobile responsible site. 
 
 ### During this project I used
 

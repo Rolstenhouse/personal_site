@@ -2,7 +2,7 @@
 layout: projectPost
 title: CheapSleep
 role: Android Developer
-techStack: VenmoAPI, Java (Android), SQLite
+techStack: Venmo API, Java (Android), SQLite
 brief: Native alarm clock application that donates to a charity every time you snooze the alarm
 start: July 2015
 end: 24 hours later
