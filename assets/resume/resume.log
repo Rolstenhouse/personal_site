@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 FEB 2017 01:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  12 JUN 2017 00:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -112,12 +112,22 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 65--66
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 91--92
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 	\end{itemize}
+                   
+? 
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 95--96
 [][][][][][][]  
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 139--140
+Overfull \hbox (6.0pt too wide) in paragraph at lines 143--144
 [][][][][][][]  
  []
 
@@ -128,11 +138,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148 \end{description}
+l.152 \end{description}
                        
 ? 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 150--151
+Overfull \hbox (6.0pt too wide) in paragraph at lines 154--155
 [][][][][][][]  
  []
 
@@ -143,7 +153,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.155 \end{description}
+l.159 \end{description}
                        
 ? 
 [1
@@ -153,7 +163,7 @@ l.155 \end{description}
 Here is how much of TeX's memory you used:
  1036 strings out of 493089
  13769 string characters out of 6134842
- 75297 words of memory out of 5000000
+ 76297 words of memory out of 5000000
  4561 multiletter control sequences out of 15000+600000
  8110 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -166,7 +176,7 @@ cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 10.pfb>
-Output written on resume.pdf (1 page, 97935 bytes).
+Output written on resume.pdf (1 page, 98632 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
