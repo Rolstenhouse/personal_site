@@ -6,20 +6,19 @@ layout: default
   <div class="ui container">
 
     <div class="ui left aligned very padded segment">
-     <div class="ui left aligned huge header">Hi there! I'm Rob</div>
+     <div class="ui left aligned huge header">Hi there! I'm Rob,</div>
      <div id="maininfo">
-       <div class = "">I'm a passionate software engineer currently finishing up a Computer Engineering degree at the University of Florida. 
+       <div class = "ui left aligned medium bio">a passionate software engineer currently finishing up a Computer Engineering degree at the University of Florida. Right now, I'm spending time learning about investing, blockchain, and hardware development.
        </div>
      </div>
    </div>
-   <div class = "ui divider"></div>
+   <br>
    <div class="ui center aligned basic segment">
-    <div class="ui two column middle aligned very relaxed stackable grid">
+    <div class="ui two column very relaxed stackable grid">
       <div class="column">
         <div class="ui segment">
-          <a class="header fade" href="{{site.baseurl}}/work"><h2>Work Experience</h2></a>
+          <a class="header fade" href="{{site.baseurl}}/work"><h2>Recent Work Experience</h2></a>
           <div class="ui divider"></div>
-
           <div class = "ui divided items">
             {% for job in site.work %}
             {% if job.categories contains 'recent' %}
@@ -45,18 +44,15 @@ layout: default
               {% endfor %}
             </div>
             <div class="ui divider"></div>
-            <a href = "{{ site.baseurl }}/work">
-              <div class="ui big blue basic labeled icon button">
-                <i class="building icon"></i>
-                Other positions I've held
-              </div>
+            <a href = "{{ site.baseurl }}/work" class="fade">
+              View older work experience
             </a>
           </div>
         </div>
         <div class="ui vertical divider"></div>
         <div class="center aligned column">
           <div class="ui segment">
-            <a class="header fade" href="{{site.baseurl}}/projects}}"><h2>Projects</h2></a>
+            <a class="header fade" href="{{site.baseurl}}/projects}}"><h2>Recent Projects</h2></a>
             <div class="ui divider"></div>
 
             <div class = "ui divided items">
@@ -87,48 +83,12 @@ layout: default
               {% endfor %}
             </div>
             <div class="ui divider"></div>
-            <a href = "{{ site.baseurl }}/projects">
-              <div class="ui big orange basic labeled icon button">
-                <i class="laptop icon"></i>
-                More projects I've worked on
-              </div>
+            <a href = "{{ site.baseurl }}/projects" class="fade">
+              View older projects
             </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="ui divider"></div>
-
-    <div class="ui three column stackable centered grid">
-      <div class="four column centered row">
-        <div class="column">
-          <a href = "{{ site.baseurl }}/assets/resume/resume.pdf">
-            <div class="ui big red basic labeled icon button">
-              <i class="file pdf outline icon"></i>
-              Resume
-            </div>
-          </a>
-        </div>
-        <div class="column">
-          <a href = "https://linkedin.com/in/{{site.linkedin_username}}">
-            <div class="ui big blue basic labeled icon button">
-              <i class="linkedin icon"></i>
-              LinkedIn
-            </div>
-          </a>
-        </div>
-        <div class="column">
-          <a href = "https://github.com/{{site.github_username}}">
-            <div class="ui big orange basic labeled icon button">
-              <i class="github icon"></i>
-              Github
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-
-    <br>
   </div>
 </div>

@@ -67,3 +67,7 @@ p{
     transition-duration: .5s;
     color: black;
 }
+
+.bio {
+    padding-left: .5em;
+}
