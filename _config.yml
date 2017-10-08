@@ -40,4 +40,4 @@ collections:
     permalink: /extracurricular/:path/
 
 
-comfortableLanguages: ['VHDL', 'Java', 'C#', 'JavaScript']
+comfortableLanguages: ['Java', 'C++', 'JavaScript', 'Python']

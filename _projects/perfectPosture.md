@@ -9,7 +9,7 @@ end: 24 hours later
 image: perfectPosture.png
 githubURL: https://github.com/joshbenner851/Perfect-Posture
 siteURL:
-categories: ['recent']
+categories: []
 date: 2016-02-15 00:00:00
 ---
 

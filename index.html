@@ -8,8 +8,7 @@ layout: default
     <div class="ui left aligned very padded segment">
      <div class="ui left aligned huge header">Hi there! I'm Rob</div>
      <div id="maininfo">
-       <div class = "">I'm a current Computer Engineering major with Physics minor at the University of Florida.<br>
-       I have a passion for technology and enjoy "hacking" whenever I get the chance.
+       <div class = "">I'm a passionate software engineer currently finishing up a Computer Engineering degree at the University of Florida. 
        </div>
      </div>
    </div>
@@ -18,7 +17,7 @@ layout: default
     <div class="ui two column middle aligned very relaxed stackable grid">
       <div class="column">
         <div class="ui segment">
-          <h2>Work Experience</h2>
+          <a class="header fade" href="{{site.baseurl}}/work"><h2>Work Experience</h2></a>
           <div class="ui divider"></div>
 
           <div class = "ui divided items">
@@ -33,7 +32,7 @@ layout: default
               </a>
               </div>
               <div class="content">
-                <a class="header">{{ job.title }}</a>
+                <a class="header" href="{{ job.url }}">{{ job.title }}</a>
                 <div class="meta">
                   <span>{{ job.role }}</span>
                 </div>
@@ -45,8 +44,9 @@ layout: default
               {% endif %}
               {% endfor %}
             </div>
+            <div class="ui divider"></div>
             <a href = "{{ site.baseurl }}/work">
-              <div class="ui big blue labeled icon button">
+              <div class="ui big blue basic labeled icon button">
                 <i class="building icon"></i>
                 Other positions I've held
               </div>
@@ -56,7 +56,7 @@ layout: default
         <div class="ui vertical divider"></div>
         <div class="center aligned column">
           <div class="ui segment">
-            <h2>Projects</h2>
+            <a class="header fade" href="{{site.baseurl}}/projects}}"><h2>Projects</h2></a>
             <div class="ui divider"></div>
 
             <div class = "ui divided items">
@@ -70,7 +70,7 @@ layout: default
                 </a>
                 </div>
                 <div class="content">
-                  <a class="header">{{ project.title }}</a>
+                  <a class="header" href="{{project.url}}">{{ project.title }}</a>
                   <div class="meta">
                     <span>{{ project.role }}</span>
                   </div>
@@ -86,8 +86,9 @@ layout: default
               {% endif %}
               {% endfor %}
             </div>
+            <div class="ui divider"></div>
             <a href = "{{ site.baseurl }}/projects">
-              <div class="ui big orange labeled icon button">
+              <div class="ui big orange basic labeled icon button">
                 <i class="laptop icon"></i>
                 More projects I've worked on
               </div>

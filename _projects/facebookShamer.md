@@ -36,4 +36,5 @@ Facebook's Graph API was used to grab the profile picture, and then automaticall
 PHP was used as a basic server so that images could be temporarily stored after Canvas was used to generate the graphic. This image would then be uploaded to Facebook and deleted off the server.
 
 ### Status
-This project was never completed, but may be restarted closer to election time. We missed the viral period of the Primaries, and would be unlikely to gain traction right now.
+
+No longer continued.

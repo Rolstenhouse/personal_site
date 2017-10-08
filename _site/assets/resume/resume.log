@@ -1,9 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  21 SEP 2017 00:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 OCT 2017 19:06
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**resume.tex
-(./resume.tex
+**/Users/rolstenhouse/Desktop/programming/personal/portfolio/assets/resume/resu
+me.tex
+
+(/Users/rolstenhouse/Desktop/programming/personal/portfolio/assets/resume/resum
+e.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
@@ -81,48 +85,48 @@ LaTeX Font Info:    ... okay on input line 39.
 \everyMPtoPDFconversion=\toks15
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 44.
+(Font)              <7> on input line 45.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 44.
+(Font)              <5> on input line 45.
 
-Overfull \hbox (41.60194pt too wide) in alignment at lines 44--48
+Overfull \hbox (41.60194pt too wide) in alignment at lines 45--49
 [] []
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 53.
+(Font)              <12> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 53.
+(Font)              <8> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 53.
+(Font)              <6> on input line 54.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 53--54
+Overfull \hbox (6.0pt too wide) in paragraph at lines 54--55
 [][][][][][][]  
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 56.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 65--66
+Overfull \hbox (6.0pt too wide) in paragraph at lines 66--67
 [][][][][][][]  
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 104--105
+Overfull \hbox (6.0pt too wide) in paragraph at lines 105--106
 [][][][][][][]  
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 153--160
+Overfull \hbox (6.0pt too wide) in paragraph at lines 152--159
 [][][][][][][]  
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 161--163
+Overfull \hbox (6.0pt too wide) in paragraph at lines 160--162
 [][][][][][][]  
  []
 
@@ -132,24 +136,22 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 161--163
 (./resume.aux) ) 
 Here is how much of TeX's memory you used:
  1036 strings out of 493089
- 13769 string characters out of 6134842
+ 13970 string characters out of 6134842
  76297 words of memory out of 5000000
- 4561 multiletter control sequences out of 15000+600000
- 8110 words of font info for 29 fonts, out of 8000000 for 9000
+ 4560 multiletter control sequences out of 15000+600000
+ 7812 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,6n,22p,300b,195s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,6n,22p,373b,195s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
-10.pfb>
-Output written on resume.pdf (1 page, 98082 bytes).
+cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti10.pfb>
+Output written on resume.pdf (1 page, 83210 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 28 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

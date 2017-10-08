@@ -47,7 +47,11 @@
   font-size: 16px;
 }
 
-.p{
+p{
+    font-size: 16px;
+}
+
+.post-content p{
   font-size: 20px;
 }
 
@@ -55,4 +59,11 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+.fade {
+    transition-property: color;
+    transition-timing-function: ease;
+    transition-duration: .5s;
+    color: black;
 }

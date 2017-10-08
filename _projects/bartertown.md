@@ -33,9 +33,9 @@ We were planning on monetizing through targeted advertising and to eventually of
 
 ### What we found 
 
-As we pitched to investors, we continuously got questions on how this was going to make money and how we were going to acquire users. We answred these questions as best as we could; however, we soon discovered that we had no passion for carrying this idea to term. In an attempt to get users on the website, we realized that the interface was cumbersome and that no one was interested in trying a platform that was difficult to use. We felt these pains during the summer, but felt that we were locked into the program and idea we had and that a dramatic pivot would not be possible.
+As we pitched to investors, we continuously got questions on how this was going to make money and how we were going to acquire users. We answered these questions as best as we could; however, we soon discovered that we had no passion for carrying this idea to term. In an attempt to get users on the website, we realized that the interface was cumbersome and that no one was interested in trying a platform that was difficult to use. We felt these pains during the summer, but felt that we were locked into the program and idea we had and that a dramatic pivot would not be possible.
 
-We decided not to continue on with the project, primarily due to lack of interest among founders. From this experience, I learned a lot about generating business ideas, executing on them, working with investors, and working on a team with others who also had a shallow technical experience.
+We decided not to continue on with the project, primarily due to lack of interest among founders. From this experience, I learned a lot about generating business ideas, executing on them, and working with investors.
 
 ### Status
 
