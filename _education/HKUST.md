@@ -9,5 +9,3 @@ brief: Study abroad semester spent in Hong Kong as a Computer Engineering exchan
 image: hkust.png
 date: 2016-05-15 00:00:00
 ---
-
-Study abroad has been an absolutely wild experience.

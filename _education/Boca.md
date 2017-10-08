@@ -10,5 +10,3 @@ brief: Graduated 18/800 students at the school and elected to further studies at
 image: boca.png
 date: 2014-05-15 00:00:00
 ---
-
-My time at Boca High was marked by involvement, with Science Olympiad as a top priority.

@@ -8,28 +8,6 @@ permalink: /projects/
     <div class=" ui segment">
       <h1 class="ui header">Projects</h1>
       <div class="ui divider"></div>
-      <h4 class="ui block header">Programming Experience</h4>
-      <div class = "ui three column grid stackable">
-        <div class=" column">
-          <h3 class="ui header">Development</h3>
-          <p> I enjoy learning new languages and working with different software to transform ideas into something tangible.</p>
-          <h5> Right now, I'm proficient in: <br></h5>
-          <div class="ui list">
-            {% for language in site.comfortableLanguages %}
-            <div class = "item">{{language}}</div>
-            {% endfor %}
-          </div>
-          <p>I've worked with technology ranging from ElasticSearch to Scheme to Latex <i>(Lah-tek)</i>.</p>
-        </div>
-        <div class=" column">
-          <h3 class="ui header">Tech and Electronics</h3>
-          <p> I like to work and develop with my hands. I've worked on an automatic blind opener project using the arduino platform and have also taken part in building a robotic arm in high school.</p>
-        </div>
-        <div class=" column">
-          <h3 class="ui header">Web Development</h3>
-          <p> Full stack web development combines both creativity and technical application in designing both the front end and the back end. I've worked with Typescript, Javascript, MySQL, MongoDB, PHP, MeteorJS, C#, AngularJS, Bootstrap 3 and Semantic UI.</p><p>Right now, this  <a href="https://github.com/{{site.github_username}}/portfolio">website</a> is hosted with Digital Ocean using Nginx as a proxy layer, and written with Jekyll.</p>
-        </div>
-      </div>
       <h4 class="ui block header">Projects</h4>
       <div class = "ui three stackable special cards">
         {% assign projects = site.projects | reverse %}
