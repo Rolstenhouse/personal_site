@@ -23,13 +23,19 @@ How it broke down:
 - I used the BlackRock API to get past stock performance and drew a trend line to indicate whether or not a given purchase was a good idea.
 - Given the asked for Stock and quantity of shares, Razzle would use Robinhood to execute a market order of the said quantity of shares.
 
-### During this project I used
+## During this project I used
 
-Amazon Alexa. I wrote an Alexa skill to take various commands (known as intents) from the end user and interface with the AWS Lambda function that was running.
+**Amazon Alexa**. I wrote an Alexa skill to take various commands (known as intents) from the end user and interface with the AWS Lambda function that was running.
 
-The BlackRock portfolio analysis API located at `https://www.blackrock.com/tools/api-tester/hackathon/portfolio-analysis`. This API endpoint provides all valuable historical data. For this project, I made use of the trend over the past year and past threeMonths in order to predict growth of the stock.  ```Alexa ask Razzle should I buy Snapchat?``` 
+The **BlackRock portfolio analysis API** located at 
+`https://www.blackrock.com/tools/api-tester/hackathon/portfolio-analysis`. 
+This API endpoint provides all valuable historical data. For this project, I made use of the trend over the past year and past threeMonths in order to predict growth of the stock.  
+```Alexa ask Razzle should I buy Snapchat?``` 
 led to a recommendation not to buy (as of October 2017).
 
-The Robinhood private API. Robinhood currently has no public facing API and so all calls must be made through an undocumented API; luckily, there was an existing npm module at `https://github.com/aurbano/robinhood-node`. This API allowed buy orders to be executed on Robinhood from the AWS Lambda client. ```Alexa ask Razzle to buy 5 shares of Microsoft```
+The **Robinhood private API**. Robinhood currently has no public facing API and so all calls must be made through an undocumented API; luckily, there was an existing npm module at 
+```https://github.com/aurbano/robinhood-node```. 
+This API allowed buy orders to be executed on Robinhood from the AWS Lambda client. 
+```Alexa ask Razzle to buy 5 shares of Microsoft```
 
 All together, this functionality created Razzle, your personal financial assistant.
