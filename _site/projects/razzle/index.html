@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Association for Computing Machinery</title>
-	<meta name="description" content="  Managed finances within the organization">
+	<title>Razzle</title>
+	<meta name="description" content="Summary">
 
 	<link rel="stylesheet" type="text/css" href="/assets/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="/assets/custom.css">
 	<!-- <link rel="stylesheet" type="text/css" href="/assets/resume/resume.css"> -->
-	<link rel="canonical" href="http://robertolsthoorn.com/extracurricular/ACM/">
+	<link rel="canonical" href="http://robertolsthoorn.com/projects/razzle/">
 	<link rel="alternate" type="application/rss+xml" title="Robert Olsthoorn" href="http://robertolsthoorn.com/feed.xml">
 	<script src="/assets/pace/pace.min.js"></script>
   	<link href="/assets/pace/themes/minimal.css" rel="stylesheet" />
@@ -110,9 +110,62 @@
   <div id="main">
     
 
-    <ul>
-  <li>Managed finances within the organization</li>
-</ul>
+    <article class = "project">
+	<div class="ui container">
+		<div class = "ui segment">
+			<header class="header">
+				<div class="ui items">
+					<div class="item">
+						<div class="image">
+							<img src="/assets/images/razzle.png">
+						</div>
+
+						<div class="content">
+							<h1 class="post-title" itemprop="name headline">Razzle</h1>
+							<div class="meta">
+								<span>NodeJS Developer</span>
+								<span>October 2017 - 20 hours later</span>
+							</div>
+							<div class="description">
+								<p><b>tl;dr</b>  Your personal stock portfolio assistant</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="ui divider"></div>
+			<div class="container">
+				<div class="ui grid">
+					<div class="twelve wide centered column">
+			<div class="post-content" itemprop="articleBody">
+				<h1 id="summary">Summary</h1>
+
+<p><strong><em>Awarded most creative use of BlackRock API</em></strong></p>
+
+<p>Razzle is a personal financial assistant. Running on Amazon’s Echo product, Razzle could be asked to provide insights into whether or not certain stocks were a good buy, what your current investing portfolio will look like in the next year, and the ability to execute trades on behalf of your Robinhood account.</p>
+
+<p>How it broke down:
+- I used the BlackRock API to get past stock performance and drew a trend line to indicate whether or not a given purchase was a good idea.
+- Given the asked for Stock and quantity of shares, Razzle would use Robinhood to execute a market order of the said quantity of shares.</p>
+
+<h3 id="during-this-project-i-used">During this project I used</h3>
+
+<p>Amazon Alexa. I wrote an Alexa skill to take various commands (known as intents) from the end user and interface with the AWS Lambda function that was running.</p>
+
+<p>The BlackRock portfolio analysis API located at <code class="highlighter-rouge">https://www.blackrock.com/tools/api-tester/hackathon/portfolio-analysis</code>. This API endpoint provides all valuable historical data. For this project, I made use of the trend over the past year and past threeMonths in order to predict growth of the stock.  <code class="highlighter-rouge">Alexa ask Razzle should I buy Snapchat?</code> 
+led to a recommendation not to buy (as of October 2017).</p>
+
+<p>The Robinhood private API. Robinhood currently has no public facing API and so all calls must be made through an undocumented API; luckily, there was an existing npm module at <code class="highlighter-rouge">https://github.com/aurbano/robinhood-node</code>. This API allowed buy orders to be executed on Robinhood from the AWS Lambda client. <code class="highlighter-rouge">Alexa ask Razzle to buy 5 shares of Microsoft</code></p>
+
+<p>All together, this functionality created Razzle, your personal financial assistant.</p>
+
+			</div>
+		</div>
+	</div>
+		</div>
+		</div>
+	</div>
+</article>
 
 
     <footer class="footer">
