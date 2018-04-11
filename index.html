@@ -4,7 +4,6 @@ layout: default
 
 <div class="home">
   <div class="ui container">
-
     <div class="ui left aligned very padded segment">
            <span class="ui center aligned huge header">Hi! I'm Rob.</span>
      <div id="maininfo">
@@ -13,14 +12,12 @@ layout: default
      </div>
    </div>
    <br>
-   <div class="ui center aligned basic segment">
     <div class="ui two column very relaxed stackable grid">
       <div class="column">
         <div class="ui segment">
           <a class="header fade" href="{{site.baseurl}}/work"><h2>Recent Work Experience</h2></a>
-          <div class="ui divider"></div>
           <div class = "ui divided items">
-            {% for job in site.work %}
+            {% for job in site.work reversed %}
             {% if job.categories contains 'recent' %}
 
             <div class="item">
@@ -49,14 +46,13 @@ layout: default
             </a>
           </div>
         </div>
-        <div class="ui vertical divider"></div>
         <div class="center aligned column">
           <div class="ui segment">
             <a class="header fade" href="{{site.baseurl}}/projects}}"><h2>Recent Projects</h2></a>
             <div class="ui divider"></div>
 
             <div class = "ui divided items">
-              {% for project in site.projects %}
+              {% for project in site.projects reversed %}
               {% if project.categories contains 'recent' %}
 
               <div class="item">
@@ -87,7 +83,6 @@ layout: default
               View older projects
             </a>
           </div>
-        </div>
       </div>
     </div>
   </div>

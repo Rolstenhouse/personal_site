@@ -9,7 +9,6 @@ end: November 8th, 2016
 image: MaximumMaxim.png
 githubURL: https://github.com/Rolstenhouse/MaximumMaxim
 siteURL: https://vimeo.com/191319544
-categories: ['recent']
 date: 2016-11-08 00:00:00
 ---
 

@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Nextdoor</title>
-	<meta name="description" content="About">
+	<title>Krispy Kreme</title>
+	<meta name="description" content="Check it out!">
 
 	<link rel="stylesheet" type="text/css" href="/assets/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="/assets/custom.css">
 	<!-- <link rel="stylesheet" type="text/css" href="/assets/resume/resume.css"> -->
-	<link rel="canonical" href="http://robertolsthoorn.com/work/nextdoor/">
+	<link rel="canonical" href="http://robertolsthoorn.com/projects/krispykreme/">
 	<link rel="alternate" type="application/rss+xml" title="Robert Olsthoorn" href="http://robertolsthoorn.com/feed.xml">
 	<script src="/assets/pace/pace.min.js"></script>
   	<link href="/assets/pace/themes/minimal.css" rel="stylesheet" />
@@ -131,17 +131,17 @@
 				<div class="ui items">
 					<div class="item">
 						<div class="image">
-							<img src="/assets/images/nextdoor.png">
+							<img src="/assets/images/krispy.png">
 						</div>
 
 						<div class="content">
-							<h1 class="post-title" itemprop="name headline">Nextdoor</h1>
+							<h1 class="post-title" itemprop="name headline">Krispy Kreme</h1>
 							<div class="meta">
-								<span>Monetization Software Engineering Intern</span>
-								<span>June 2017 - August 2017</span>
+								<span>Hacker</span>
+								<span>January 2018 - March 2018</span>
 							</div>
 							<div class="description">
-								<p><b>tl;dr</b>  Built tooling for the ad operations team and worked on ad targeting</p>
+								<p><b>tl;dr</b>  Is the Gainesville Krispy Kreme donut hot light on?</p>
 							</div>
 						</div>
 					</div>
@@ -152,23 +152,39 @@
 				<div class="ui grid">
 					<div class="twelve wide centered column">
 			<div class="post-content" itemprop="articleBody">
-				<h2 id="about">About</h2>
+				<p><a href="{siteURL}">Check it out!</a></p>
 
-<p>Nextdoor is a company that focuses on connecting neighbors. I often introduce it to people as similar to Facebook for your neighborhood, but it’s different than that.</p>
+<h1 id="inspiration">Inspiration</h1>
 
-<p>You don’t get to choose who is on it, just like you don’t usually get to choose the people you’re going to be neighbors with. Nextdoor allows you to get to know your neighbors, offer up your services to your neighborhood, share tools, report on crime or suspicious activity, or just keep a tab on your neighborhood gossip while you’re out on vacation</p>
+<p>At 2AM one night, I had a craving for Krispy Kreme, and in order to find out if the donuts were hot, I had to download an app from the app store. I certainly didn’t need an app for this one time desire, so I accessed the website and spent considerably more time clicking around than I’d like to admit, before giving up.</p>
 
-<h2 id="work">Work</h2>
+<p>Rather than go get donuts, I did a quick search on Namecheap and bought the domain name, isthekrispykremehotlighton.com for $10. I assumed and mentally readied myself to plant a camera on top of a friends apartment complex and wait for the hot light to turn onn or off and update the website based on that.</p>
 
-<p>While I was there, I got to join the Monetization team and had an absolute blast building out a full-stack Python and React app to help the advertisement operations team understand how many ads were in our inventory. I helped create an assessment and delivery mechanism to ensure that ads were being appropriately targeted and distributed to the members of Nextdoor. I did some interesting data analysis work and ate lots of snacks while doing.</p>
+<h2 id="what-ended-up-happening">What ended up happening</h2>
 
-<h2 id="how-advertising-works">How advertising works</h2>
+<p>I woke up in the morning with a slight amount of buyer’s remorse and did a little more research, only to discover that the official Krispy Kreme website did in fact update the hot light status on their website, with an API endpoint.</p>
 
-<p>The way ads work (as of summer 2017), is that we project the amount of views (known as impressions) that a given ad could be viewed for a certain demographic, i.e. homeowners who use iPhones and record that number. The advertising operations tells a company interested in advertising on our platform how many impressions for their given demographic we can deliver (the tool that I helped build) and then they place the order in our ad inventory system. When an impression has the opportunity of being displayed to a user in the targeted category, we record that as an impression and ultimately whether the advertising campaign over or underdelivered.</p>
+<p>Unfortunately, Namecheap doesn’t allow returns on domain names, so rather than have spent $10 in vain, I decided to build out the basic UI and stick with it.</p>
 
-<h2 id="future">Future</h2>
+<h2 id="technical-details">Technical details</h2>
 
-<p>I’m going back for full time as a college new grad!</p>
+<p>This project was a little trickier than expected because I was determined not to pay anything more for it. In order to do this I took a couple steps.</p>
+
+<ul>
+  <li>Signed up for Heroku’s free tier and input my credit card, so I could get access to 1000 free single process hours per month. (A downfall of the free tier is that it times out)</li>
+  <li>Set up new-relic to ping the site and report when it’s down (a free plugin from heroku)</li>
+  <li>Used flask as my backend server to store the hot light status in order to set notifications</li>
+  <li>Stored phone numbers and hot light status in Mlab’s free 500MB mongo DB store</li>
+  <li>Ran a looped thread to check the API endpoint every five minutes to make sure my website’s status was still correct</li>
+  <li>Had a separate thread run if the hot light was on to email all the phone numbers, a hack I found out about 3 years ago on the useless facts project.</li>
+  <li>Added Google Analytics to track how many users visited my site when I launched</li>
+</ul>
+
+<p>I used this project as an opportunity to build something for fun, and I really enjoyed working on it. Unfortunately, the codebase is pretty gross, but I intended to use this project to learn and to never update again. It won’t scale and I think that’s cool.</p>
+
+<h3 id="status">Status</h3>
+
+<p>Completed and active.</p>
 
 			</div>
 		</div>
