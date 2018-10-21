@@ -6,26 +6,30 @@ layout: landing
     <div class="cn">
         <div class="ui center aligned paragraph">
             <h2>Hi! I'm Rob</h2>
-            <span>I'm a passionate software engineer currently working fulltime at Nextdoor
+            <span>
+                    a software engineer | <a class="ui black link" href="https://nextdoor.com">Nextdoor</a> 
                 <br>
                 <br> Right now, I'm spending my free time working out, dancing to salsa, and experiencing the SF bay area
                 <br>
                 <br>
-                <a class="ui red basic" target="_blank" href = "{{ site.baseurl }}/assets/resume/resume.pdf">
-                      <i class="red file pdf outline icon"></i>
-                  </a>
-                <a href = "https://linkedin.com/in/{{site.linkedin_username}}">
-                      <i class="blue linkedin alternate icon"></i>
-                  </a>
-                  <a href = "https://github.com/{{site.github_username}}">
-                      <i class="black github icon"></i>
-                  </a>
+                <a class="ui red basic" target="_blank" href="{{ site.baseurl }}/assets/resume/resume.pdf">
+                    <i class="red file pdf outline icon"></i>
+                </a>
+                <a href="https://linkedin.com/in/{{site.linkedin_username}}">
+                    <i class="blue linkedin alternate icon"></i>
+                </a>
+                <a href="https://github.com/{{site.github_username}}">
+                    <i class="black github icon"></i>
+                </a>
         </div>
     </div>
 </div>
 
 <div class="ui container">
-    <div class="ui centered vertically divided grid">
+    <p class="ui horizontal divider">
+        Past Work Experience
+    </p>
+    <div class="ui centered grid">
         <div class="three column row">
             {% assign jobs = site.work | reverse %} {% for job in jobs limit:3 %}
             <div class="column">
@@ -59,6 +63,11 @@ layout: landing
             </div>
             {% endfor %}
         </div>
+    </div>
+    <p class="ui horizontal divider">
+        Featured projects
+    </p>
+    <div class="ui centered grid">
         <div class="four column row">
             {% assign projects = site.projects | reverse %} {% for project in projects limit:4 %}
             <div class="column">
@@ -69,27 +78,27 @@ layout: landing
                 </div>
             </div>
             <div id="project_{{ forloop.index }}" class="ui basic modal">
-                    <div class="ui icon header">
-                        <div class="image">
-                            <a href="{{ project.url }}" class="ui rounded image">
-                                <img src="{{ site.baseurl }}/assets/images/{{ project.image }}">
-                            </a>
-                        </div>
-                        {{ project.title }}
-                    </div>
-                    <div class="content">
-                        <p>
-                            <b>{{project.role}}</b> | {{ project.brief }}</p>
-                    </div>
-                    <div class="actions">
-                        <div class="ui red basic cancel inverted button">
-                            Close
-                        </div>
-                        <a href="{{ project.url }}" class="ui green ok inverted button">
-                            Read more
+                <div class="ui icon header">
+                    <div class="image">
+                        <a href="{{ project.url }}" class="ui rounded image">
+                            <img src="{{ site.baseurl }}/assets/images/{{ project.image }}">
                         </a>
                     </div>
+                    {{ project.title }}
                 </div>
+                <div class="content">
+                    <p>
+                        <b>{{project.role}}</b> | {{ project.brief }}</p>
+                </div>
+                <div class="actions">
+                    <div class="ui red basic cancel inverted button">
+                        Close
+                    </div>
+                    <a href="{{ project.url }}" class="ui green ok inverted button">
+                        Read more
+                    </a>
+                </div>
+            </div>
             {% endfor %}
         </div>
     </div>
