@@ -11,7 +11,7 @@ brief: Networked and worked at a portfolio company
 date: 2017-08-15 00:00:00
 --- 
 
-[Meet the fellows]http://fellows.kleinerperkins.com/meet-the-fellows)
+[Meet the fellows](http://fellows.kleinerperkins.com/meet-the-fellows)
 
 *EDIT: No longer a current fellow*
 
