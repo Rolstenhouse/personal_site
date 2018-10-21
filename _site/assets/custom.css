@@ -71,3 +71,23 @@ p{
 .bio {
     padding-left: .5em;
 }
+
+.top-header {
+        margin-top:30vh;
+        margin-bottom:20vh;
+}
+
+.cn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.paragraph {
+    width: 200px;
+}
+
+.grayscale {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(20%);
+}

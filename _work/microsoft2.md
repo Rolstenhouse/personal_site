@@ -7,7 +7,7 @@ end: November 2017
 image: microsoft.jpg
 categories: ['software', 'recent']
 location: Redmond, Washington
-brief: Kernel driver to support new Intel chipset DMA
+brief: Wrote kernel driver to support new Intel chipset DMA
 date: 2017-11-15 00:00:00
 ---
 *Disclaimer: I originally wrote this as a blog post to be published on Microsoft's Windows blog*

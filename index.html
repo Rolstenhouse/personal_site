@@ -1,89 +1,96 @@
+--- 
+layout: landing 
 ---
-layout: default
----
 
-<div class="home">
-  <div class="ui container">
-    <div class="ui left aligned very padded segment">
-           <span class="ui center aligned huge header">Hi! I'm Rob.</span>
-     <div id="maininfo">
-       <div class = "ui left aligned medium bio"><br>I'm a passionate software engineer currently finishing up a Computer Engineering degree at the University of Florida. <br><br>Right now, I'm spending my time writing code and dancing salsa.
-       </div>
-     </div>
-   </div>
-   <br>
-    <div class="ui two column very relaxed stackable grid">
-      <div class="column">
-        <div class="ui segment">
-          <a class="header fade" href="{{site.baseurl}}/work"><h2>Recent Work Experience</h2></a>
-          <div class = "ui divided items">
-            {% for job in site.work reversed %}
-            {% if job.categories contains 'recent' %}
-
-            <div class="item">
-
-              <div class="image">
-                <a href="{{ job.url }}" class="ui image">
-                <img src="{{ site.baseurl }}/assets/images/{{ job.image }}">
-              </a>
-              </div>
-              <div class="content">
-                <a class="header" href="{{ job.url }}">{{ job.title }}</a>
-                <div class="meta">
-                  <span>{{ job.role }}</span>
-                </div>
-                <div class="description">
-                  <p>{{ job.brief }}</p>
-                </div>
-                </div>
-              </div>
-              {% endif %}
-              {% endfor %}
-            </div>
-            <div class="ui divider"></div>
-            <a href = "{{ site.baseurl }}/work" class="fade">
-              View older work experience
-            </a>
-          </div>
+<div class="top-header">
+    <div class="cn">
+        <div class="ui center aligned paragraph">
+            <h2>Hi! I'm Rob</h2>
+            <span>I'm a passionate software engineer currently working fulltime at Nextdoor
+                <br>
+                <br> Right now, I'm spending my free time working out, dancing to salsa, and experiencing the SF bay area
+                <br>
+                <br>
+                <a class="ui red basic" target="_blank" href = "{{ site.baseurl }}/assets/resume/resume.pdf">
+                      <i class="red file pdf outline icon"></i>
+                  </a>
+                <a href = "https://linkedin.com/in/{{site.linkedin_username}}">
+                      <i class="blue linkedin alternate icon"></i>
+                  </a>
+                  <a href = "https://github.com/{{site.github_username}}">
+                      <i class="black github icon"></i>
+                  </a>
         </div>
-        <div class="center aligned column">
-          <div class="ui segment">
-            <a class="header fade" href="{{site.baseurl}}/projects}}"><h2>Recent Projects</h2></a>
-            <div class="ui divider"></div>
+    </div>
+</div>
 
-            <div class = "ui divided items">
-              {% for project in site.projects reversed %}
-              {% if project.categories contains 'recent' %}
-
-              <div class="item">
-                <div class="image">
-                  <a href="{{project.url}}" class="image ui">
-                  <img src="{{ site.baseurl }}/assets/images/{{ project.image }}">
-                </a>
+<div class="ui container">
+    <div class="ui centered vertically divided grid">
+        <div class="three column row">
+            {% assign jobs = site.work | reverse %} {% for job in jobs limit:3 %}
+            <div class="column">
+                <div class="cn image">
+                    <a onClick="$('#job_{{ forloop.index }}').modal('show');" class="grayscale ui small image">
+                        <img src="{{ site.baseurl }}/assets/images/{{ job.image }}">
+                    </a>
+                </div>
+            </div>
+            <div id="job_{{ forloop.index }}" class="ui basic modal">
+                <div class="ui icon header">
+                    <div class="image">
+                        <a href="{{ job.url }}" class="ui rounded image">
+                            <img src="{{ site.baseurl }}/assets/images/{{ job.image }}">
+                        </a>
+                    </div>
+                    {{ job.title }}
                 </div>
                 <div class="content">
-                  <a class="header" href="{{project.url}}">{{ project.title }}</a>
-                  <div class="meta">
-                    <span>{{ project.role }}</span>
-                  </div>
-                  <div class="description">
-                    <p>{{ project.brief }}</p>
-                  </div>
-<!--                   <div class="extra">
-                    <div class="ui label">IMAX</div>
-                    <div class="ui label"><i class="globe icon"></i> Additional Languages</div>
-                  </div> -->
+                    <p>
+                        <b>{{job.role}}</b> | {{ job.brief }}</p>
                 </div>
-              </div>
-              {% endif %}
-              {% endfor %}
+                <div class="actions">
+                    <div class="ui red basic cancel inverted button">
+                        Close
+                    </div>
+                    <a href="{{ job.url }}" class="ui green ok inverted button">
+                        Read more
+                    </a>
+                </div>
             </div>
-            <div class="ui divider"></div>
-            <a href = "{{ site.baseurl }}/projects" class="fade">
-              View older projects
-            </a>
-          </div>
-      </div>
+            {% endfor %}
+        </div>
+        <div class="four column row">
+            {% assign projects = site.projects | reverse %} {% for project in projects limit:4 %}
+            <div class="column">
+                <div class="cn image">
+                    <a onClick="$('#project_{{ forloop.index }}').modal('show');" class="grayscale ui rounded small image">
+                        <img src="{{ site.baseurl }}/assets/images/{{ project.image }}">
+                    </a>
+                </div>
+            </div>
+            <div id="project_{{ forloop.index }}" class="ui basic modal">
+                    <div class="ui icon header">
+                        <div class="image">
+                            <a href="{{ project.url }}" class="ui rounded image">
+                                <img src="{{ site.baseurl }}/assets/images/{{ project.image }}">
+                            </a>
+                        </div>
+                        {{ project.title }}
+                    </div>
+                    <div class="content">
+                        <p>
+                            <b>{{project.role}}</b> | {{ project.brief }}</p>
+                    </div>
+                    <div class="actions">
+                        <div class="ui red basic cancel inverted button">
+                            Close
+                        </div>
+                        <a href="{{ job.url }}" class="ui green ok inverted button">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
-  </div>
 </div>
