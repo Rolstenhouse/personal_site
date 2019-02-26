@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 JAN 2018 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 JAN 2019 23:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -108,35 +108,70 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 66--67
+
+/Users/rolstenhouse/programming/personal/portfolio/assets/resume/resume.tex:104
+: LaTeX Error: \begin{document} ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 \end{itemize}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/rolstenhouse/programming/personal/portfolio/assets/resume/resume.tex:104
+: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.104 \end{itemize}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 106--107
 [][][][][][][]  
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 107--108
+Overfull \hbox (6.0pt too wide) in paragraph at lines 129--130
 [][][][][][][]  
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 160--167
-[][][][][][][]  
- []
+/Users/rolstenhouse/programming/personal/portfolio/assets/resume/resume.tex:158
+: LaTeX Error: \begin{document} ended by \end{itemize}.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 \end{itemize}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 168--170
-[][][][][][][]  
- []
+/Users/rolstenhouse/programming/personal/portfolio/assets/resume/resume.tex:158
+: Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.158 \end{itemize}
+                   
+Things are pretty mixed up, but I think the worst is over.
 
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./resume.aux) ) 
 Here is how much of TeX's memory you used:
- 1036 strings out of 493089
- 13946 string characters out of 6134842
+ 1035 strings out of 493089
+ 13930 string characters out of 6134842
  76297 words of memory out of 5000000
  4560 multiletter control sequences out of 15000+600000
- 7812 words of font info for 28 fonts, out of 8000000 for 9000
+ 7644 words of font info for 27 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  23i,6n,22p,365b,195s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
@@ -144,12 +179,11 @@ Here is how much of TeX's memory you used:
 cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-tt10.pfb>
-Output written on resume.pdf (1 page, 90282 bytes).
+mti10.pfb>
+Output written on resume.pdf (1 page, 81557 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 28 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
