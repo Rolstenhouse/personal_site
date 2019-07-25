@@ -12,7 +12,8 @@
 \usepackage[empty]{fullpage}
 \usepackage{color}
 \usepackage{tabto}
-\definecolor{mygrey}{gray}{0.80}
+\usepackage{hyperref}
+\definecolor{mygrey}{gray}{1.00}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
@@ -33,19 +34,18 @@
 		\textbf{#1} & #2 \\
 		\textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
+
+\newcommand{\singlesubheading}[3]{ \textbf{#1} / #2 / #3 \vspace{-2pt}}
 %-----------------------------------------------------------
 
 
 \begin{document}
 
-\begin{center}
+% \begin{center}
 \textbf{\huge Robert Olsthoorn}\\
-http://robertolsthoorn.com
-\end{center}
+% \end{center}
 \begin{tabular*}{7in}{l@{\extracolsep{3.3in}}l}
-+1-561-866-4321 &
-\hfill\ rolsthoorn12@gmail.com \\
-https://linkedin.com/in/rolstenhouse\ & \hfill\ https://github.com/rolstenhouse
+    US \& EU dual citizen / +1-561-866-4321 / rolsthoorn12@gmail.com / 3080 24th St, San Francisco, CA
 \end{tabular*}
 \\
 
@@ -53,40 +53,42 @@ https://linkedin.com/in/rolstenhouse\ & \hfill\ https://github.com/rolstenhouse
 
 \resheading{Work Experience}
 \begin{itemize}
-\item
-    \ressubheading{Nextdoor}{San Francisco, CA}{Real Estate | Software Engineer}{Aug. 2018 -- Present}
+\item[]
+    \singlesubheading{Nextdoor}{Software Engineer}{Aug. 2018 -- Present}
     \begin{itemize}
-        \resitem{Conducted research, wrote product spec, implement and shipped internal tool yielding a 15x performance improvement for operations and developers}
-        \resitem{Surveyed and interviewed users of the product to report insights into product direction}
-        \resitem{Helped define product specs to drive real estate agent onboarding}
-        \resitem{Developed full-stack products to help increase MRR by over \$200K}
+        % \resitem{Conducted research, synthesized results, implemented and shipped internal tool yielding a 15x performance improvement for operations and developers}
+        \resitem{Worked on Real Estate with engineering team of seven driving over \$10m ARR}
+        \resitem{Scoped and developed several key projects (10x in customer support efficiency, 1\% churn reduction)}
+        \resitem{Developed full-stack solutions leveraging React, Python, iOS and ElasticSearch}
+        \resitem{Managed an intern responsible for critical path projects}
     \end{itemize}
-\item
-	\ressubheading{Microsoft}{Redmond, WA}{Windows Core | Software Engineering Intern}{Sep. 2017 -- Nov. 2017}
-	\begin{itemize}
-    \resitem{Developed windows kernel driver to support new Intel chipset DMA functionality}
-    \resitem{Crafted a product specification to shape developmnet direction of the driver}
-    \resitem{Sped up memcpy operation when zeroing out memory by offloading CPU work to DMA}
+\item[]
+	\singlesubheading{Microsoft}{Software Engineer Intern}{Sep. -- Nov. 2017}
+    \begin{itemize}
+    \resitem{Wrote a highly technical product spec to set expectations for new Intel chipset}
+    \resitem{Developed windows kernel driver for DMA (Direct memory access), speeding up memcpy operations when zeroing out consecutive chunks of memory}
 	\end{itemize}
-\item
-	\ressubheading{Nextdoor | KPCB Engineering Fellow}{San Francisco, CA}{Monetization | Software Engineering Intern}{May 2017 -- Aug. 2017}
+\item[]
+	\singlesubheading{Kleiner Perkins @ Nextdoor}{Software Engineer Intern}{May -- Aug. 2017}
 	\begin{itemize}
-		\resitem{Developed Ad inventory forecasting tool for advertising operations team}
-		\resitem{Built Django APIs to route SQS messages through an ad inventory management pipeline}
-		\resitem{Wrote ad targeting evaluation test suite and redis cache update task}
-		\resitem{Selected as 1 of 52 Engineering Fellows out of 2500 applicants}
+        \resitem{Selected as one of 52 KP Engineering Fellows out of 2500 students to represent Kleiner}
+        \resitem{Developed Ad inventory forecasting tool, increasing booking inventory by 2x}
+        \resitem{Leveraged backend Frameworks (Django, SQS and Redis), to create a scalable and testable inventory management pipeline}
     \end{itemize}
-\end{itemize}
-% \item
-% 	\ressubheading{Microsoft}{Redmond, WA}{Compiler and Language Platform | Explorer Intern}{May 2016 -- Aug. 2016}
-% 	\begin{itemize}
-% 		\resitem{Created VS Code extension to support static analysis tool file format SARIF usisng TypeScript}
-% 	  \resitem{Authored PowerShell script to rewrite URIs referencing commit-dependent source files hosted in GitHub}
-% 		\resitem{Configured continuous integration platform, Appveyor, for static analysis tools supporting the SARIF standard}
-% 		\resitem{Refactored aspects of the SARIF SDK to comply with quality standards}
-%     \end{itemize}
-    
-
+\item[]
+	\singlesubheading{Microsoft}{Explore Intern (PM and SWE)}{May -- Aug. 2016}
+    \begin{itemize}
+        \resitem{Drove product vision for efficiently sharing code and static analysis bug reports across the company}
+		\resitem{Created VS Code extension to support Microsoft's new static analysis file format SARIF}
+	    % \resitem{Authored PowerShell script to rewrite URIs referencing commit-dependent source files hosted in GitHub}
+		% \resitem{Configured continuous integration platform, Appveyor, for static analysis tools supporting the SARIF standard}
+		% \resitem{Refactored aspects of the SARIF SDK to comply with quality standards}
+    \end{itemize}
+\item[]
+	\singlesubheading{Bartertown, LLC}{Founder}{May -- Aug. 2015}
+    \begin{itemize}
+        \resitem{Accepted into local incubator, HackerHouse, where we built a social trading platform for a currency-free exchange of services and goods}
+    \end{itemize}
 % \item
 % 	\ressubheading{Infinite Energy}{Gainesville, FL}{Software Developer Intern}{Mar. 2015 - Aug. 2015}
 % 	\begin{itemize}
@@ -105,44 +107,38 @@ https://linkedin.com/in/rolstenhouse\ & \hfill\ https://github.com/rolstenhouse
 
 \resheading{Notable Projects}
 \begin{itemize}
-\item
-	\ressubheading{[Startup] Bartertown, LLC}{Gainesville, FL}{CTO \& CoFounder}{May 2015 - Aug. 2015}
-	\begin{itemize}
-        \resitem{Founded a social trading platform for the exchange of services and goods}
-        \resitem{Led product and development decisions}
-        \resitem{Accepted into HackerHouse, a startup accelerator, where we pitched to investors weekly}
-    \end{itemize}
-\item
-	\ressubheading{Razzle}{Seattle, WA}{DubHacks: Awarded creative use of BlackRock API}{Oct. 2017}
-	\begin{itemize}
-		\resitem{Used Amazon's Alexa to interface with stock portfolio, execute trades, and provide financial insights}
-		\resitem{Hooked into Robinhood's Private API and used BlackRock's historical data API to provide valuable portfolio insights}
+\item[]
+	\singlesubheading{Razzle}{DubHacks, Seattle, WA}{Oct. 2017}
+    \begin{itemize}
+        \resitem{Awarded Most Creative Use of BlackRock API}
+		\resitem{Used Amazon's Alexa to interface with prviate stock portfolio, execute trades, and provide financial insights by hooking into Robinhood's Private API and using BlackRock's financial API}
 	\end{itemize}
-\item
-	\ressubheading{PerfectPosture}{Tai Tam, Hong Kong}{BitwiseHacks: Awarded best software hack}{Feb. 2016}
-	\begin{itemize}
-		\resitem{Led development of OS X application to automatically dim laptop screen based on back-posture}
-		\resitem{Provided back-posture data through accelerometer on TI Launchpad implemented as a wearable}
+\item[]
+	\singlesubheading{PerfectPosture}{BitwiseHacks, Tai Tam, Hong Kong}{Feb. 2016}
+    \begin{itemize}
+        \resitem{Awarded best software hack}
+		\resitem{Led development of MacOS application to automatically dim laptop screen based on back-posture detected by wearable}
     \end{itemize}
+\item[]
+    \singlesubheading{CheapSleep}{Hackstart, Atlanta, GA}{Jul. 2015}
+    \begin{itemize}
+        \resitem{Awarded Most Unique \& Problem-Solving App}
+        \resitem{Interviewed at \underline{\href{https://hypepotamus.com/people/lets-show-fl-sophomore-atls-tech-scene/}{https://hypepotamus.com/people/lets-show-fl-sophomore-atls-tech-scene/}}}
+		\resitem{Created an alarm clock which donated to a chosen charity per snooze by creating an Android app using the (now deprecated) Venmo API.}
+	\end{itemize}
 \end{itemize}
     
 \resheading{Education}
     \begin{itemize}
-    \item
+    \item[]
         \ressubheading{University of Florida, Honors Program}{Gainesville, FL}{Bachelor of Science in Computer Engineering, Minor in Physics}{Aug. 2014 -- May 2018}
         \begin{itemize}
             \resitem{GPA: 3.67/4.0}
         \end{itemize}
     
-    \item
+    \item[]
         \ressubheading{Hong Kong University of Science and Technology}{Clearwater Bay, Hong Kong}{School of Engineering}{Feb. 2016 -- May 2016}
     \end{itemize}
-% \item
-% 	\ressubheading{CheapSleep}{Atlanta, GA}{Hackstart: Awarded prize for Most Unique \& Problem-Solving App}{Jul. 2015}
-% 	\begin{itemize}
-% 		\resitem{Created an alarm clock which donated to a chosen charity per snooze.}
-% 		\resitem{Implemented on the Android platform using the (deprecated) Venmo API.}
-% 	\end{itemize}
 % \item
 % 	\ressubheading{Bartertown, LLC}{Gainesville, FL}{CTO \& CoFounder}{May 2015 - Aug. 2015}
 % 	\begin{itemize}
@@ -154,8 +150,6 @@ https://linkedin.com/in/rolstenhouse\ & \hfill\ https://github.com/rolstenhouse
 % 	\begin{itemize}
 % 		\resitem{Led mobile site development using \textbf{jQuery} mobile and wrote custom event check-in.}
 % 	\end{itemize}
-
-\end{itemize}
 
 % \resheading{Involvement}
 % \begin{itemize}
