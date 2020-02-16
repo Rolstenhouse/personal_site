@@ -164,9 +164,11 @@
 
 <p>Razzle is a personal financial assistant. Running on Amazon’s Echo product, Razzle could be asked to provide insights into whether or not certain stocks were a good buy, what your current investing portfolio will look like in the next year, and the ability to execute trades on behalf of your Robinhood account.</p>
 
-<p>How it broke down:
-- I used the BlackRock API to get past stock performance and drew a trend line to indicate whether or not a given purchase was a good idea.
-- Given the asked for Stock and quantity of shares, Razzle would use Robinhood to execute a market order of the said quantity of shares.</p>
+<p>How it broke down:</p>
+<ul>
+  <li>I used the BlackRock API to get past stock performance and drew a trend line to indicate whether or not a given purchase was a good idea.</li>
+  <li>Given the asked for Stock and quantity of shares, Razzle would use Robinhood to execute a market order of the said quantity of shares.</li>
+</ul>
 
 <h2 id="during-this-project-i-used">During this project I used</h2>
 
@@ -178,9 +180,9 @@ This API endpoint provides all valuable historical data. For this project, I mad
 <code class="highlighter-rouge">Alexa ask Razzle should I buy Snapchat?</code> 
 led to a recommendation not to buy (as of October 2017).</p>
 
-<p>The <strong>Robinhood private API</strong>. Robinhood currently has no public facing API and so all calls must be made through an undocumented API; luckily, there was an existing npm module at 
+<p>The <strong>Robinhood private API</strong>. Robinhood currently has no public facing API and so all calls must be made through an undocumented API; luckily, there was an existing npm module at
 <code class="highlighter-rouge">https://github.com/aurbano/robinhood-node</code>. 
-This API allowed buy orders to be executed on Robinhood from the AWS Lambda client. 
+This API allowed buy orders to be executed on Robinhood from the AWS Lambda client.
 <code class="highlighter-rouge">Alexa ask Razzle to buy 5 shares of Microsoft</code></p>
 
 <p>All together, this functionality created Razzle, your personal financial assistant.</p>

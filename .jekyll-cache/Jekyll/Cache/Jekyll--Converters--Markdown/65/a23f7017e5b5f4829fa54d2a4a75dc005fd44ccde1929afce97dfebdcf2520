@@ -1,0 +1,32 @@
+I"�<h1 id="summary">Summary</h1>
+
+<p>During our time in Hong Kong, our original idea was to influence the election as much as possible, despite the fact that we were studying overseas.</p>
+
+<p>We created a web application which would</p>
+
+<ol>
+  <li>Grab your current Facebook profile picture</li>
+  <li>Allow you to choose a specific political associated filter</li>
+  <li>Link you to a private album where it was stored, where you would choose to set it as your profile picture</li>
+</ol>
+
+<p>From a technical perspective, this wasn’t completely trivial.</p>
+
+<h5 id="during-this-project-we-used">During this project we used</h5>
+
+<ul>
+  <li>PHP</li>
+  <li>Facebook’s Graph API</li>
+  <li>Canvas</li>
+</ul>
+
+<p>Canvas was used on the client-side and server-side to render the photo with a set image.</p>
+
+<p>Facebook’s Graph API was used to grab the profile picture, and then automatically upload the picture to a privately created album within Facebook that would later be redirected to. Unfortunately, Facebook does not allow outside applications to update the profile picture (as of May 2016) and the user had to manually set the updated project.</p>
+
+<p>PHP was used as a basic server so that images could be temporarily stored after Canvas was used to generate the graphic. This image would then be uploaded to Facebook and deleted off the server.</p>
+
+<h3 id="status">Status</h3>
+
+<p>No longer continued.</p>
+:ET

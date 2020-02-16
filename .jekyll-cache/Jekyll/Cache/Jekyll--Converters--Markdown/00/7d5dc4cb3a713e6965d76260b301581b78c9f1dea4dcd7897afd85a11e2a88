@@ -1,0 +1,23 @@
+I"l<h1 id="summary">Summary</h1>
+
+<p>This project was built at HackStart with the goal to allow an alarm clock to donate to a chosen charity. During development at the hackathon, the alarm clock was functional; however, the donation was only enabled to donate to the developer, which just so happened to be myself.</p>
+
+<p>Despite being only halfway functional, I received an award for “Most Unique and Problem-Solving App” as the ultimate vision I had for the application was powerful.</p>
+
+<p>How it broke down:</p>
+<ul>
+  <li>The alarm clock was based on open source github project, https://github.com/SheldonNeilson/Android-Alarm-Clock</li>
+  <li>The Android application was developed with android studio, along with the Venmo API</li>
+  <li>The database was slightly modified to keep track of the number of times the individual hit snooze, which would later be aggregated to send through the API.</li>
+  <li>All monetary transactions were done through Venmo</li>
+</ul>
+
+<h3 id="during-this-project-i-used">During this project I used</h3>
+
+<p><code class="highlighter-rouge">Java</code> to develop most of the internal logic of the applications and <code class="highlighter-rouge">SQLite</code> for the database, as it as almost a requisite of Android. If I were to do it again, I would have stored most information locally, but also some information on our own servers; however when I developed the application, I was focused more on building everything into the application.</p>
+
+<p>I also used lots of Redbull, pulling my first all-nighter at a hackathon, much thanks to the onsite Redbull vending machines.</p>
+
+<h3 id="status">Status</h3>
+<p>This project was barely completed, and maybe pursued at some point in the future; however, this would be dependent on finding a charity API that would support micro-donations. Currently, the existing solution has a $10 minimum transfer amount.</p>
+:ET
