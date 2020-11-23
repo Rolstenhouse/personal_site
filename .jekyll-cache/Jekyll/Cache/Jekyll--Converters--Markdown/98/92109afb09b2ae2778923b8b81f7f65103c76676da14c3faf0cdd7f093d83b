@@ -1,4 +1,4 @@
-I"¦<h1 id="summary">Summary</h1>
+I"¹<h1 id="summary">Summary</h1>
 
 <p>On a mission to use a piece of hardware without a connection to the internet, and an obvious lack in solid music to entertain those around, the project created itself out of necessity.</p>
 
@@ -8,7 +8,7 @@
 
 <h3 id="during-this-project-i-used">During this project I used</h3>
 
-<p><code class="highlighter-rouge">C++</code> in coordination with the online compiler and IDE, <a href="https://developer.mbed.org/compiler/#nav:/mbed-os-example-blinky/main.cpp">mbed</a> was used to program the MAX32600, a Maxim Integrated programmable board, in order to flash onboard multicolor LEDâ€™s and play appropriate tones on an additional piezoelectric buzzer.</p>
+<p><code class="language-plaintext highlighter-rouge">C++</code> in coordination with the online compiler and IDE, <a href="https://developer.mbed.org/compiler/#nav:/mbed-os-example-blinky/main.cpp">mbed</a> was used to program the MAX32600, a Maxim Integrated programmable board, in order to flash onboard multicolor LEDâ€™s and play appropriate tones on an additional piezoelectric buzzer.</p>
 
 <p>The programmed songs were as follows:</p>
 

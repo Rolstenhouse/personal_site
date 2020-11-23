@@ -1,10 +1,10 @@
-I"j<h1 id="summary">Summary</h1>
+I"}<h1 id="summary">Summary</h1>
 
 <p>This project was the final assessment to the <a href="http://www.dessa.fau.edu/esp.php">FAU Engineering Scholars Program</a>, targeted towards individuals with a proclivity to STEM.</p>
 
 <p>During the three-week course we had three 8-hour days of the week where we learned about basics to HTML, CSS, JS, PHP, and MySQL so basically a crash course in web development. I worked with three other individuals for the final project, Peter Lin, William Garner, and Tiago Baptista.</p>
 
-<p>We had tried to build a forum that was based around all things old-school computer related and went for a terminal styled theme (build off of <code class="highlighter-rouge">Bootstrap</code>)</p>
+<p>We had tried to build a forum that was based around all things old-school computer related and went for a terminal styled theme (build off of <code class="language-plaintext highlighter-rouge">Bootstrap</code>)</p>
 
 <h3 id="status">Status</h3>
 

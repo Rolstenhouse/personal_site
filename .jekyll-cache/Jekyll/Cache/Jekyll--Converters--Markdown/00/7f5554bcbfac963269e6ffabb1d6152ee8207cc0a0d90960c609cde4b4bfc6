@@ -1,10 +1,10 @@
-I"!<h1 id="summary">Summary</h1>
+I"*!<h1 id="summary">Summary</h1>
 
 <p>Built at hackFSU, this “bot” would send random facts to a friend or enemy at a specified phone number. At the time, the project would only send emails from your browser session, rather than forking a separate process on the backEnd. This was done in order to prevent spamming,</p>
 
 <h3 id="during-this-project-i-used">During this project I Used</h3>
 
-<p><code class="highlighter-rouge">PHP</code> to iterate over a list of Useless Facts that was stored as a variable within the program. In order to send to most text message providers within the US, I sent text messages to the specified number using the following format.</p>
+<p><code class="language-plaintext highlighter-rouge">PHP</code> to iterate over a list of Useless Facts that was stored as a variable within the program. In order to send to most text message providers within the US, I sent text messages to the specified number using the following format.</p>
 
 <h5 id="email-addresses">Email Addresses</h5>
 

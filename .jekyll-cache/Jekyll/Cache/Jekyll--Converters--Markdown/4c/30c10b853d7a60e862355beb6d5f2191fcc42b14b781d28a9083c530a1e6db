@@ -1,4 +1,4 @@
-I"¸<h1 id="summary">Summary</h1>
+I"<h1 id="summary">Summary</h1>
 
 <p>In order to help provide analytics for Engineersâ€™ Week at the University of Florida, our team was responsible for developing the mobile website as well as the mechanism used to check in each individual into over 20 different events.</p>
 
@@ -6,13 +6,13 @@
 
 <p>How it broke down:</p>
 <ul>
-  <li>The main website was build with WordPress, so we developed the processing form in <code class="highlighter-rouge">PHP</code></li>
-  <li>In order to build a mobile website, we set it up to redirect to a <code class="highlighter-rouge">jQuery mobile</code> mobile responsible site.</li>
+  <li>The main website was build with WordPress, so we developed the processing form in <code class="language-plaintext highlighter-rouge">PHP</code></li>
+  <li>In order to build a mobile website, we set it up to redirect to a <code class="language-plaintext highlighter-rouge">jQuery mobile</code> mobile responsible site.</li>
 </ul>
 
 <h3 id="during-this-project-i-used">During this project I used</h3>
 
-<p>The form allowed for new users or users who had already registered using a <code class="highlighter-rouge">PHP</code> form with a <code class="highlighter-rouge">MySQL</code> database storing all the responses and account queries. In order to make sure that sign-ins were tracked for each individual event; each event was supplied with an appropriate access code that the user had to put in in order to login.</p>
+<p>The form allowed for new users or users who had already registered using a <code class="language-plaintext highlighter-rouge">PHP</code> form with a <code class="language-plaintext highlighter-rouge">MySQL</code> database storing all the responses and account queries. In order to make sure that sign-ins were tracked for each individual event; each event was supplied with an appropriate access code that the user had to put in in order to login.</p>
 
 <h3 id="reflection">Reflection</h3>
 

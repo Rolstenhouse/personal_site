@@ -48,6 +48,14 @@
       <div class="ui segment inverted aligned center">
         <p class="">Learner, Hacker, Traveler</p>
       </div>
+      <div class="cn card"> 
+        <div class="ui card center aligned" style="background-color: #1B1C1D;">
+            <div class="content inverted">
+        <h4>Get notified about life changes</h4>
+        <script async data-uid="a97cb17602" src="https://tremendous-crafter-1627.ck.page/a97cb17602/index.js"></script>
+        </div>
+        </div>
+    </div>
       <hr>
     </div>
     <div class="item">
@@ -167,13 +175,13 @@
 
 <p>After iterating through several prototypes and design drafts, I got my first real experience at trying to build and deploy a website, which at the time seemed incredibly difficult.</p>
 
-<p>We used <code class="highlighter-rouge">MeteorJS</code> as our full-stack solution, which allows you to write javascript on both the frontEnd and the backEnd. The server architecture was a version of Node, and in a similar fashion there were lots of user-submitted packages in the online equivalent of npm for meteor, Atmosphere. The frontEnd used Meteor’s native templating engine, Handlebars, and the MaterializeCSS css and javascript library.</p>
+<p>We used <code class="language-plaintext highlighter-rouge">MeteorJS</code> as our full-stack solution, which allows you to write javascript on both the frontEnd and the backEnd. The server architecture was a version of Node, and in a similar fashion there were lots of user-submitted packages in the online equivalent of npm for meteor, Atmosphere. The frontEnd used Meteor’s native templating engine, Handlebars, and the MaterializeCSS css and javascript library.</p>
 
-<p>Meteor uses <code class="highlighter-rouge">MongoDB</code> as its database, which we felt had met our needs, since all we initially thought we needed to store was the individual products or services that we would be advertising, but we soon ran into design decisions on when to duplicate data and when to query as we introduced more tracking, categorizing, and user accounts monitoring their own activity.</p>
+<p>Meteor uses <code class="language-plaintext highlighter-rouge">MongoDB</code> as its database, which we felt had met our needs, since all we initially thought we needed to store was the individual products or services that we would be advertising, but we soon ran into design decisions on when to duplicate data and when to query as we introduced more tracking, categorizing, and user accounts monitoring their own activity.</p>
 
-<p>We implemented a real-time messaging system between two use accounts to allow for safe communication with the users, who had been previously verified based on their email <em>if it was from <code class="highlighter-rouge">@ufl.edu</code></em>.</p>
+<p>We implemented a real-time messaging system between two use accounts to allow for safe communication with the users, who had been previously verified based on their email <em>if it was from <code class="language-plaintext highlighter-rouge">@ufl.edu</code></em>.</p>
 
-<p>We added <code class="highlighter-rouge">ElasticSearch</code> as a search engine to build up an index of the services and products that were offered to enable a faster search response time and an overall cohesive experience. It added the ability for fuzzy searching in order to provide suggestions based on spelling errors.</p>
+<p>We added <code class="language-plaintext highlighter-rouge">ElasticSearch</code> as a search engine to build up an index of the services and products that were offered to enable a faster search response time and an overall cohesive experience. It added the ability for fuzzy searching in order to provide suggestions based on spelling errors.</p>
 
 <p>We were planning on monetizing through targeted advertising and to eventually offer payment through a service such as Venmo or Braintree, which would allow us to take a small transaction of the order.</p>
 

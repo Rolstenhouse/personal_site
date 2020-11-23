@@ -1,4 +1,4 @@
-I"g<h1 id="summary">Summary</h1>
+I"z<h1 id="summary">Summary</h1>
 
 <p><em>AWARDED 2nd PLACE OVERALL AT SWAMPHACKS</em></p>
 
@@ -12,7 +12,7 @@
 
 <h3 id="what-we-built">What we built</h3>
 
-<p>We build our backEnd with <code class="highlighter-rouge">R</code> in order to expose our API to take the image from our web application. We then sent that image to the Microsoft facial recognition API which sent back s JSON response with the relevant encoded emotions</p>
+<p>We build our backEnd with <code class="language-plaintext highlighter-rouge">R</code> in order to expose our API to take the image from our web application. We then sent that image to the Microsoft facial recognition API which sent back s JSON response with the relevant encoded emotions</p>
 
 <h3 id="status">Status</h3>
 

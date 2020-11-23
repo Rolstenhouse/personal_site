@@ -1,4 +1,4 @@
-I"‘
+I"ð
 <h1 id="summary">Summary</h1>
 
 <p>During our time in Hong Kong, a couple other expats and I decided to try our luck at Bitwise Hacks, a hackathon taking place at the Hong Kong international secondary school. Our team, comprised of myself, Josh Benner, Joel Walker, Cloe Liu, and Ethan Raymond, worked together to develop a wearable posture assistant, Perfect Posture.</p>
@@ -11,21 +11,21 @@
   <li>The Launchpad would receive the data and send it through ATTâ€™s M2X stream technology, which would then push status updates to both:</li>
   <li>
     <ul>
-      <li>a website (where past sensitivity was charted using <code class="highlighter-rouge">Chart.js</code>)</li>
+      <li>a website (where past sensitivity was charted using <code class="language-plaintext highlighter-rouge">Chart.js</code>)</li>
     </ul>
   </li>
   <li>
     <ul>
-      <li>a <code class="highlighter-rouge">Mac OS</code> menubar application, which would execute a script to shut the users computer off at a set threshold.</li>
+      <li>a <code class="language-plaintext highlighter-rouge">Mac OS</code> menubar application, which would execute a script to shut the users computer off at a set threshold.</li>
     </ul>
   </li>
 </ul>
 
 <h3 id="during-this-project-i-used">During this project I used</h3>
 
-<p><code class="highlighter-rouge">Swift</code> to develop the menubar application. Developing the application as a menubar was a necessary design decision for Mac OS since it would be a nonintrusive way to tell a user that the dedicated application is running in the background while they carry out regular tasks.</p>
+<p><code class="language-plaintext highlighter-rouge">Swift</code> to develop the menubar application. Developing the application as a menubar was a necessary design decision for Mac OS since it would be a nonintrusive way to tell a user that the dedicated application is running in the background while they carry out regular tasks.</p>
 
-<p>In order to execute calls to the system in order to turn off the screen, <code class="highlighter-rouge">Applescript</code> which was similar to a <code class="highlighter-rouge">.bat</code> script you might run on windows, executed the lower screen brightness command 15 times, in order to effectively darken the screen without putting it to sleep.</p>
+<p>In order to execute calls to the system in order to turn off the screen, <code class="language-plaintext highlighter-rouge">Applescript</code> which was similar to a <code class="language-plaintext highlighter-rouge">.bat</code> script you might run on windows, executed the lower screen brightness command 15 times, in order to effectively darken the screen without putting it to sleep.</p>
 
 <h4 id="our-teams-responsibilities">Our teamâ€™s responsibilities</h4>
 

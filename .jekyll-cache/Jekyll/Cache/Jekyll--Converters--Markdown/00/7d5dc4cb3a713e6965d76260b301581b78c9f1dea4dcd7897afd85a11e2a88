@@ -1,4 +1,4 @@
-I"l<h1 id="summary">Summary</h1>
+I"’<h1 id="summary">Summary</h1>
 
 <p>This project was built at HackStart with the goal to allow an alarm clock to donate to a chosen charity. During development at the hackathon, the alarm clock was functional; however, the donation was only enabled to donate to the developer, which just so happened to be myself.</p>
 
@@ -14,7 +14,7 @@
 
 <h3 id="during-this-project-i-used">During this project I used</h3>
 
-<p><code class="highlighter-rouge">Java</code> to develop most of the internal logic of the applications and <code class="highlighter-rouge">SQLite</code> for the database, as it as almost a requisite of Android. If I were to do it again, I would have stored most information locally, but also some information on our own servers; however when I developed the application, I was focused more on building everything into the application.</p>
+<p><code class="language-plaintext highlighter-rouge">Java</code> to develop most of the internal logic of the applications and <code class="language-plaintext highlighter-rouge">SQLite</code> for the database, as it as almost a requisite of Android. If I were to do it again, I would have stored most information locally, but also some information on our own servers; however when I developed the application, I was focused more on building everything into the application.</p>
 
 <p>I also used lots of Redbull, pulling my first all-nighter at a hackathon, much thanks to the onsite Redbull vending machines.</p>
 

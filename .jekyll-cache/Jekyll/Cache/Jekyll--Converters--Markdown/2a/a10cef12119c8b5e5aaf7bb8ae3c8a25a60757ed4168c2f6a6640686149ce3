@@ -1,4 +1,4 @@
-I"<h1 id="summary">Summary</h1>
+I"c<h1 id="summary">Summary</h1>
 
 <p><strong><em>Awarded most creative use of BlackRock API</em></strong></p>
 
@@ -15,15 +15,15 @@
 <p><strong>Amazon Alexa</strong>. I wrote an Alexa skill to take various commands (known as intents) from the end user and interface with the AWS Lambda function that was running.</p>
 
 <p>The <strong>BlackRock portfolio analysis API</strong> located at 
-<code class="highlighter-rouge">https://www.blackrock.com/tools/api-tester/hackathon/portfolio-analysis</code>. 
+<code class="language-plaintext highlighter-rouge">https://www.blackrock.com/tools/api-tester/hackathon/portfolio-analysis</code>. 
 This API endpoint provides all valuable historical data. For this project, I made use of the trend over the past year and past threeMonths in order to predict growth of the stock.<br />
-<code class="highlighter-rouge">Alexa ask Razzle should I buy Snapchat?</code> 
+<code class="language-plaintext highlighter-rouge">Alexa ask Razzle should I buy Snapchat?</code> 
 led to a recommendation not to buy (as of October 2017).</p>
 
 <p>The <strong>Robinhood private API</strong>. Robinhood currently has no public facing API and so all calls must be made through an undocumented API; luckily, there was an existing npm module at
-<code class="highlighter-rouge">https://github.com/aurbano/robinhood-node</code>. 
+<code class="language-plaintext highlighter-rouge">https://github.com/aurbano/robinhood-node</code>. 
 This API allowed buy orders to be executed on Robinhood from the AWS Lambda client.
-<code class="highlighter-rouge">Alexa ask Razzle to buy 5 shares of Microsoft</code></p>
+<code class="language-plaintext highlighter-rouge">Alexa ask Razzle to buy 5 shares of Microsoft</code></p>
 
 <p>All together, this functionality created Razzle, your personal financial assistant.</p>
 :ET
