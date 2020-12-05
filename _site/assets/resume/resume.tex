@@ -6,7 +6,7 @@
 %
 % This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 %-----------------------------------------------------------
 \usepackage[empty]{fullpage}
@@ -35,7 +35,11 @@
 		\textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
 
-\newcommand{\singlesubheading}[3]{ \textbf{#1} / #2 / #3 \vspace{-2pt}}
+% \newcommand{\singlesubheading}[3]{ \textbf{#1} / #2 & #3  \vspace{-2pt} #3}
+\newcommand{\singlesubheading}[3]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} / #2 & #3
+\end{tabular*}\vspace{-2pt}}
 %-----------------------------------------------------------
 
 
@@ -45,44 +49,51 @@
 \textbf{\huge Robert Olsthoorn}\\
 % \end{center}
 \begin{tabular*}{7in}{l@{\extracolsep{3.3in}}l}
-    US \& EU dual citizen / +1-561-866-4321 / rolsthoorn12@gmail.com / 3080 24th St, San Francisco, CA
+    US \& EU dual citizen / rolsthoorn12@gmail.com / \url{https://robertolsthoorn.com} / San Francisco, CA
 \end{tabular*}
 \\
 
 \vspace{0.1in}
 
-\resheading{Work Experience}
+\resheading{Experience}
 \begin{itemize}
 \item[]
-    \singlesubheading{Terra (YC W20)}{Founder/CTO}{Nov. 2019 -- Dec. 2020}
+    \singlesubheading{Terra (YC W20)}{Founder}{Nov. 2019 -- Dec. 2020}
     \begin{itemize}
-        \resitem{Built-co-ownership business}
-        \resitem{Developed and tested 20+ business ideas}
-        \resitem{Product + Sales + Marketing + Partnerships : We did it all}
+        \resitem{Raised \$150k from YCombinator}
+        \resitem{Ran search lab developing 20+ business ideas: (real estate co-ownership, home warranty, social trading, gig workers, workplace productivity etc.)}
+        \resitem{Product + S/M + UXR + partnerships: Everything involved in 0 to 1 company building}
+        \resitem{Built MVPs (when needed) using React Native, React, Python/Flask, AWS, Serverless}
     \end{itemize}
-    \singlesubheading{Nextdoor}{Software Engineer}{Aug. 2018 -- Nov. 2019}
+
+\item[]
+    \singlesubheading{Nextdoor}{Product Engineer: Real Estate}{Aug. 2018 -- Nov. 2019}
     \begin{itemize}
         % \resitem{Conducted research, synthesized results, implemented and shipped internal tool yielding a 15x performance improvement for internal ops and devs}
         \resitem{Worked on a small team building the Real Estate product to drive over \$10m ARR}
-        \resitem{Scoped and developed several key projects (10x in customer support efficiency, 1\% churn reduction)}
+        \resitem{Scoped and developed several key projects (10x in customer support efficiency, 1\% SaaS churn reduction)}
         \resitem{Developed full-stack solutions leveraging React, Python, iOS and ElasticSearch}
         \resitem{Managed an intern responsible for mission-critical projects}
     \end{itemize}
+\end{itemize}
+
+\resheading{Internships}
+\begin{itemize}
 \item[]
-	\singlesubheading{Microsoft}{Software Engineer Intern}{Sep. -- Nov. 2017}
+	\singlesubheading{Microsoft}{Software Engineer Intern: Drivers}{Sep. -- Nov. 2017}
     \begin{itemize}
-    \resitem{Wrote a highly technical product spec to set expectations for new Intel chipset}
     \resitem{Developed windows kernel driver for DMA (Direct memory access), speeding up memcpy operations when zeroing out consecutive chunks of memory}
+    \resitem{Wrote a highly technical product spec to set expectations for Intel DMA chipset}
 	\end{itemize}
 \item[]
-	\singlesubheading{Kleiner Perkins @ Nextdoor}{Software Engineer Intern}{May -- Aug. 2017}
+	\singlesubheading{Kleiner Perkins @ Nextdoor}{Software Engineer Intern: Ads}{May -- Aug. 2017}
 	\begin{itemize}
         \resitem{Selected as one of 52 KP Engineering Fellows out of 2500 students to represent Kleiner}
         \resitem{Developed Ad inventory forecasting tool, increasing booking inventory by 2x}
         \resitem{Leveraged backend Frameworks (Django, SQS and Redis), to create a scalable and testable inventory management pipeline}
     \end{itemize}
 \item[]
-	\singlesubheading{Microsoft}{Explore Intern (PM and SWE)}{May -- Aug. 2016}
+	\singlesubheading{Microsoft}{Explore Intern (PM/SWE): Compilers}{May -- Aug. 2016}
     \begin{itemize}
         \resitem{Drove product vision for efficiently sharing code and static analysis bug reports across the company}
 		\resitem{Created VS Code extension to support Microsoft's new static analysis file format SARIF}
@@ -111,28 +122,28 @@
 % 	\end{itemize}
 \end{itemize}
 
-\resheading{Notable Projects}
-\begin{itemize}
-\item[]
-	\singlesubheading{Razzle}{DubHacks, Seattle, WA}{Oct. 2017}
-    \begin{itemize}
-        \resitem{Awarded Most Creative Use of BlackRock API}
-		\resitem{Used Amazon's Alexa to interface with prviate stock portfolio, execute trades, and provide financial insights by hooking into Robinhood's Private API and using BlackRock's financial API}
-	\end{itemize}
-\item[]
-	\singlesubheading{PerfectPosture}{BitwiseHacks, Tai Tam, Hong Kong}{Feb. 2016}
-    \begin{itemize}
-        \resitem{Awarded best software hack}
-		\resitem{Led development of MacOS application to automatically dim laptop screen based on back-posture detected by wearable}
-    \end{itemize}
-\item[]
-    \singlesubheading{CheapSleep}{Hackstart, Atlanta, GA}{Jul. 2015}
-    \begin{itemize}
-        \resitem{Awarded Most Unique \& Problem-Solving App}
-        \resitem{Interviewed at \underline{\href{https://hypepotamus.com/people/lets-show-fl-sophomore-atls-tech-scene/}{https://hypepotamus.com/people/lets-show-fl-sophomore-atls-tech-scene/}}}
-		\resitem{Created an alarm clock which donated to a chosen charity per snooze by creating an Android app using the (now deprecated) Venmo API.}
-	\end{itemize}
-\end{itemize}
+% \resheading{Notable Projects}
+% \begin{itemize}
+% \item[]
+% 	\singlesubheading{Razzle}{DubHacks, Seattle, WA}{Oct. 2017}
+%     \begin{itemize}
+%         \resitem{Awarded Most Creative Use of BlackRock API}
+% 		\resitem{Used Amazon's Alexa to interface with prviate stock portfolio, execute trades, and provide financial insights by hooking into Robinhood's Private API and using BlackRock's financial API}
+% 	\end{itemize}
+% \item[]
+% 	\singlesubheading{PerfectPosture}{BitwiseHacks, Tai Tam, Hong Kong}{Feb. 2016}
+%     \begin{itemize}
+%         \resitem{Awarded best software hack}
+% 		\resitem{Led development of MacOS application to automatically dim laptop screen based on back-posture detected by wearable}
+%     \end{itemize}
+% \item[]
+%     \singlesubheading{CheapSleep}{Hackstart, Atlanta, GA}{Jul. 2015}
+%     \begin{itemize}
+%         \resitem{Awarded Most Unique \& Problem-Solving App}
+%         \resitem{Interviewed at \underline{\href{https://hypepotamus.com/people/lets-show-fl-sophomore-atls-tech-scene/}{https://hypepotamus.com/people/lets-show-fl-sophomore-atls-tech-scene/}}}
+% 		\resitem{Created an alarm clock which donated to a chosen charity per snooze by creating an Android app using the (now deprecated) Venmo API.}
+% 	\end{itemize}
+% \end{itemize}
     
 \resheading{Education}
     \begin{itemize}
