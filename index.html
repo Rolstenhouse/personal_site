@@ -6,116 +6,68 @@ layout: landing
     <div class="cn">
         <div class="ui center aligned paragraph">
             <img class = "ui centered circular tiny image" src = "{{ site.baseurl }}/assets/images/profile.jpg">
-            <h2>👋 Hi! I'm Rob</h2>
+            <h2>👋 Hi! I'm Rob (robols.eth)</h2>
             <span>
-                    I build things and have fun.
-                <br>
+                    
+                <!-- <br>
                 <br> 👨‍💻 Founder | YC w20 (<a href="https://withterra.com">Terra</a>): ex-microsoft, ex-nextdoor, ex-KP
                 <br> 💃 Latin dancer
                 <br> 🏃‍♂️ Fitness enthusiast
-                <br> 🌎 Adventurer <br> <br>
-                <!-- <a class="ui red basic" target="_blank" href="{{ site.baseurl }}/assets/resume/resume.pdf">
-                    <i class="red file pdf outline icon"></i>
-                </a> -->
-                <a href="https://linkedin.com/in/{{site.linkedin_username}}">
-                    <i class="blue linkedin alternate icon"></i>
-                </a>
+                <br> 🌎 Adventurer <br> <br> -->
+
+                <h5>
+                    Written pieces
+                </h5>
+                <div>
+                    <i>Dev</i><br>
+                    <a href="https://github.com/Rolstenhouse/unofficial-apis">Unofficial APIs</a>
+                    <a href="https://news.ycombinator.com/item?id=23248980">[Discuss on HN]</a>
+                    <br>
+                    <a href="https://github.com/Rolstenhouse/py-iMessage">iMessage python library</a><br>
+                    <a href="https://python.plainenglish.io/aws-lambda-python-the-easy-way-using-serverless-23b9c26c5a86">AWS + Lambda</a><br>
+                    <i>Misc</i>
+                    <a href="https://rolsthoorn.medium.com/how-to-convert-heic-images-to-jpg-on-a-mac-380e7d2e06a2">Convert HEIC</a><br>
+                    <a href="https://rolsthoorn.medium.com/splitting-rent-is-awkward-c81f80e49d80">Splitting rent</a><br>
+                </div>
+
+                <h5>
+                    Influential reads
+                </h5>
+                <div>
+                    <i>Articles</i> <br>
+                    <a href="https://a16z.com/2020/01/09/progressive-decentralization-crypto-product-management/">When to decentralize</a>
+                    <a href="https://danluu.com/productivity-velocity/">Engineer's mindset on productivity</a><br>
+                    <i>Podcasts</i><br>
+                <a href="https://thehustle.co/my-first-million-podcast/">Idea porn</a><br>
+                    <i>Books</i><br>
+                    <a href="https://www.amazon.com/Snow-Crash-Neal-Stephenson/dp/0553380958">Snow crash</a>
+                </div>
+
+                <h5>
+                    Past
+                </h5>
+                <div>
+                    CoFounder @ Terra (YC W20)<br>
+                    SWE @ Nextdoor<br>
+                    🐊 alum <br>
+                </div>
+                
+                <h6>Connect with me</h6>
                 <a href="https://github.com/{{site.github_username}}">
                     <i class="black github icon"></i>
                 </a>
                 <a href="https://instagram.com/{{site.instagram_username}}">
                     <i class="purple instagram icon"></i>
                 </a>
+                <a href="https://twitter.com/{{site.twitter}}">
+                    <i class="blue twitter icon"></i>
+                </a>
+                <a href="https://linkedin.com/in/{{site.linkedin_username}}">
+                    <i class="blue linkedin alternate icon"></i>
+                </a>
                 <br/>
                 <br/>
                 <br/>
-        </div>
-    </div>
-    <div class="cn card"> 
-        <div class="ui red card center aligned">
-            <div class="content">
-        <h4>Get notified about life changes</h4>
-        <script async data-uid="a97cb17602" src="https://tremendous-crafter-1627.ck.page/a97cb17602/index.js"></script>
-    </div>
-    </div>
-        </div>
-</div>
-
-<div class="ui container">
-    <p class="ui horizontal divider">
-        Past Work Experience
-    </p>
-    <div class="ui centered grid">
-        <div class="three column row">
-            {% assign jobs = site.work | reverse %} {% for job in jobs limit:3 %}
-            <div class="column">
-                <div class="cn image">
-                    <a onClick="$('#job_{{ forloop.index }}').modal('show');" class="grayscale ui small image">
-                        <img src="{{ site.baseurl }}/assets/images/{{ job.image }}">
-                    </a>
-                </div>
-            </div>
-            <div id="job_{{ forloop.index }}" class="ui basic modal">
-                <div class="ui icon header">
-                    <div class="image">
-                        <a href="{{ job.url }}" class="ui rounded image">
-                            <img src="{{ site.baseurl }}/assets/images/{{ job.image }}">
-                        </a>
-                    </div>
-                    {{ job.title }}
-                </div>
-                <div class="content">
-                    <p>
-                        <b>{{job.role}}</b> | {{ job.brief }}</p>
-                </div>
-                <div class="actions">
-                    <div class="ui red basic cancel inverted button">
-                        Close
-                    </div>
-                    <a href="{{ job.url }}" class="ui green ok inverted button">
-                        Read more
-                    </a>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-    <p class="ui horizontal divider">
-        Featured projects
-    </p>
-    <div class="ui centered grid">
-        <div class="four column row">
-            {% assign projects = site.projects | reverse %} {% for project in projects limit:4 %}
-            <div class="column">
-                <div class="cn image">
-                    <a onClick="$('#project_{{ forloop.index }}').modal('show');" class="grayscale ui rounded small image">
-                        <img src="{{ site.baseurl }}/assets/images/{{ project.image }}">
-                    </a>
-                </div>
-            </div>
-            <div id="project_{{ forloop.index }}" class="ui basic modal">
-                <div class="ui icon header">
-                    <div class="image">
-                        <a href="{{ project.url }}" class="ui rounded image">
-                            <img src="{{ site.baseurl }}/assets/images/{{ project.image }}">
-                        </a>
-                    </div>
-                    {{ project.title }}
-                </div>
-                <div class="content">
-                    <p>
-                        <b>{{project.role}}</b> | {{ project.brief }}</p>
-                </div>
-                <div class="actions">
-                    <div class="ui red basic cancel inverted button">
-                        Close
-                    </div>
-                    <a href="{{ project.url }}" class="ui green ok inverted button">
-                        Read more
-                    </a>
-                </div>
-            </div>
-            {% endfor %}
         </div>
     </div>
 </div>
