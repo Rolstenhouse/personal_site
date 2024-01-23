@@ -1,5 +1,5 @@
 ---
-layout:post
+layout: post
 title: 40 months with Future.fit
 date: 2024-01-22 00:00:00
 ---
