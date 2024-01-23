@@ -39,5 +39,8 @@ collections:
   extracurricular:
     output: true
     permalink: /extracurricular/:path/
+  writing:
+    output: true
+    permalink: /writing/:path/
 
 comfortableLanguages: ["Java", "C++", "JavaScript", "Python"]
