@@ -38,6 +38,11 @@ layout: landing
 
           <h5>Writing</h5>
           <div>
+            {% assign writing = site.writing | reverse %} {% for post in writing
+            %}
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a
+            ><br />
+            {% endfor %}
             <a
               href="https://medium.com/whatnot-engineering/how-whatnot-is-building-the-future-of-nft-live-shopping-5cedbfc115a7"
               >How Whatnot is building the future of NFT live shopping</a
@@ -149,7 +154,7 @@ layout: landing
           <br /><i>Software</i> <br />
           <a href="https://freedom.to/dashboard">Freedom - block websites</a
           ><br />
-          <a href="https://www.alfredapp.com/">Alfred - productivity</a><br />
+          <a href="https://www.raycast.com/">Raycast - productivity</a><br />
         </div>
       </span>
 
