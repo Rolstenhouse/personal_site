@@ -27,6 +27,9 @@ layout: landing
       </header>
 
       <div class="post-content" itemprop="articleBody">{{ content }}</div>
+      {% assign writing = site.writing | reverse %} {% for post in writing %}
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a><br />
+      {% endfor %}
     </div>
   </div>
 </article>
