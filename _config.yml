@@ -25,6 +25,7 @@ markdown: kramdown
 # include: ['_projects']
 
 exclude: [node_modules]
+font_family: "Georgia, serif"
 
 collections:
   projects:

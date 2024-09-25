@@ -7,26 +7,23 @@ layout: landing
     <div class="ui center aligned paragraph">
       <h2>👋 Hey there! I'm Rob Olsthoorn</h2>
       <img
-        class="ui centered circular medium image"
+        class="ui centered circular small image"
         src="{{ site.baseurl }}/assets/images/profile.jpg"
       />
       <div>
-        Well, that's it. You've peaked.
+        Well, that's it.
         <br />
-        Somehow you were curious enough to find my personal website. Thanks. And
-        I'm glad you're here.
+        Somehow you were curious enough to find my personal website. Thanks. I'm
+        glad you're here.
         <br />
-        Here's a slice of who I am and what I think about. If that's interesting
-        to you, enjoy.
+        Here's a slice of who I am and what I think about. I hope it's what you
+        came here for.
         <br />
         Rob
       </div>
-
-      <div>
-        I'm not sure what you're looking to find - but here's my life story.
-      </div>
-
-      <h5>Early life</h5>
+    </div>
+    <div class="ui center aligned paragraph">
+      <h3>Early life</h3>
       <ul>
         <li>
           Born in St. Thomas, US Virgin Islands - my parents moved me to Boca
@@ -38,168 +35,163 @@ layout: landing
         </li>
         <li>
           Went to the University of Florida. Studied computer engineering, tried
-          to start my first company, Bartertown (it failed because I had no idea
-          what I was doing)
+          to start my first company, Bartertown (ended)
         </li>
-        <li>Made it out of the swamp, by working at Microsoft - then later Nextdoor under the KP Eng '17 fellows program</li>
+        <li>
+          Made it out of the swamp, by working at Microsoft - then later
+          Nextdoor under the KP Eng '17 fellows program
+        </li>
       </ul>
-      <h5>Later on</h5>
+      <h3>Later on</h3>
       <ul>
         <li>Worked with realtors at Nextdoor to sell homes</li>
-        <li>YC W20 - Started my second company, <a href="https://www.producthunt.com/posts/laguna-2">Laguna</a>. We pivoted a lot to get there (it failed because we didn't believe in a venture scale outcome) </li>
-        <li>Spent time designing the future of work with dOrg, a crypto based self-organizing work group a DAO. </li>
-        <li>Excited about live-shopping, worked at Whatnot on 0-1 initiatives</li>
+        <li>
+          YC W20 - Started my second company,
+          <a href="https://www.producthunt.com/posts/laguna-2">Laguna</a>.
+          Learned a lot. Built cool things.
+        </li>
+        <li>
+          Spent time designing the future of work with dOrg, a crypto based
+          self-organizing work group a DAO. Brought in ~$500k to the org.
+        </li>
+        <li>
+          Went from 0-$1.5M in GMV for Whatnot NFTs. Launched other 0-1
+          initiatives.
+        </li>
       </ul>
-      <h5>Now</h5>
+      <h3>Now</h3>
       <ul>
         <li>
           Enjoying life. Very excited about Voice AI and automotive business
           opportunities
         </li>
-        <li>
-          Learning about the world
-        </li>
+        <li>Learning about the world</li>
         <li><a href="https://twitter.com/rob_olsthoorn">Twitter</a></li>
         <li><a href="https://www.instagram.com/robolsthoorn/">Instagram</a></li>
       </ul>
 
-      <h5>Valuable resources</h5>
-      If we're all just LLMs, here's my training data:
+      <h3>Writing</h3>
       <ul>
         <li>
-          <i>Blogs</i> <br />
-          <a href="https://longform.asmartbear.com/">Asmartbear (Jason Cohen)</a
+          {% assign writing = site.writing | reverse %} {% for post in writing
+          %}
+          <a href="{{ post.url | prepend: site.baseurl }}"
+            >{{ post.title}} ({{ post.date | date: "%b %Y" }})</a
+          >
           ><br />
-          <a href="https://sive.rs/">Derek Sivers</a><br />
-          <a href="https://www.gwern.net/">Gwern</a><br />
-          <a href="http://www.paulgraham.com/articles.html">Paul Graham</a
-          ><br />
-          <a href="http://patrickcollison.com/">Patrick Collison </a><br />
-          <a href="https://avc.com/">Fred Wilson</a><br />
+          {% endfor %}
+        </li>
+        <li>
+          <a
+            href="https://medium.com/whatnot-engineering/how-whatnot-is-building-the-future-of-nft-live-shopping-5cedbfc115a7"
+            >Whatnot and NFTs (Aug. 2021)</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/Rolstenhouse/unofficial-apis"
+            >Unofficial APIs (2020)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://rolsthoorn.medium.com/splitting-rent-is-awkward-c81f80e49d80"
+            >Mathemtaically making everyone happy with rent (2018)</a
+          >
+        </li>
+      </ul>
+      <br />
+      <br />
+
+      <h3>Links</h3>
+      If we're all just LLMs, here's my training data:
+      <ul>
+        <li><i>Blogs</i></li>
+        <li>
+          <a href="https://longform.asmartbear.com/"
+            >Asmartbear (Jason Cohen)</a
+          >
+        </li>
+        <li><a href="https://sive.rs/">Derek Sivers</a></li>
+        <li><a href="https://www.gwern.net/">Gwern</a></li>
+        <li>
+          <a href="http://www.paulgraham.com/articles.html">Paul Graham</a>
+        </li>
+        <li><a href="http://patrickcollison.com/">Patrick Collison</a></li>
+        <li><a href="https://avc.com/">Fred Wilson</a></li>
+        <li>
           <a
             href="https://a16z.com/wp-content/uploads/2021/08/The-pmarca-Blog-Archives.pdf"
             >pmarca</a
-          ><br />
-          <a href="https://vitalik.ca/">Vitalik Buterin</a><br />
-          <a href="https://dcgross.com/">Daniel Gross</a><br />
-          <a href="https://nat.org/">Nat Friedman</a><br />
-          <a href="https://blog.eladgil.com/">Elad Gil</a><br />
-          <a href="https://www.kalzumeus.com/">Patrick Mackenzie</a><br />
-          <a href="https://stratechery.com/">Ben Thompson</a><br />
-          <a href="https://www.joelonsoftware.com/>">Joel Spolsky</a><br />
+          >
+        </li>
+        <li><a href="https://vitalik.ca/">Vitalik Buterin</a></li>
+        <li><a href="https://dcgross.com/">Daniel Gross</a></li>
+        <li><a href="https://nat.org/">Nat Friedman</a></li>
+        <li><a href="https://blog.eladgil.com/">Elad Gil</a></li>
+        <li><a href="https://www.kalzumeus.com/">Patrick Mackenzie</a></li>
+        <li><a href="https://stratechery.com/">Ben Thompson</a></li>
+        <li><a href="https://www.joelonsoftware.com/">Joel Spolsky</a></li>
 
-          <br /><i>Podcasts</i><br />
+        <li><i>Podcasts</i></li>
+        <li>
           <a href="https://thehustle.co/my-first-million-podcast/"
             >My first million</a
           >
-          <br />
+        </li>
+        <li>
           <a href="https://www.infiniteloopspodcast.com/">Infinite loops</a>
-          <br />
+        </li>
+        <li>
           <a
             href="https://podcasts.apple.com/us/podcast/invest-like-the-best-with-patrick-oshaughnessy/id1154105909"
             >Invest like the best</a
           >
-          <br />
-          <a href="https://www.dealershipguy.com/">Car dealership guy</a>
-          <br />
+        </li>
+        <li><a href="https://www.dealershipguy.com/">Car dealership guy</a></li>
 
-          <br /><i>Books</i><br />
+        <li><i>Books</i></li>
+        <li>
           <a
             href="https://www.amazon.com/Snow-Crash-Neal-Stephenson/dp/0553380958"
             >Snow crash</a
-          ><br />
+          >
+        </li>
+        <li>
           <a
             href="https://www.amazon.com/The-Everything-Store-Brad-Stone-audiobook/dp/B00FJFJOLC/ref=sr_1_1?crid=1S1WOKWPIS5EQ&keywords=everything+store&qid=1673756826&sprefix=everything+sto%2Caps%2C178&sr=8-1"
             >Everything store</a
-          ><br />
+          >
+        </li>
 
-          <br /><i>Specific articles</i> <br />
+        <li><i>Specific articles</i></li>
+        <li>
           <a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/"
             >Negotiating</a
-          ><br />
+          >
+        </li>
+        <li>
           <a
             href="https://www.navalmanack.com/almanack-of-naval-ravikant/find-a-position-of-leverage"
             >Forms of leverage</a
-          ><br />
+          >
+        </li>
+        <li>
           <a
             href="https://a16z.com/2020/01/09/progressive-decentralization-crypto-product-management/"
             >When to decentralize</a
-          ><br />
+          >
+        </li>
+        <li>
           <a href="https://danluu.com/productivity-velocity/"
             >Engineer's mindset on productivity</a
-          ><br />
+          >
+        </li>
+        <li>
           <a href="https://randsinrepose.com/archives/stables-and-volatiles/"
             >Stables and volatiles</a
-          ><br />
+          >
         </li>
       </ul>
-
-      <h5>Rob's ruminations</h5>
-      <ul>
-        <div>
-            {% assign writing = site.writing | reverse %} {% for post in writing
-            %}
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a
-            ><br />
-            {% endfor %}
-            <a
-              href="https://medium.com/whatnot-engineering/how-whatnot-is-building-the-future-of-nft-live-shopping-5cedbfc115a7"
-              >Whatnot and NFTs (written during the Bull Market)</a
-            ><br />
-            <a href="https://github.com/Rolstenhouse/unofficial-apis"
-              >Unofficial APIs</a
-            >
-            <a
-              href="https://rolsthoorn.medium.com/splitting-rent-is-awkward-c81f80e49d80"
-              >I'm overpaying for my shitty room</a
-            ><br />
-      </ul>
-
-      <span>
-        <h5>Passions</h5>
-        <div>
-          Bringing joy into the world via
-          <a href="https://liquidauto.co">car parts</a>,
-          <a href="https://mock-yc.vercel.app/">mock interviews</a>,
-          <a href="https://stickerfy.xyz">stickers</a>, and more. <br />
-          <br />
-          Working with great people. Select investments -
-          <a href="https://www.trymito.io/">Mito</a>,
-          <a href="https://www.tupelosmb.com/">Tupelo</a>,
-          <a href="https://quill.co/">Quill</a>, LP @
-          <a href="https://www.orangedao.xyz/">OrangeDAO</a> - Fund 0 <br />
-          <br />
-          Embracing a serial hobbyist lifestyle - Miata racing, Salsa Dancing,
-          Traveling (30+ countries), Hybrid fitness (1000lb club)
-          <br />
-          <br />
-        </div>
-        <div>
-          <h5>Writing</h5>
-          <div>
-            {% assign writing = site.writing | reverse %} {% for post in writing
-            %}
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a
-            ><br />
-            {% endfor %}
-            <a
-              href="https://medium.com/whatnot-engineering/how-whatnot-is-building-the-future-of-nft-live-shopping-5cedbfc115a7"
-              >How Whatnot is building the future of NFT live shopping</a
-            ><br />
-            <a href="https://github.com/Rolstenhouse/unofficial-apis"
-              >Unofficial APIs</a
-            >
-            <a href="https://news.ycombinator.com/item?id=23248980"
-              >[Discuss on HN]</a
-            ><br />
-            <a
-              href="https://rolsthoorn.medium.com/splitting-rent-is-awkward-c81f80e49d80"
-              >How to split rent for multiple rooms</a
-            ><br />
-            <br />
-          </div>
-        </div>
-        <div>
       <br />
       <br />
       <br />
