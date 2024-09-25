@@ -4,18 +4,17 @@ layout: landing
 
 <div class="mt-20 mb-20">
   <div class="flex justify-center items-center">
-    <div class="text-center">
+    <div class="text-center prose">
       <h2 class="mb-4">👋 Hey there! I'm Rob Olsthoorn</h2>
-      <img
-        class="rounded-full mx-auto mb-4"
-        src="{{ site.baseurl }}/assets/images/profile.jpg"
-      />
-      <div class="mb-8">
+      <div>
         Well, that's it.
         <br />
         Somehow you were curious enough to find my personal website. Thanks. I'm
         glad you're here.
         <br />
+      </div>
+      <img src="{{ site.baseurl }}/assets/images/profile.jpg" />
+      <div class="mb-8">
         Here's a slice of who I am and what I think about. I hope it's what you
         came here for.
         <br />
@@ -70,15 +69,14 @@ layout: landing
 
       <h3 class="mb-2">Writing</h3>
       <ul class="list-disc list-inside mb-4">
+        {% assign writing = site.writing | reverse %} {% for post in writing %}
         <li>
-          {% assign writing = site.writing | reverse %} {% for post in writing
-          %}
           <a href="{{ post.url | prepend: site.baseurl }}"
             >{{ post.title}} ({{ post.date | date: "%b %Y" }})</a
           >
-          ><br />
-          {% endfor %}
         </li>
+        {% endfor %}
+
         <li>
           <a
             href="https://medium.com/whatnot-engineering/how-whatnot-is-building-the-future-of-nft-live-shopping-5cedbfc115a7"
