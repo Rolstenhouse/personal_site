@@ -11,3 +11,6 @@ Just build:
 
 Run local host:
 `jekyll serve --watch`
+
+#### Set up
+https://jekyllrb.com/docs/installation/macos/
