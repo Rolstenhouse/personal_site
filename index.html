@@ -2,15 +2,15 @@
 layout: landing
 ---
 
-<div class="top-header">
-  <div class="cn">
-    <div class="ui center aligned paragraph">
-      <h2>👋 Hey there! I'm Rob Olsthoorn</h2>
+<div class="mt-20 mb-20">
+  <div class="flex justify-center items-center">
+    <div class="text-center">
+      <h2 class="mb-4">👋 Hey there! I'm Rob Olsthoorn</h2>
       <img
-        class="ui centered circular small image"
+        class="rounded-full mx-auto mb-4"
         src="{{ site.baseurl }}/assets/images/profile.jpg"
       />
-      <div>
+      <div class="mb-8">
         Well, that's it.
         <br />
         Somehow you were curious enough to find my personal website. Thanks. I'm
@@ -21,8 +21,8 @@ layout: landing
         <br />
         Rob
       </div>
-      <h3>Early life</h3>
-      <ul>
+      <h3 class="mb-2">Early life</h3>
+      <ul class="list-disc list-inside mb-4">
         <li>
           Born in St. Thomas, US Virgin Islands - my parents moved me to Boca
           Raton, Florida where I grew up. I was not Jewish.
@@ -40,8 +40,8 @@ layout: landing
           Nextdoor under the KP Eng '17 fellows program
         </li>
       </ul>
-      <h3>Later on</h3>
-      <ul>
+      <h3 class="mb-2">Later on</h3>
+      <ul class="list-disc list-inside mb-4">
         <li>Worked with realtors at Nextdoor to sell homes</li>
         <li>
           YC W20 - Started my second company,
@@ -57,8 +57,8 @@ layout: landing
           initiatives.
         </li>
       </ul>
-      <h3>Now</h3>
-      <ul>
+      <h3 class="mb-2">Now</h3>
+      <ul class="list-disc list-inside mb-4">
         <li>
           Enjoying life. Very excited about Voice AI and automotive business
           opportunities
@@ -68,8 +68,8 @@ layout: landing
         <li><a href="https://www.instagram.com/robolsthoorn/">Instagram</a></li>
       </ul>
 
-      <h3>Writing</h3>
-      <ul>
+      <h3 class="mb-2">Writing</h3>
+      <ul class="list-disc list-inside mb-4">
         <li>
           {% assign writing = site.writing | reverse %} {% for post in writing
           %}
@@ -100,11 +100,11 @@ layout: landing
       <br />
       <br />
 
-      <h3>Links</h3>
+      <h3 class="mb-2">Links</h3>
       If we're all just LLMs, here's my training data:
-      <ul>
+      <ul class="list-disc list-inside mb-4">
         <li><i>Blogs</i></li>
-        <ul>
+        <ul class="list-disc list-inside ml-4">
           <li>
             <a href="https://longform.asmartbear.com/"
               >Asmartbear (Jason Cohen)</a
@@ -133,7 +133,7 @@ layout: landing
         </ul>
 
         <li><i>Podcasts</i></li>
-        <ul>
+        <ul class="list-disc list-inside ml-4">
           <li>
             <a href="https://thehustle.co/my-first-million-podcast/"
               >My first million</a
@@ -153,7 +153,7 @@ layout: landing
           </li>
         </ul>
         <li><i>Books</i></li>
-        <ul>
+        <ul class="list-disc list-inside ml-4">
           <li>
             <a
               href="https://www.amazon.com/Snow-Crash-Neal-Stephenson/dp/0553380958"
@@ -170,7 +170,7 @@ layout: landing
         </ul>
 
         <li><i>Specific articles</i></li>
-        <ul>
+        <ul class="list-disc list-inside ml-4">
           <li>
             <a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/"
               >Negotiating</a
