@@ -2,34 +2,27 @@
 layout: landing
 ---
 
-<article
-  class="post top-header"
-  itemscope
-  itemtype="http://schema.org/BlogPosting"
->
-  <div class="cn">
-    <div class="ui center aligned paragraph">
-      <header class="header">
-        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-        <p class="post-meta">
-          <time
-            datetime="{{ page.date | date_to_xmlschema }}"
-            itemprop="datePublished"
-          >
+<div class="mt-20 mb-20">
+  <div class="flex justify-center items-center">
+    <div class="prose font-serif">
+      <header class="mb-4">
+        <h1 class="font-serif">{{ page.title }}</h1>
+        <p class="text-sm">
+          <time datetime="{{ page.date | date_to_xmlschema }}">
             {{ page.date | date: "%b %-d, %Y" }}
           </time>
           {% if page.author %} •
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span itemprop="name">{{ page.author }}</span>
+          <span>
+            <span>{{ page.author }}</span>
           </span>
           {% endif %}
         </p>
       </header>
 
-      <div class="post-content" itemprop="articleBody">{{ content }}</div>
+      <div>{{ content }}</div>
       {% assign writing = site.writing | reverse %} {% for post in writing %}
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a><br />
       {% endfor %}
     </div>
   </div>
-</article>
+</div>
