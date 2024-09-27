@@ -20,21 +20,31 @@ layout: landing
       </header>
 
       <div>{{ content }}</div>
+      <br />
+      <br />
+      <br />
       {% assign sorted_posts = site.writing | sort: 'date' %} {% for post in
       sorted_posts %} {% if post.url == page.url %} {% assign prevIndex =
       forloop.index0 | minus: 1 %} {% assign nextIndex = forloop.index0 | plus:
-      1 %} {% if prevIndex >= 0 %}
-      <a href="{{ sorted_posts[prevIndex].url | prepend: site.baseurl }}"
-        >Previous: {{ sorted_posts[prevIndex].title }}</a
-      ><br />
-      {% endif %}
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a
-      ><br />
-      {% if nextIndex < sorted_posts.size %}
-      <a href="{{ sorted_posts[nextIndex].url | prepend: site.baseurl }}"
-        >Next: {{ sorted_posts[nextIndex].title }}</a
-      ><br />
-      {% endif %} {% endif %} {% endfor %}
+      <div class="flex justify-between">
+        {% if prevIndex >= 0 %}
+        <a href="{{ sorted_posts[prevIndex].url | prepend: site.baseurl }}"
+          >{{ sorted_posts[prevIndex].title }}</a
+        >
+        <span class="text-sm"
+          >{{ sorted_posts[prevIndex].date | date: "%b %-d, %Y" }}</span
+        >
+        {% endif %}
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        {% if nextIndex < sorted_posts.size %}
+        <a href="{{ sorted_posts[nextIndex].url | prepend: site.baseurl }}"
+          >{{ sorted_posts[nextIndex].title }}</a
+        >
+        <span class="text-sm"
+          >{{ sorted_posts[nextIndex].date | date: "%b %-d, %Y" }}</span
+        >
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>
