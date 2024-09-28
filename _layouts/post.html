@@ -2,11 +2,10 @@
 layout: landing
 ---
 
-<div class="mt-20 mb-20">
-  <div class="flex justify-between items-center">
-    <a href="{{ site.baseurl }}/">Home</a>
-    <div class="prose font-serif">
-      <header class="mb-4">
+<div class="mt-20 mb-20 flex justify-center">
+  <div class="prose font-serif">
+    <header class="mb-4 flex justify-between items-center">
+      <div>
         <h1 class="font-serif">{{ page.title }}</h1>
         <p class="text-sm">
           <time datetime="{{ page.date | date_to_xmlschema }}">
@@ -18,35 +17,42 @@ layout: landing
           </span>
           {% endif %}
         </p>
-      </header>
+      </div>
+      <a href="{{ site.baseurl }}/" class="text-blue-500 hover:text-blue-700"
+        >Home</a
+      >
+    </header>
 
-      <div class="prose font-serif">{{ content }}</div>
-      <br />
-      <br />
-      <br />
-      {% assign sorted_posts = site.writing | sort: 'date' %} {% for post in
-      sorted_posts %} {% if post.url == page.url %} {% assign prevIndex =
-      forloop.index0 | minus: 1 %} {% assign nextIndex = forloop.index0 | plus:
-      1 %} {% break %} {% endif %} {% endfor %}
-      <div class="flex justify-between">
-        {% if prevIndex >= 0 %}
+    <div class="prose font-serif">{{ content }}</div>
+    <br />
+    <br />
+    <br />
+    {% assign sorted_posts = site.writing | sort: 'date' %} {% for post in
+    sorted_posts %} {% if post.url == page.url %} {% assign prevIndex =
+    forloop.index0 | minus: 1 %} {% assign nextIndex = forloop.index0 | plus: 1
+    %} {% break %} {% endif %} {% endfor %}
+    <div class="flex justify-between">
+      {% if prevIndex >= 0 %}
+      <div>
         <a href="{{ sorted_posts[prevIndex].url | prepend: site.baseurl }}"
           >{{ sorted_posts[prevIndex].title }}</a
         >
         <span class="text-sm"
           >{{ sorted_posts[prevIndex].date | date: "%b %-d, %Y" }}</span
         >
-        {% endif %}
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        {% if nextIndex < sorted_posts.size %}
+      </div>
+      {% endif %}
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      {% if nextIndex < sorted_posts.size %}
+      <div>
         <a href="{{ sorted_posts[nextIndex].url | prepend: site.baseurl }}"
           >{{ sorted_posts[nextIndex].title }}</a
         >
         <span class="text-sm"
           >{{ sorted_posts[nextIndex].date | date: "%b %-d, %Y" }}</span
         >
-        {% endif %}
       </div>
+      {% endif %}
     </div>
   </div>
 </div>
