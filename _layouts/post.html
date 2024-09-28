@@ -27,6 +27,7 @@ layout: landing
       {% assign sorted_posts = site.writing | sort: 'date' %} {% for post in
       sorted_posts %} {% if post.url == page.url %} {% assign prevIndex =
       forloop.index0 | minus: 1 %} {% assign nextIndex = forloop.index0 | plus:
+      1 %} {% break %} {% endif %} {% endfor %}
       <div class="flex justify-between">
         {% if prevIndex >= 0 %}
         <a href="{{ sorted_posts[prevIndex].url | prepend: site.baseurl }}"
