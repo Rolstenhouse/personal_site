@@ -33,7 +33,7 @@ layout: landing
     %} {% break %} {% endif %} {% endfor %}
     <div class="flex justify-between">
       {% if prevIndex >= 0 %}
-      <div>
+      <div class="flex">
         <a href="{{ sorted_posts[prevIndex].url | prepend: site.baseurl }}"
           >{{ sorted_posts[prevIndex].title }}</a
         >
@@ -44,7 +44,7 @@ layout: landing
       {% endif %}
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       {% if nextIndex < sorted_posts.size %}
-      <div>
+      <div class="flex">
         <a href="{{ sorted_posts[nextIndex].url | prepend: site.baseurl }}"
           >{{ sorted_posts[nextIndex].title }}</a
         >
