@@ -6,6 +6,7 @@ layout: landing
   <div class="prose font-serif">
     <header class="mb-4 flex justify-between items-center">
       <div>
+        <a href="{{ site.baseurl }}/">Home</a>
         <h1 class="font-serif">{{ page.title }}</h1>
         <p class="text-sm">
           <time datetime="{{ page.date | date_to_xmlschema }}">
@@ -18,9 +19,6 @@ layout: landing
           {% endif %}
         </p>
       </div>
-      <a href="{{ site.baseurl }}/" class="text-blue-500 hover:text-blue-700"
-        >Home</a
-      >
     </header>
 
     <div class="prose font-serif">{{ content }}</div>
