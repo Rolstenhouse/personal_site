@@ -31,24 +31,24 @@ layout: landing
     %} {% break %} {% endif %} {% endfor %}
     <div class="flex justify-between">
       {% if prevIndex >= 0 %}
-      <div class="flex">
+      <div class="flex flex-col">
         <a href="{{ sorted_posts[prevIndex].url | prepend: site.baseurl }}"
           >{{ sorted_posts[prevIndex].title }}</a
         >
-        <span class="text-sm"
-          >{{ sorted_posts[prevIndex].date | date: "%b %-d, %Y" }}</span
-        >
+        <div class="text-sm"></div>
+          {{ sorted_posts[prevIndex].date | date: "%b %-d, %Y" }}
+        </div>
       </div>
       {% endif %}
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       {% if nextIndex < sorted_posts.size %}
-      <div class="flex">
+      <div class="flex flex-col">
         <a href="{{ sorted_posts[nextIndex].url | prepend: site.baseurl }}"
           >{{ sorted_posts[nextIndex].title }}</a
         >
-        <span class="text-sm"
-          >{{ sorted_posts[nextIndex].date | date: "%b %-d, %Y" }}</span
-        >
+        <div class="text-sm">
+          {{ sorted_posts[nextIndex].date | date: "%b %-d, %Y" }}
+        </div>
       </div>
       {% endif %}
     </div>
