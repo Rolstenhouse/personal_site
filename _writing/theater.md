@@ -13,3 +13,5 @@ Authenticity wins. Playing a great bit requires 100% commitment and others will 
 The best advice: what would X do here? Where X is the best role player that comes to mind.
 
 What role will you play today?
+
+EDIT: Nov. 16, 2024 - [Impro](https://amzn.to/4fOsuXV) is a great book on status, playing games, and treating life as improv. 
