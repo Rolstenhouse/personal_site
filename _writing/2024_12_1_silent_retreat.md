@@ -18,4 +18,4 @@ I’m blessed. I love my friends, my family, my life. I’m incredibly lucky and
 
 Great things in life are accomplished when shared with others, intensely shared. And each day isn’t a dress rehearsal, it’s the main event. 
 
-I look forward to next year’s Thanksgiving, one in which I’ll travel with friends. And until then, a life filled with intensity, focus, and low ego.
+I look forward to next year’s Thanksgiving, one in which I’ll travel with friends. And until then, a life filled with intensity, focus, and lower ego.
