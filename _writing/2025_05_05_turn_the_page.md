@@ -1,3 +1,4 @@
+---
 layout: post
 title: Turn the page
 subtitle: I was baptized at the capitalist church
