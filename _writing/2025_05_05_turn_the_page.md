@@ -5,15 +5,15 @@ subtitle: I was baptized at the capitalist church
 date: 2025-05-5 21:00:00
 ---
 
-Buffett announcing his retirement to a standing ovation of 50,000 felt like what I can only imagine those that saw jesus walk on water felt. 
+Buffett seated, diet coke placed in front of him, announced his retirement this past week to a standing ovation of 50,000. The energy of this man and the stadium was unlike anything I've felt before, and talking to others you begin to undestand why - he's made many people rich, gave many capitalists a career, a purpose and simple values to live by. 
 
-I was baptized at the capitalist church. 
+And I was swept up in the energy, I was baptized in capitalism.
 
-Buffett is the best investor of all time, and has a powerful, sharp, relaxed aura that's powerful in real life (and caused a 6% BRK.A drop on his retirement announcement). He feels approachable and relatable, feasting on only coke and McDonalds. 
+Buffett is the best investor of all time, and has a powerful, sharp, relaxed aura that's palpable in real life (and caused a 6% BRK.A drop on his retirement announcement). He's approachable and relatable using basic language that disguises his brilliance. 
 
-And most importantly, he (and the weekend generally) rewired my brain. 
+And most importantly, he (and the weekend generally) gave me an appreciation for finance I didn't have before.
 
-"Turn every page", "Pull the thread", "The thrill of the hunt". 
+My takeaway quotes from the weekend: "Turn every page", "Pull the thread", "The thrill of the hunt". 
 
 When you invest in public markets, you have to find your edge. That's not possible by just reading a 10-k, you need to go all the way down the rabbit hole until you build conviction and are able to confidently spot what so many others have missed. Warren, back in 1954, chases down a strange cacoa market arbitrage which led him to a shareholder meeting with him and the (you can listen here)[https://www.youtube.com/watch?v=0q23WdK5Yz8], and I heard several other stories like this throughout the weekend, hunting down the early munger partnership files, flying halfway around the world on a small chance to run into a key exec at a company, understanding where the float of the business was stored - all of which yielded profitable intel. 
 
