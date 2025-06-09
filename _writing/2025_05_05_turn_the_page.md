@@ -13,7 +13,7 @@ Buffett is the best investor of all time, and has a powerful, sharp, relaxed aur
 
 And most importantly, he (and the 2025 Berkshire weekend more broadly) gave me an appreciation for finance I didn't have before. One that values going further beyond anyone else
 
-My favorite quotes from the weekend: "Turn every page" (Buffett), "Pull the thread" (anon), "...the thrill of the hunt" (anon).
+My favorite quotes from the weekend: "Very few people do turn every page — and the ones who turn every page aren’t going to tell you what they’re finding. You’ve got to do a little of it yourself" (Buffett), "I kept pulling, and pulling, and pulling the thread until I get my answer" (anon), "I do ... for the thrill of the hunt" (anon).
 
 When you invest in public markets, you have to find your edge. That's not possible by just reading a 10-k, you need to go all the way down the rabbit hole until you build conviction and are able to confidently spot what so many others have missed. Buffet, back in 1954, chases down a strange cacao market arbitrage which led him to a shareholder meeting with him and the [you can listen here](https://www.youtube.com/watch?v=0q23WdK5Yz8), and I heard this relentless obsession only a couple times throughout the weekend, hunting down the early munger partnership files, flying halfway around the world on a small chance to run into a key exec at a company, understanding where the float of the business was stored - all of which yielded profitable intel. 
 
