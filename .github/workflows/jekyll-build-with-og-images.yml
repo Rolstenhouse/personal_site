@@ -1,0 +1,185 @@
+name: Jekyll Build with OG Images
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+          bundler-cache: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm install puppeteer gray-matter
+          bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Start Jekyll server for OG image generation
+        run: |
+          bundle exec jekyll serve --detach
+          echo "Waiting for Jekyll server to start..."
+          sleep 5
+
+      - name: Generate OG images
+        run: |
+          mkdir -p _site/assets/og-images
+          node - <<EOF
+          const fs = require('fs');
+          const path = require('path');
+          const puppeteer = require('puppeteer');
+          const matter = require('gray-matter');
+
+          // Configuration
+          const WRITING_DIR = path.join(process.cwd(), '_writing');
+          const OUTPUT_DIR = path.join(process.cwd(), '_site/assets/og-images');
+
+          // Ensure output directory exists
+          if (!fs.existsSync(OUTPUT_DIR)) {
+            fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+          }
+
+          // Get all markdown files in the _writing directory
+          const markdownFiles = fs.readdirSync(WRITING_DIR)
+            .filter(file => file.endsWith('.md'));
+
+          // Main function to generate OG images
+          async function generateOgImages() {
+            const browser = await puppeteer.launch({
+              args: ['--no-sandbox', '--disable-setuid-sandbox']
+            });
+            const page = await browser.newPage();
+            
+            // Set viewport to OG image dimensions
+            await page.setViewport({
+              width: 1200,
+              height: 630,
+              deviceScaleFactor: 1
+            });
+            
+            // Process each markdown file
+            for (const file of markdownFiles) {
+              const filePath = path.join(WRITING_DIR, file);
+              const fileContent = fs.readFileSync(filePath, 'utf8');
+              
+              // Parse front matter
+              const { data } = matter(fileContent);
+              const { title } = data;
+              
+              if (!title) continue;
+              
+              // Generate filename without extension
+              const baseFilename = file.replace(/\.md$/, '');
+              const outputPath = path.join(OUTPUT_DIR, `${baseFilename}.png`);
+              
+              // Create a simple HTML page for the OG image
+              await page.setContent(`
+                <!DOCTYPE html>
+                <html>
+                <head>
+                  <meta charset="utf-8">
+                  <title>${title}</title>
+                  <style>
+                    body {
+                      margin: 0;
+                      padding: 0;
+                      width: 1200px;
+                      height: 630px;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      background-color: white;
+                      font-family: Georgia, serif;
+                      position: relative;
+                    }
+                    .container {
+                      padding: 60px;
+                      border: 4px solid #000;
+                      margin: 20px;
+                      height: calc(100% - 48px);
+                      box-sizing: border-box;
+                      display: flex;
+                      flex-direction: column;
+                    }
+                    .title {
+                      font-size: 64px;
+                      font-weight: bold;
+                      line-height: 1.1;
+                      margin-bottom: 20px;
+                    }
+                    .subtitle {
+                      font-size: 36px;
+                      color: #555;
+                      line-height: 1.2;
+                      margin-top: 0;
+                      font-weight: normal;
+                    }
+                    .site {
+                      font-size: 24px;
+                      color: #888;
+                      position: absolute;
+                      bottom: 60px;
+                      left: 60px;
+                    }
+                  </style>
+                </head>
+                <body>
+                  <div class="container">
+                    <div class="title">${title}</div>
+                    ${data.subtitle ? `<div class="subtitle">${data.subtitle}</div>` : ''}
+                    <div class="site">robolsthoorn.com</div>
+                  </div>
+                </body>
+                </html>
+              `);
+              
+              // Take a screenshot
+              await page.screenshot({
+                path: outputPath,
+                type: 'png',
+                fullPage: false
+              });
+              
+              console.log(`Generated OG image for: ${file}`);
+            }
+            
+            await browser.close();
+            console.log('OG image generation complete!');
+          }
+
+          // Run the generator
+          generateOgImages().catch(error => {
+            console.error('Error generating OG images:', error);
+            process.exit(1);
+          });
+          EOF
+
+      - name: Stop Jekyll server
+        run: pkill -f "jekyll serve" || true
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
