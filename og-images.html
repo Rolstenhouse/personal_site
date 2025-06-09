@@ -1,0 +1,49 @@
+---
+layout: null
+permalink: /og-images/
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>OG Images Index</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>OG Images for Blog Posts</h1>
+  <p>Click on any link below to view the OG image for that post:</p>
+  <ul>
+    {% for post in site.writing %}
+      <li>
+        <a href="{{ site.baseurl }}/og-images/{{ post.path | split: '/' | last | split: '.' | first }}/">
+          {{ post.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

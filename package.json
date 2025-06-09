@@ -1,0 +1,14 @@
+{
+  "name": "personal_site",
+  "version": "1.0.0",
+  "description": "Personal website with OG image generation",
+  "scripts": {
+    "start": "bundle exec jekyll serve",
+    "generate-og": "node scripts/generate-og-images.js",
+    "build": "bundle exec jekyll build && npm run generate-og"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "puppeteer": "^21.3.8"
+  }
+}
