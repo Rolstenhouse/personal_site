@@ -5,7 +5,6 @@ _site/
 
 # Node.js files
 node_modules/
-package-lock.json
 
 # Generated OG images
 assets/og-images/
