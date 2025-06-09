@@ -26,6 +26,7 @@ markdown: kramdown
 
 exclude: [node_modules, package-lock.json, scripts]
 
+
 # Always generate OG images
 generate_og_images: true
 font_family: "Georgia, serif"
