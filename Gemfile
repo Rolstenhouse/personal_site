@@ -1,15 +1,15 @@
 source "https://rubygems.org"
 
-ruby "~> 3.0"
+# Specify Ruby version compatible with your system (2.6.10)
+ruby "~> 2.6.0"
 
-# Jekyll and plugins
-gem "jekyll", "~> 4.2.0"
-gem "jekyll-feed", "~> 0.16.0"
-gem "jekyll-seo-tag", "~> 2.7.1"
-gem "jekyll-sitemap", "~> 1.4.0"
-
-# If you want to use GitHub Pages, uncomment the line below
+# Use github-pages gem which includes Jekyll and other dependencies
 gem "github-pages", group: :jekyll_plugins
+
+# Additional plugins that are compatible with GitHub Pages
+gem "jekyll-feed"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

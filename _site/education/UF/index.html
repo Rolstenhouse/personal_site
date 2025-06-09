@@ -2,226 +2,179 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>University of Florida</title>
-	<meta name="description" content="">
+  <title>
+    University of Florida
+  </title>
+  <meta
+    name="description"
+    content=""
+  />
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="University of Florida" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="http://localhost:4000/education/UF/" />
+  <meta property="og:site_name" content="Rob Olsthoorn" />
+  
+  <meta property="og:image" content="http://localhost:4000/assets/og-images/UF.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="University of Florida" />
+  
+  <link
+    rel="canonical"
+    href="http://localhost:4000/education/UF/"
+  />
+  <link rel="alternate" type="application/rss+xml" title="Rob Olsthoorn"
+  href="http://localhost:4000/feed.xml">
+  <script src="/assets/pace/pace.min.js"></script>
+  <link href="/assets/pace/themes/minimal.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+    $(function () {
+      $("#resume").load("/assets/resume/resume.html");
+    });
+  </script>
 
-	<link rel="stylesheet" type="text/css" href="/assets/semantic.min.css">
-	<link rel="stylesheet" type="text/css" href="/assets/custom.css">
-	<!-- <link rel="stylesheet" type="text/css" href="/assets/resume/resume.css"> -->
-	<link rel="canonical" href="http://robertolsthoorn.com/education/UF/">
-	<link rel="alternate" type="application/rss+xml" title="Robert Olsthoorn" href="http://robertolsthoorn.com/feed.xml">
-	<script src="/assets/pace/pace.min.js"></script>
-  	<link href="/assets/pace/themes/minimal.css" rel="stylesheet" />
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="/assets/semantic.min.js"></script>
-	<script> 
-			$(function(){$("#resume").load("/assets/resume/resume.html")}); 
-    </script> 
-
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70370619-1"></script>
-    <script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-70370619-1"
+  ></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'UA-70370619-1');
-    </script>
-    <script>
-        var host = "robertolsthoorn.com"
-        if (window.location.host == host && window.location.protocol != "https:") {
-            window.location.protocol = "https:"
-        }
-    </script>
+    gtag("config", "UA-70370619-1");
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            sm: "0.8rem",
+            base: "1rem",
+            xl: "1.25rem",
+            "2xl": "1.563rem",
+            "3xl": "1.953rem",
+            "4xl": "2.441rem",
+            "5xl": "3.052rem",
+          },
+          fontFamily: {
+            serif: [
+              "Georgia",
+              "Cambria",
+              '"Times New Roman"',
+              "Times",
+              "serif",
+            ],
+          },
+        },
+      },
+    };
+  </script>
+  <script>
+    var host = "robolsthoorn.com";
+    if (window.location.host == host && window.location.protocol != "https:") {
+      window.location.protocol = "https:";
+    }
+  </script>
+  <script>
+    !(function (t, e) {
+      var o, n, p, r;
+      e.__SV ||
+        ((window.posthog = e),
+        (e._i = []),
+        (e.init = function (i, s, a) {
+          function g(t, e) {
+            var o = e.split(".");
+            2 == o.length && ((t = t[o[0]]), (e = o[1])),
+              (t[e] = function () {
+                t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+              });
+          }
+          ((p = t.createElement("script")).type = "text/javascript"),
+            (p.async = !0),
+            (p.src =
+              s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
+              "/static/array.js"),
+            (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+              p,
+              r
+            );
+          var u = e;
+          for (
+            void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+              u.people = u.people || [],
+              u.toString = function (t) {
+                var e = "posthog";
+                return (
+                  "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                );
+              },
+              u.people.toString = function () {
+                return u.toString(1) + ".people (stub)";
+              },
+              o =
+                "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(
+                  " "
+                ),
+              n = 0;
+            n < o.length;
+            n++
+          )
+            g(u, o[n]);
+          e._i.push([i, s, a]);
+        }),
+        (e.__SV = 1));
+    })(document, window.posthog || []);
+    posthog.init("phc_F8W5zQagmvjztqZ5Qbb9hXZBNXc9fDdTojt17VJbnR6", {
+      api_host: "https://us.i.posthog.com",
+      person_profiles: "always", // or 'always' to create profiles for anonymous users as well
+    });
+  </script>
 </head>
 
 
 <body>
-  <header class="header">
-  <div id = "menu" class="ui sidebar left vertical inverted menu visible fixed overlay">
-    <div class = "ui segment center aligned inverted">
-      <img class = "ui centered circular small image" src = "/assets/images/profile.jpg">
-      <div class="ui segment inverted aligned center">
-        <p class="">Learner, Hacker, Traveler</p>
+    <div class="mx-3 my-8 md:my-20 md:p-0 flex justify-center">
+  <div class="prose font-serif">
+    <header class="mb-4 flex justify-between items-center">
+      <div>
+        <a href="/" class="block mb-6">Home</a>
+        <h1 class="font-serif leading-tight mb-0">University of Florida</h1>
+        
+        <p class="text-sm">
+          <time datetime="2017-05-14T20:00:00-04:00">
+            May 14, 2017
+          </time>
+          
+        </p>
       </div>
-      <div class="cn card"> 
-        <div class="ui card center aligned" style="background-color: #1B1C1D;">
-            <div class="content inverted">
-        <h4>Get notified about life changes</h4>
-        <script async data-uid="a97cb17602" src="https://tremendous-crafter-1627.ck.page/a97cb17602/index.js"></script>
-        </div>
-        </div>
-    </div>
-      <hr>
-    </div>
-    <div class="item">
-      <a class="header" href="/">
-        Home
-      </a>
-    </div>
-    <div class="item">
-      <a class="header" href="/work">Work Experience</a>
-      <div class="menu">
-        
-        
-          <a class="item" href="/work/microsoft2/">Microsoft Round 2</a>
-        
-          <a class="item" href="/work/nextdoor/">Nextdoor</a>
-        
-          <a class="item" href="/work/KPCB/">KPCB</a>
-        
-          <a class="item" href="/work/microsoft/">Microsoft</a>
-        
-          <a class="item" href="/work/infiniteEnergy/">Infinite Energy</a>
-        
-          <a class="item" href="/work/urbanDarling/">Urban Darling, LLC</a>
-        
-          <a class="item" href="/work/publix/">Publix</a>
-        
-      </div>
-    </div>
-    <div class="item">
-      <a class="header" href="/projects">Projects</a>
-      <div class="menu">
-        
-        
-          <a class="item" href="/projects/krispykreme/">Krispy Kreme</a>
-        
-          <a class="item" href="/projects/razzle/">Razzle</a>
-        
-          <a class="item" href="/projects/emote/">Emote</a>
-        
-          <a class="item" href="/projects/maximumMaxim/">Maximum Maxim</a>
-        
-          <a class="item" href="/projects/facebookShamer/">Political Shamer</a>
-        
-          <a class="item" href="/projects/perfectPosture/">Perfect Posture</a>
-        
-          <a class="item" href="/projects/quantum/">An Introduction to Quantum Computing</a>
-        
-          <a class="item" href="/projects/bartertown/">BarterTown</a>
-        
-          <a class="item" href="/projects/cheapSleep/">CheapSleep</a>
-        
-          <a class="item" href="/projects/uselessFacts/">Useless Facts</a>
-        
-          <a class="item" href="/projects/engineersWeek/">UF Engineers Week 2015</a>
-        
-          <a class="item" href="/projects/SAE/">Society of Automotive Engineers</a>
-        
-          <a class="item" href="/projects/systemX/">System X Computing</a>
-        
-      </div>
-    </div>
-    <div class="item">
-      <a class="header" href="/education">Education</a>
-      </div>
-  </div>
+    </header>
 
-  <div id = "m_menu" class="ui large four item menu inverted hidden">
-    <div class="ui container">
-      <a class="item" href="/" >Home</a>
-      <a class="item" href="/projects">Projects</a>
-      <a class="item" href="/education">Education</a>
-      <a class="item" href="/work">Work</a>
+    <div class="prose font-serif">
+</div>
+    <br />
+    <br />
+    <br />
+                                 
+    <div class="flex w-full flex-row justify-between">
+      
+      <a href=""></a>
+      
     </div>
   </div>
-  <br>
-    
-</header>
-
-
-  <div id="main">
-    
-
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="header">
-    <h1 class="post-title" itemprop="name headline">University of Florida</h1>
-    <p class="post-meta"><time datetime="2017-05-15T01:00:00+01:00" itemprop="datePublished">May 15, 2017</time></p>
-  </header>
-
-  <div class="post-content" itemprop="articleBody">
-    
-
-  </div>
-
-</article>
-
-
-    <footer class="footer">
-  <div class="ui vertical segment">
-      <div class="ui three column centered grid">
-      <div class="four column centered row">
-        <div class="column">
-          <a href = "/assets/resume/resume.pdf">
-            <button class="ui mini red basic button">
-              <i class="file pdf outline icon"></i>
-              Resume
-            </button>
-          </a>
-        </div>
-        <div class="column">
-          <a href = "https://linkedin.com/in/rolstenhouse">
-            <button class="ui mini blue basic button">
-              <i class="linkedin icon"></i>
-              LinkedIn
-            </button>
-          </a>
-        </div>
-        <div class="column">
-          <a href = "https://github.com/rolstenhouse">
-            <button class="ui mini black basic button">
-              <i class="github icon"></i>
-              Github
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-  </div>
-  
-  <script> 
-
-//Kept in for dynamic resizing in webpages (HONESTLY SHOULD REMOVE)
-    if($(window).width() < 617){
-      $('#menu').sidebar('hide');
-      $('.ui.small.menu')
-      .visibility({
-        type   : 'fixed'
-      })
-      ;
-    }
-
-
-    $('#menu')
-    .sidebar({
-      dimPage: false
-      ,closable: false
-    });
-
-    $(window).resize(function() {
-// Detect if the resized screen is mobile or desktop width
-if($(window).width() > 617) {
-  console.log('desktop'); 
-  $('.dimmed').removeClass("dimmed");
-  $('#menu').sidebar('show');
-  $('#menu').addClass("visible");
-  $('#menu').removeClass("uncover");
-}
-else {
- console.log('mobile');
- $('#menu').sidebar('hide');
-}
-});
-</script>
+</div>
 
 </body>
 

@@ -24,7 +24,7 @@ markdown: kramdown
 
 # include: ['_projects']
 
-exclude: [node_modules, package-lock.json, scripts]
+exclude: [node_modules, package-lock.json, scripts, vendor]
 
 
 # Always generate OG images

@@ -2,110 +2,433 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>Robert Olsthoorn</title>
-	<meta name="description" content="Robert Olsthoorn | Developer, Traveler, Learner, Family Man
-">
+  <title>
+    Rob Olsthoorn
+  </title>
+  <meta
+    name="description"
+    content="Rob Olsthoorn | Developer, Traveler, Learner
+"
+  />
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rob Olsthoorn" />
+  <meta property="og:description" content="Rob Olsthoorn | Developer, Traveler, Learner
+" />
+  <meta property="og:url" content="http://localhost:4000/" />
+  <meta property="og:site_name" content="Rob Olsthoorn" />
+  
+  <link
+    rel="canonical"
+    href="http://localhost:4000/"
+  />
+  <link rel="alternate" type="application/rss+xml" title="Rob Olsthoorn"
+  href="http://localhost:4000/feed.xml">
+  <script src="/assets/pace/pace.min.js"></script>
+  <link href="/assets/pace/themes/minimal.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+    $(function () {
+      $("#resume").load("/assets/resume/resume.html");
+    });
+  </script>
 
-	<link rel="stylesheet" type="text/css" href="/assets/custom.css">
-	<!-- <link rel="stylesheet" type="text/css" href="/assets/resume/resume.css"> -->
-	<link rel="canonical" href="http://robertolsthoorn.com/">
-	<link rel="alternate" type="application/rss+xml" title="Robert Olsthoorn" href="http://robertolsthoorn.com/feed.xml">
-	<script src="/assets/pace/pace.min.js"></script>
-  	<link href="/assets/pace/themes/minimal.css" rel="stylesheet" />
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script> 
-			$(function(){$("#resume").load("/assets/resume/resume.html")}); 
-    </script> 
-
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70370619-1"></script>
-    <script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-70370619-1"
+  ></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'UA-70370619-1');
-    </script>
-    <script>
-        var host = "robertolsthoorn.com"
-        if (window.location.host == host && window.location.protocol != "https:") {
-            window.location.protocol = "https:"
-        }
-    </script>
+    gtag("config", "UA-70370619-1");
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            sm: "0.8rem",
+            base: "1rem",
+            xl: "1.25rem",
+            "2xl": "1.563rem",
+            "3xl": "1.953rem",
+            "4xl": "2.441rem",
+            "5xl": "3.052rem",
+          },
+          fontFamily: {
+            serif: [
+              "Georgia",
+              "Cambria",
+              '"Times New Roman"',
+              "Times",
+              "serif",
+            ],
+          },
+        },
+      },
+    };
+  </script>
+  <script>
+    var host = "robolsthoorn.com";
+    if (window.location.host == host && window.location.protocol != "https:") {
+      window.location.protocol = "https:";
+    }
+  </script>
+  <script>
+    !(function (t, e) {
+      var o, n, p, r;
+      e.__SV ||
+        ((window.posthog = e),
+        (e._i = []),
+        (e.init = function (i, s, a) {
+          function g(t, e) {
+            var o = e.split(".");
+            2 == o.length && ((t = t[o[0]]), (e = o[1])),
+              (t[e] = function () {
+                t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+              });
+          }
+          ((p = t.createElement("script")).type = "text/javascript"),
+            (p.async = !0),
+            (p.src =
+              s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
+              "/static/array.js"),
+            (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+              p,
+              r
+            );
+          var u = e;
+          for (
+            void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+              u.people = u.people || [],
+              u.toString = function (t) {
+                var e = "posthog";
+                return (
+                  "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                );
+              },
+              u.people.toString = function () {
+                return u.toString(1) + ".people (stub)";
+              },
+              o =
+                "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(
+                  " "
+                ),
+              n = 0;
+            n < o.length;
+            n++
+          )
+            g(u, o[n]);
+          e._i.push([i, s, a]);
+        }),
+        (e.__SV = 1));
+    })(document, window.posthog || []);
+    posthog.init("phc_F8W5zQagmvjztqZ5Qbb9hXZBNXc9fDdTojt17VJbnR6", {
+      api_host: "https://us.i.posthog.com",
+      person_profiles: "always", // or 'always' to create profiles for anonymous users as well
+    });
+  </script>
 </head>
 
 
 <body>
-    <div class="top-header">
-    <div class="cn">
-        <div class="ui center aligned paragraph">
-            <img class = "ui centered circular tiny image" src = "/assets/images/profile.jpg">
-            <h2>👋 Hi! I'm Rob - robols.eth</h2>
-            <span>
-                <h5>
-                    Written pieces
-                </h5>
-                <div>
-                    <i>Dev</i><br>
-                    <a href="https://github.com/Rolstenhouse/unofficial-apis">Unofficial APIs</a>
-                    <a href="https://news.ycombinator.com/item?id=23248980">[Discuss on HN]</a>
-                    <br>
-                    <a href="https://github.com/Rolstenhouse/py-iMessage">iMessage python library</a><br>
-                    <a href="https://python.plainenglish.io/aws-lambda-python-the-easy-way-using-serverless-23b9c26c5a86">AWS + Lambda</a><br>
-                    <br><i>Misc</i><br>
-                    <a href="https://rolsthoorn.medium.com/how-to-convert-heic-images-to-jpg-on-a-mac-380e7d2e06a2">Convert HEIC</a><br>
-                    <a href="https://rolsthoorn.medium.com/splitting-rent-is-awkward-c81f80e49d80">Splitting rent</a><br>
-                </div>
+    <div class="mx-3 my-8 md:my-20 md:p-0">
+  <div class="flex justify-center items-center">
+    <div class="prose font-serif">
+      <h2 class="mb-4 font-serif">👋 Hey there! I'm Rob Olsthoorn</h2>
+      <div>
+        Well, that's it.
+        <br />
+        <br />
+        Somehow you were curious enough to find my personal website. Thanks. I'm
+        glad you're here.
+        <br />
+      </div>
+      <div class="flex justify-center">
+        <img
+          src="/assets/images/profile.jpg"
+          class="max-w-xs"
+        />
+      </div>
+      <div class="mb-8">
+        Here's a slice of who I am and what I think about. I hope it's what you
+        came here for.
+        <br />
+        Love, Rob
+      </div>
+      <h3 class="mb-2">Early life</h3>
+      <ul class="list-disc list-inside mb-4">
+        <li>
+          Born in St. Thomas, US Virgin Islands - my parents moved me to Boca
+          Raton, Florida where I grew up. I was not Jewish.
+        </li>
+        <li>
+          Sold candy in middle school, fireworks to friends, and used toys to my
+          siblings - not the most admirable.
+        </li>
+        <li>
+          Went to the University of Florida. Studied computer engineering, tried
+          to start my first company, Bartertown (ended)
+        </li>
+        <li>
+          Made it out of the swamp, by working at Microsoft - then later
+          Nextdoor under the KP Eng '17 fellows program
+        </li>
+      </ul>
+      <h3 class="mb-2">Later on</h3>
+      <ul class="list-disc list-inside mb-4">
+        <li>Built software for realtors at Nextdoor to sell homes</li>
+        <li>
+          YC W20 - Started my second company,
+          <a href="https://www.producthunt.com/posts/laguna-2">Laguna</a>.
+          Learned a lot. Built cool things.
+        </li>
+        <li>
+          Spent time designing the future of work with dOrg, a crypto based
+          self-organizing work group a DAO. Brought in ~$500k to the org.
+        </li>
+        <li>
+          Went from 0-$1.5M in GMV for Whatnot NFTs. Led projects on our
+          non-live selling marketplace
+        </li>
+      </ul>
+      <h3 class="mb-2">Now</h3>
+      <ul class="list-disc list-inside mb-4">
+        <li>
+          Enjoying life. Very excited about Voice AI and automotive business
+          opportunities
+        </li>
+        <li>Learning about the world</li>
+        <li><a href="https://twitter.com/rob_olsthoorn">Twitter</a></li>
+        <li><a href="https://www.instagram.com/robolsthoorn/">Instagram</a></li>
+      </ul>
 
-                <h5>
-                    Influential reads
-                </h5>
-                <div>
-                    <i>Articles</i> <br>
-                    <a href="https://www.navalmanack.com/almanack-of-naval-ravikant/find-a-position-of-leverage">Forms of leverage</a>
-                    <a href="https://a16z.com/2020/01/09/progressive-decentralization-crypto-product-management/">When to decentralize</a><br>
-                    <a href="https://danluu.com/productivity-velocity/">Engineer's mindset on productivity</a><br>
-                    <br><i>Podcasts</i><br>
-                <a href="https://thehustle.co/my-first-million-podcast/">Idea porn</a><br>
-                    <br><i>Books</i><br>
-                    <a href="https://www.amazon.com/Snow-Crash-Neal-Stephenson/dp/0553380958">Snow crash</a>
-                </div>
+      <h3 class="mb-2">Writing</h3>
+      <ul class="list-disc list-inside mb-4">
+         
+        <li>
+          <a href="/writing/2025_05_05_turn_the_page/"
+            >Turn every page (May 2025)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/2024_12_1_silent_retreat/"
+            >3-day silent retreat (Dec 2024)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/2024_11_16_simplicity/"
+            >Simplicity (Nov 2024)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/2024_09_12_memories/"
+            >Rereading a book for my first time (Sep 2024)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/2024_07_12_obsession/"
+            >Obsession (Jul 2024)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/2024_07_12_discovering_hidden_information/"
+            >Discovering hidden information & reps (Jul 2024)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/2024_07_01_do_the_obvious_thing/"
+            >Do the obvious thing (Jun 2024)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/academic_rigor/"
+            >Academic Rigor (Jun 2024)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/energy/"
+            >Energy (Jun 2024)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/people/"
+            >People (May 2024)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/focus/"
+            >Focus (May 2024)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/quality/"
+            >Quality (May 2024)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/theater/"
+            >Life is theater (Apr 2024)</a
+          >
+        </li>
+        
+        <li>
+          <a href="/writing/future.fit/"
+            >40 months with Future.fit (Jan 2024)</a
+          >
+        </li>
+        
 
-                <h5>
-                    Career
-                </h5>
-                <div>
-                    Human @ dOrg<br>
-                    Angel investor<br>
-                    CoFounder @ Terra (YC W20)<br>
-                    SWE @ Nextdoor<br>
-                    🐊 alum <br>
-                    <i>intern w/</i> Microsoft (x2), Nextdoor (KP Eng 2017), Infinite Energy, Urban Darling
-                </div>
-                
-                <h5>Follow me</h5>
-                <a href="https://github.com/rolstenhouse">
-                    <i class="black github icon"></i>
-                </a>
-                <a href="https://instagram.com/rob.olsthoorn">
-                    <i class="purple instagram icon"></i>
-                </a>
-                <a href="https://twitter.com/olsthoorn_rob">
-                    <i class="blue twitter icon"></i>
-                </a>
-                <a href="https://linkedin.com/in/rolstenhouse">
-                    <i class="blue linkedin alternate icon"></i>
-                </a>
-                <br/>
-                <br/>
-                <br/>
-        </div>
+        <li>
+          <a
+            href="https://medium.com/whatnot-engineering/how-whatnot-is-building-the-future-of-nft-live-shopping-5cedbfc115a7"
+            >Whatnot and NFTs (Aug. 2021)</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/Rolstenhouse/unofficial-apis"
+            >Unofficial APIs (2020)</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://rolsthoorn.medium.com/splitting-rent-is-awkward-c81f80e49d80"
+            >Perfect rent pricing for all (2018)</a
+          >
+        </li>
+      </ul>
+      <br />
+
+      <h3 class="mb-2">Links</h3>
+      If we're all just LLMs, here's my training data:
+      <ul class="list-disc list-inside mb-4">
+        <li><i>Blogs</i></li>
+        <ul class="list-disc list-inside ml-4">
+          <li>
+            <a href="https://longform.asmartbear.com/"
+              >Asmartbear (Jason Cohen)</a
+            >
+          </li>
+          <li><a href="https://sive.rs/">Derek Sivers</a></li>
+          <li><a href="https://www.gwern.net/">Gwern</a></li>
+          <li>
+            <a href="http://www.paulgraham.com/articles.html">Paul Graham</a>
+          </li>
+          <li><a href="http://patrickcollison.com/">Patrick Collison</a></li>
+          <li><a href="https://avc.com/">Fred Wilson</a></li>
+          <li>
+            <a
+              href="https://a16z.com/wp-content/uploads/2021/08/The-pmarca-Blog-Archives.pdf"
+              >pmarca</a
+            >
+          </li>
+          <li><a href="https://vitalik.ca/">Vitalik Buterin</a></li>
+          <li><a href="https://dcgross.com/">Daniel Gross</a></li>
+          <li><a href="https://nat.org/">Nat Friedman</a></li>
+          <li><a href="https://blog.eladgil.com/">Elad Gil</a></li>
+          <li><a href="https://www.kalzumeus.com/">Patrick Mackenzie</a></li>
+          <li><a href="https://stratechery.com/">Ben Thompson</a></li>
+          <li><a href="https://www.joelonsoftware.com/">Joel Spolsky</a></li>
+        </ul>
+
+        <li><i>Podcasts</i></li>
+        <ul class="list-disc list-inside ml-4">
+          <li>
+            <a href="https://thehustle.co/my-first-million-podcast/"
+              >My first million</a
+            >
+          </li>
+          <li>
+            <a href="https://www.infiniteloopspodcast.com/">Infinite loops</a>
+          </li>
+          <li>
+            <a
+              href="https://podcasts.apple.com/us/podcast/invest-like-the-best-with-patrick-oshaughnessy/id1154105909"
+              >Invest like the best</a
+            >
+          </li>
+          <li>
+            <a href="https://www.dealershipguy.com/">Car dealership guy</a>
+          </li>
+        </ul>
+        <li><i>Books</i></li>
+        <ul class="list-disc list-inside ml-4">
+          <li>
+            <a
+              href="https://www.amazon.com/Snow-Crash-Neal-Stephenson/dp/0553380958"
+              >Snow crash</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.amazon.com/The-Everything-Store-Brad-Stone-audiobook/dp/B00FJFJOLC/ref=sr_1_1?crid=1S1WOKWPIS5EQ&keywords=everything+store&qid=1673756826&sprefix=everything+sto%2Caps%2C178&sr=8-1"
+              >Everything store</a
+            >
+          </li>
+          <li><a href="https://amzn.to/3XYMcda">Total Recall</a></li>
+        </ul>
+
+        <li><i>Specific articles</i></li>
+        <ul class="list-disc list-inside ml-4">
+          <li>
+            <a href="https://www.kalzumeus.com/2012/01/23/salary-negotiation/"
+              >Negotiating</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.navalmanack.com/almanack-of-naval-ravikant/find-a-position-of-leverage"
+              >Forms of leverage</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://a16z.com/2020/01/09/progressive-decentralization-crypto-product-management/"
+              >When to decentralize</a
+            >
+          </li>
+          <li>
+            <a href="https://danluu.com/productivity-velocity/"
+              >Engineer's mindset on productivity</a
+            >
+          </li>
+          <li>
+            <a href="https://randsinrepose.com/archives/stables-and-volatiles/"
+              >Stables and volatiles</a
+            >
+          </li>
+        </ul>
+      </ul>
+      <br />
+      <br />
+      <br />
     </div>
+  </div>
 </div>
+
 </body>
 
 </html>

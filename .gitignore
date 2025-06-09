@@ -15,3 +15,7 @@ assets/og-images/
 # Temporary files
 .tmp
 .cache
+
+# Bundler files
+vendor/
+.bundle/

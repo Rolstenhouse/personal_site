@@ -2,41 +2,141 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>Urban Darling, LLC</title>
-	<meta name="description" content="First Internship">
+  <title>
+    Urban Darling, LLC
+  </title>
+  <meta
+    name="description"
+    content="First Internship"
+  />
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Urban Darling, LLC" />
+  <meta property="og:description" content="First Internship" />
+  <meta property="og:url" content="http://localhost:4000/work/urbanDarling/" />
+  <meta property="og:site_name" content="Rob Olsthoorn" />
+  
+  <link
+    rel="canonical"
+    href="http://localhost:4000/work/urbanDarling/"
+  />
+  <link rel="alternate" type="application/rss+xml" title="Rob Olsthoorn"
+  href="http://localhost:4000/feed.xml">
+  <script src="/assets/pace/pace.min.js"></script>
+  <link href="/assets/pace/themes/minimal.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+    $(function () {
+      $("#resume").load("/assets/resume/resume.html");
+    });
+  </script>
 
-	<link rel="stylesheet" type="text/css" href="/assets/semantic.min.css">
-	<link rel="stylesheet" type="text/css" href="/assets/custom.css">
-	<!-- <link rel="stylesheet" type="text/css" href="/assets/resume/resume.css"> -->
-	<link rel="canonical" href="http://robertolsthoorn.com/work/urbanDarling/">
-	<link rel="alternate" type="application/rss+xml" title="Robert Olsthoorn" href="http://robertolsthoorn.com/feed.xml">
-	<script src="/assets/pace/pace.min.js"></script>
-  	<link href="/assets/pace/themes/minimal.css" rel="stylesheet" />
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="/assets/semantic.min.js"></script>
-	<script> 
-			$(function(){$("#resume").load("/assets/resume/resume.html")}); 
-    </script> 
-
-        <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70370619-1"></script>
-    <script>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-70370619-1"
+  ></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'UA-70370619-1');
-    </script>
-    <script>
-        var host = "robertolsthoorn.com"
-        if (window.location.host == host && window.location.protocol != "https:") {
-            window.location.protocol = "https:"
-        }
-    </script>
+    gtag("config", "UA-70370619-1");
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            sm: "0.8rem",
+            base: "1rem",
+            xl: "1.25rem",
+            "2xl": "1.563rem",
+            "3xl": "1.953rem",
+            "4xl": "2.441rem",
+            "5xl": "3.052rem",
+          },
+          fontFamily: {
+            serif: [
+              "Georgia",
+              "Cambria",
+              '"Times New Roman"',
+              "Times",
+              "serif",
+            ],
+          },
+        },
+      },
+    };
+  </script>
+  <script>
+    var host = "robolsthoorn.com";
+    if (window.location.host == host && window.location.protocol != "https:") {
+      window.location.protocol = "https:";
+    }
+  </script>
+  <script>
+    !(function (t, e) {
+      var o, n, p, r;
+      e.__SV ||
+        ((window.posthog = e),
+        (e._i = []),
+        (e.init = function (i, s, a) {
+          function g(t, e) {
+            var o = e.split(".");
+            2 == o.length && ((t = t[o[0]]), (e = o[1])),
+              (t[e] = function () {
+                t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+              });
+          }
+          ((p = t.createElement("script")).type = "text/javascript"),
+            (p.async = !0),
+            (p.src =
+              s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
+              "/static/array.js"),
+            (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
+              p,
+              r
+            );
+          var u = e;
+          for (
+            void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+              u.people = u.people || [],
+              u.toString = function (t) {
+                var e = "posthog";
+                return (
+                  "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                );
+              },
+              u.people.toString = function () {
+                return u.toString(1) + ".people (stub)";
+              },
+              o =
+                "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(
+                  " "
+                ),
+              n = 0;
+            n < o.length;
+            n++
+          )
+            g(u, o[n]);
+          e._i.push([i, s, a]);
+        }),
+        (e.__SV = 1));
+    })(document, window.posthog || []);
+    posthog.init("phc_F8W5zQagmvjztqZ5Qbb9hXZBNXc9fDdTojt17VJbnR6", {
+      api_host: "https://us.i.posthog.com",
+      person_profiles: "always", // or 'always' to create profiles for anonymous users as well
+    });
+  </script>
 </head>
 
 
