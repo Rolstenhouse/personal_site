@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Specify Ruby version compatible with your system (2.6.10)
-ruby "~> 2.6.0"
+ruby "~> 3.0.7"
 
 # Use github-pages gem which includes Jekyll and other dependencies
 gem "github-pages", group: :jekyll_plugins
