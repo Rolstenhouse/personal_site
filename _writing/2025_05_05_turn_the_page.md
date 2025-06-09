@@ -31,7 +31,7 @@ Takeaways are great, so how am I shifting my life post-baptism?
 2. When there's something interesting me, why stop at the article or book published, reach out to the author and go deeper. Find out where they hang out and find a reason to be nearby.
 3. Spend less time on surface-level, seconds based consumption. Every stone at the surface has been looked at. 
 
-Grateful for an amazing weekend with my friends, parth chopra, kenton prescott, and jay feng. Excited for next year!
+Grateful for an amazing weekend with [parth chopra](https://x.com/pchopra28), [kenton prescott](https://x.com/KentonPrescott), and [jay feng](https://x.com/jayofeng). Excited for next year!
 
 Related books worth reading
 - Snowball
@@ -41,4 +41,4 @@ Related books worth reading
 Books I have on deck as a result of the weekend
 - Buffett's Early Letters
 - Engines that move markets
-- Not a book but, (Value Investors Club)[https://www.valueinvestorsclub.com/]
+- Not a book but, [Value Investors Club](https://www.valueinvestorsclub.com/)
