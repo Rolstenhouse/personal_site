@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Turn the page
+title: Turn every page
 subtitle: I was baptized at the capitalist church
 date: 2025-05-5 21:00:00
 ---
